@@ -16,3 +16,12 @@ D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug
 D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CopyComplete
 D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
 D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csprojAssemblyReference.cache
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CoreCompileInputs.cache
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CopyComplete
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb

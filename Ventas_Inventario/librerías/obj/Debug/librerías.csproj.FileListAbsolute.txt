@@ -10,3 +10,9 @@ D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\librerías\obj\Debug\libre
 D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\librerías\obj\Debug\librerías.csproj.CoreCompileInputs.cache
 D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\librerías\obj\Debug\librerías.dll
 D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\librerías\obj\Debug\librerías.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\librerías\bin\Debug\librerías.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\librerías\bin\Debug\librerías.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\librerías\obj\Debug\librerías.csprojAssemblyReference.cache
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\librerías\obj\Debug\librerías.csproj.CoreCompileInputs.cache
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\librerías\obj\Debug\librerías.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\librerías\obj\Debug\librerías.pdb

@@ -170,7 +170,7 @@ namespace Ventas_Inventario.Forms
                 {
                     obInventario.Editar(txtNombre.Text, txtVolumen.Text, txtPortada.Text, cbCategoria.Text, cbAuxiliar.Text,
                        txtPrecio.Text, txtCantidad.Text, txtPuntaje.Text, IDinventario);
-                    MessageBox.Show("Tus datos se insertaron");
+                    MessageBox.Show("Tus datos se editaron");
                     MostrarInventario();
                     Limpiar();
                 }
@@ -191,10 +191,10 @@ namespace Ventas_Inventario.Forms
                 Editar = true;
                 
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
-                txtVolumen.Text = dataGridView1.CurrentRow.Cells["Volumen/Edicion"].Value.ToString();
+                txtVolumen.Text = dataGridView1.CurrentRow.Cells["Volumen"].Value.ToString();
                 txtPortada.Text = dataGridView1.CurrentRow.Cells["Portada"].Value.ToString();
                 cbCategoria.Text = dataGridView1.CurrentRow.Cells["Categoria"].Value.ToString();
-                cbAuxiliar.Text = dataGridView1.CurrentRow.Cells["Empresa"].Value.ToString();
+                cbAuxiliar.Text = dataGridView1.CurrentRow.Cells["Editorial"].Value.ToString();
                 txtPrecio.Text = dataGridView1.CurrentRow.Cells["Precio"].Value.ToString();
                 txtCantidad.Text = dataGridView1.CurrentRow.Cells["Cantidad"].Value.ToString();
                 txtPuntaje.Text = dataGridView1.CurrentRow.Cells["Puntaje"].Value.ToString();
