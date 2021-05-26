@@ -1,0 +1,49 @@
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.exe.config
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.exe
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.pdb
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\FontAwesome.Sharp.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csprojAssemblyReference.cache
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Form1.resources
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Properties.Resources.resources
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.GenerateResource.cache
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.CoreCompileInputs.cache
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.CopyComplete
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.exe
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.pdb
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Cliente.resources
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Inventario.resources
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\LibreriasNegocio.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\librerías.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\LibreriasNegocio.pdb
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\librerías.pdb
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\SpreadsheetLight.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\SpreadsheetLight.xml
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.Packaging.dll
+D:\Escritorio\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.Packaging.xml
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.exe.config
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.exe
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\FontAwesome.Sharp.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\LibreriasNegocio.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\SpreadsheetLight.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.Packaging.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\librerías.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\LibreriasNegocio.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\SpreadsheetLight.xml
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.Packaging.xml
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\bin\Debug\librerías.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csprojAssemblyReference.cache
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Form1.resources
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Cliente.resources
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Inventario.resources
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Properties.Resources.resources
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.GenerateResource.cache
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.CoreCompileInputs.cache
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.CopyComplete
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.exe
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.csproj.ResolveComReference.cache

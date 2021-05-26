@@ -1,0 +1,18 @@
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.dll
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.pdb
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.dll
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.pdb
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csprojAssemblyReference.cache
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CoreCompileInputs.cache
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CopyComplete
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
+D:\Escritorio\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.pdb
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csprojAssemblyReference.cache
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CoreCompileInputs.cache
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.csproj.CopyComplete
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
+D:\Escritorio\Guardado temporal\poo\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb
