@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PlugnPlayTest2.Views.NuevoProducto">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+
+                <Entry
+                x:Name="txtCat"
+                Placeholder="Categoria"
+                Keyboard="Text"
+            />
+                <Entry
+                x:Name="txtNom"
+                Placeholder="Nombre del Producto"
+                Keyboard="Text"
+            />
+                <Entry
+                x:Name="txtCan"
+                Placeholder="Cantidad"
+                Keyboard="Numeric"
+            />
+                <Entry
+                x:Name="txtVen"
+                Placeholder="Ventas"
+                Keyboard="Numeric"
+            />
+                <Entry
+                x:Name="txtInf"
+                Placeholder="Informacion del producto"
+                Keyboard="Text"
+            />
+                <Button
+                x:Name="btnAgregarJazmin"
+                Text="Agregar a Inventario Jazmin"
+                Clicked="BtnIdentificar_Clicked_1"
+                />
+                <Button
+                x:Name="btnAgregarJorge"
+                Text="Agregar a Inventario Jorge"
+                    Clicked ="btnAgregarJorge_Clicked"
+                
+                
+                
+                />
+
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

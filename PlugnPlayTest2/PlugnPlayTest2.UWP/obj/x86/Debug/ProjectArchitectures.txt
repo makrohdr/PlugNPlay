@@ -1,0 +1,1 @@
+C:\Users\diego\source\repos\PlugnPlayTest2\PlugnPlayTest2.UWP\PlugnPlayTest2.UWP.csproj;x86
