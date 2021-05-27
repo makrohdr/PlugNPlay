@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ventas_Inventario", "Ventas_Inventario\Ventas_Inventario.csproj", "{AEE99B87-4DBD-4EEA-B383-8021B0CA85AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreríasCapaPresentacion", "Ventas_Inventario\LibreríasCapaPresentacion.csproj", "{AEE99B87-4DBD-4EEA-B383-8021B0CA85AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "librerías", "librerías\librerías.csproj", "{8CE31E11-7447-4E1C-BE15-4CB3FBCB0421}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreríasCapaDatos", "librerías\LibreríasCapaDatos.csproj", "{8CE31E11-7447-4E1C-BE15-4CB3FBCB0421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriasNegocio", "LibreriasNegocio\LibreriasNegocio.csproj", "{7299D57A-9489-4083-9155-77E5932226D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriasCapaNegocio", "LibreriasNegocio\LibreriasCapaNegocio.csproj", "{7299D57A-9489-4083-9155-77E5932226D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

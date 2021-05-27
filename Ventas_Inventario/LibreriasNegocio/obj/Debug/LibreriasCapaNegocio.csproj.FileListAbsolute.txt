@@ -1,0 +1,9 @@
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasCapaNegocio.csprojAssemblyReference.cache
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasCapaNegocio.csproj.CoreCompileInputs.cache
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasCapaNegocio.csproj.CopyComplete
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb

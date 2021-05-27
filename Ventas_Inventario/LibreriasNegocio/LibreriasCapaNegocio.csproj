@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\librerías\librerías.csproj">
+    <ProjectReference Include="..\librerías\LibreríasCapaDatos.csproj">
       <Project>{8ce31e11-7447-4e1c-be15-4cb3fbcb0421}</Project>
-      <Name>librerías</Name>
+      <Name>LibreríasCapaDatos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

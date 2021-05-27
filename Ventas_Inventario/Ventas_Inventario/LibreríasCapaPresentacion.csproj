@@ -119,9 +119,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LibreriasNegocio\LibreriasNegocio.csproj">
+    <ProjectReference Include="..\LibreriasNegocio\LibreriasCapaNegocio.csproj">
       <Project>{7299d57a-9489-4083-9155-77e5932226d3}</Project>
-      <Name>LibreriasNegocio</Name>
+      <Name>LibreriasCapaNegocio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

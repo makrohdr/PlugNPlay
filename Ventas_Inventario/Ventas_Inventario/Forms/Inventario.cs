@@ -18,6 +18,7 @@ namespace Ventas_Inventario.Forms
         CN_Inventario obInventario = new CN_Inventario();
         private string IDinventario = null;
         private bool Editar = false;
+        private string Aux1;
 
         DataTable tabla = new DataTable();
 
@@ -43,29 +44,17 @@ namespace Ventas_Inventario.Forms
 
                 MessageBox.Show("No se ha podido cargar la base de datos");
             }
-            
+
         }
         
-        //trabando aqu[i
-        /*
-        private void FiltroNombre()
-        {
-            try
-            {
-                CN_Inventario filtro = new CN_Inventario();
-                dataGridView1.DataSource = filtro.FiltroNombre(Aux1);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-        */
+        
+        
+        
         private void txtFiltro2_TextChanged(object sender, EventArgs e)
         {
             //dataGridView1.DefaultView.RowFilter = $"nombre LIKE '{txtFiltro2.Text}%'";
         }
+        
         /// <summary>
         /// 
         /// 
@@ -100,20 +89,9 @@ namespace Ventas_Inventario.Forms
             {
 
             }
-            /* else if (cbCategoria.SelectedItem.ToString() == "Juego de mesa")
-            {
-
-            }
-            else if (cbCategoria.SelectedItem.ToString() == "TCG")
-            {
-                cbAuxiliar.Items.Add("Cartas");
-                cbAuxiliar.Items.Add("Boosters");
-                cbAuxiliar.Items.Add("Collector boosters");
-                cbAuxiliar.Items.Add("Decks");
-            }*/
         }
 
-        
+
 
         //crear evento en un nevo textbox para lector de barras 
         /*
@@ -123,7 +101,21 @@ namespace Ventas_Inventario.Forms
 	        }
         */
 
-        
+        //trabando aquí
+        private void FiltroNombre()
+        {
+            try
+            {
+                
+                CN_Inventario filtro = new CN_Inventario();
+                dataGridView1.DataSource = filtro.FiltroNombre(Aux1);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         private void btsBuscar_Click(object sender, EventArgs e)
         {
@@ -135,7 +127,7 @@ namespace Ventas_Inventario.Forms
                     
                 }
 
-                MostrarInventario();
+                FiltroNombre();
             }
             catch (Exception)
             {

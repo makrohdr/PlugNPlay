@@ -22,7 +22,6 @@ namespace librerías
         {
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "Select * from Inventario where Nombre like '" + Auxiliar1 + "%'" ;
-            //comando.Parameters.AddWithValue("@Aux1", Auxiliar1);
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
