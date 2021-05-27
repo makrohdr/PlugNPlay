@@ -7,3 +7,11 @@ D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNe
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasCapaNegocio.csproj.CopyComplete
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\bin\Debug\LibreriasNegocio.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\bin\Debug\librerías.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasCapaNegocio.csprojAssemblyReference.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasCapaNegocio.csproj.CopyComplete
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\LibreriasNegocio\obj\Debug\LibreriasNegocio.pdb

@@ -18,7 +18,7 @@ namespace Ventas_Inventario.Forms
         CN_Inventario obInventario = new CN_Inventario();
         private string IDinventario = null;
         private bool Editar = false;
-        private string Aux1;
+        
 
         DataTable tabla = new DataTable();
 
@@ -108,7 +108,7 @@ namespace Ventas_Inventario.Forms
             {
                 
                 CN_Inventario filtro = new CN_Inventario();
-                dataGridView1.DataSource = filtro.FiltroNombre(Aux1);
+                dataGridView1.DataSource = filtro.FiltroNombre(txtFiltro2.Text);
             }
             catch (Exception)
             {

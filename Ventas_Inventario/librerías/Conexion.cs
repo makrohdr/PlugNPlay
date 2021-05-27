@@ -11,7 +11,12 @@ namespace librerías
     public class Conexion
     {
         SqlConnection miConexion = new SqlConnection
-            (@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ControlVentas;user ID=makro;Password=mxclhdr");
+        /* (@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ControlVentas;");*/
+        (@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DBplugYplay;
+          Integrated Security=True;Connect Timeout=30;Encrypt=False;
+          TrustServerCertificate=True;
+          ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+          
 
         public SqlConnection abriConexion()
         {
