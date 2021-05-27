@@ -18,10 +18,10 @@ namespace librerías
         SqlCommand comando = new SqlCommand();
 
         #region Filtros
-        public DataTable FiltroNombre(string Auxiliar1)
+        public DataTable FiltroNombre(string Auxiliar1, string Auxiliar2)
         {
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "Select * from Inventario where Nombre like '" + Auxiliar1 + "%'" ;
+            comando.CommandText = "Select * from Inventario where " + Auxiliar1 + " like '" + Auxiliar2 + "%'" ;
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
@@ -30,6 +30,7 @@ namespace librerías
 
 
         #endregion
+
         public DataTable Mostrar()
         {
             //Procedimiento almacenado (primero se ocupa crear uno)

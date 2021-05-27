@@ -19,10 +19,10 @@ namespace LibreriasNegocio
             return tabla;
         }
 
-        public DataTable FiltroNombre(string Aux1)
+        public DataTable FiltroNombre(string Aux1, string Aux2)
         {
             DataTable tabla = new DataTable();
-            tabla = OBinventario.FiltroNombre(Aux1);
+            tabla = OBinventario.FiltroNombre(Aux1, Aux2);
             return tabla;
         }
 

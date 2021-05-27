@@ -106,25 +106,22 @@ namespace Ventas_Inventario.Forms
         {
             try
             {
-                
                 CN_Inventario filtro = new CN_Inventario();
-                dataGridView1.DataSource = filtro.FiltroNombre(txtFiltro2.Text);
+                dataGridView1.DataSource = filtro.FiltroNombre(txtFiltro1.Text ,txtFiltro2.Text);
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
-
+        //Buscar
         private void btsBuscar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtFiltro1.Text == "Nombre")
+                if (txtFiltro1.Text != "")
                 {
-                    obInventario.FiltroNombre(txtFiltro2.Text);
-                    
+                    obInventario.FiltroNombre(txtFiltro1.Text, txtFiltro2.Text);
                 }
 
                 FiltroNombre();
@@ -132,10 +129,16 @@ namespace Ventas_Inventario.Forms
             catch (Exception)
             {
                 MessageBox.Show("No se ha podido encontrar un articulo.");
-                txtFiltro1.Focus();
+                txtFiltro2.Focus();
             }
+        }
+        //Regresar a la tabla a la normalidad
+        private void btnTabla_Click(object sender, EventArgs e)
+        {
+            txtFiltro1.SelectedIndex = 0;
+            txtFiltro2.Clear();
 
-            
+            MostrarInventario();
         }
 
         //Guardar
@@ -171,9 +174,7 @@ namespace Ventas_Inventario.Forms
                     MessageBox.Show("No se puedo realizar la siguente accion: " + ex);
                 }
             }
-            
         }
-
 
         //Editar
         private void btnEditar_Click(object sender, EventArgs e)
@@ -197,7 +198,6 @@ namespace Ventas_Inventario.Forms
                 MessageBox.Show("seleccione una fila por editar");
             }
         }
-
 
         //Eliminar
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -272,34 +272,9 @@ namespace Ventas_Inventario.Forms
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            //no sirve
-            //obInventario.filtrar(txtFiltro.Text.Trim());
-            //MostrarInventario();
-
-            //if (txtFiltro.Text != "")
-            //{
-            //    dataGridView1.CurrentCell = null;
-            //    foreach (DataGridViewRow r in dataGridView1.Rows)
-            //    {
-            //        r.Visible = false;
-            //    }
-            //    foreach (DataGridViewRow r in dataGridView1.Rows)
-            //    {
-            //        foreach (DataGridViewCell c in r.Cells)
-            //        {
-            //            if (c.Value.ToString().ToUpper().IndexOf(txtFiltro.Text.ToUpper()) == 0)
-            //            {
-            //                r.Visible = true;
-            //                break;
-            //            }
-            //        }
-            //    }
-
-            //}
-            //else
-            //{
-            //    MostrarInventario();
-            //}
+           
         }
+
+        
     }
 }

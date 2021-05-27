@@ -53,6 +53,7 @@
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtFiltro2 = new System.Windows.Forms.TextBox();
             this.txtFiltro1 = new System.Windows.Forms.ComboBox();
+            this.btnTabla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -341,12 +342,23 @@
             this.txtFiltro1.Size = new System.Drawing.Size(121, 21);
             this.txtFiltro1.TabIndex = 50;
             // 
+            // btnTabla
+            // 
+            this.btnTabla.Location = new System.Drawing.Point(467, 40);
+            this.btnTabla.Name = "btnTabla";
+            this.btnTabla.Size = new System.Drawing.Size(75, 35);
+            this.btnTabla.TabIndex = 103;
+            this.btnTabla.Text = "regresar tabla";
+            this.btnTabla.UseVisualStyleBackColor = true;
+            this.btnTabla.Click += new System.EventHandler(this.btnTabla_Click);
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTabla);
             this.Controls.Add(this.txtFiltro1);
             this.Controls.Add(this.txtFiltro2);
             this.Controls.Add(this.lblBuscar);
@@ -408,5 +420,6 @@
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.TextBox txtFiltro2;
         private System.Windows.Forms.ComboBox txtFiltro1;
+        private System.Windows.Forms.Button btnTabla;
     }
 }
