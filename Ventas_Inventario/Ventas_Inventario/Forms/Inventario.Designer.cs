@@ -54,6 +54,9 @@
             this.txtFiltro2 = new System.Windows.Forms.TextBox();
             this.txtFiltro1 = new System.Windows.Forms.ComboBox();
             this.btnTabla = new System.Windows.Forms.Button();
+            this.txtFiltro3 = new System.Windows.Forms.ComboBox();
+            this.txtFiltro4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,10 +68,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(127, 79);
+            this.dataGridView1.Location = new System.Drawing.Point(127, 121);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(661, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(661, 317);
             this.dataGridView1.TabIndex = 20;
             // 
             // btnGuardar
@@ -300,7 +303,7 @@
             // 
             this.btsBuscar.Location = new System.Drawing.Point(360, 50);
             this.btsBuscar.Name = "btsBuscar";
-            this.btsBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btsBuscar.Size = new System.Drawing.Size(75, 50);
             this.btsBuscar.TabIndex = 52;
             this.btsBuscar.Text = "Buscar";
             this.btsBuscar.UseVisualStyleBackColor = true;
@@ -352,12 +355,45 @@
             this.btnTabla.UseVisualStyleBackColor = true;
             this.btnTabla.Click += new System.EventHandler(this.btnTabla_Click);
             // 
+            // txtFiltro3
+            // 
+            this.txtFiltro3.FormattingEnabled = true;
+            this.txtFiltro3.Items.AddRange(new object[] {
+            "Nombre",
+            "Volumen",
+            "Portada",
+            "Categoria",
+            "Editorial"});
+            this.txtFiltro3.Location = new System.Drawing.Point(127, 79);
+            this.txtFiltro3.Name = "txtFiltro3";
+            this.txtFiltro3.Size = new System.Drawing.Size(121, 21);
+            this.txtFiltro3.TabIndex = 104;
+            // 
+            // txtFiltro4
+            // 
+            this.txtFiltro4.Location = new System.Drawing.Point(254, 79);
+            this.txtFiltro4.Name = "txtFiltro4";
+            this.txtFiltro4.Size = new System.Drawing.Size(100, 20);
+            this.txtFiltro4.TabIndex = 105;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(360, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 50);
+            this.button1.TabIndex = 106;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtFiltro3);
+            this.Controls.Add(this.txtFiltro4);
             this.Controls.Add(this.btnTabla);
             this.Controls.Add(this.txtFiltro1);
             this.Controls.Add(this.txtFiltro2);
@@ -421,5 +457,8 @@
         private System.Windows.Forms.TextBox txtFiltro2;
         private System.Windows.Forms.ComboBox txtFiltro1;
         private System.Windows.Forms.Button btnTabla;
+        private System.Windows.Forms.ComboBox txtFiltro3;
+        private System.Windows.Forms.TextBox txtFiltro4;
+        private System.Windows.Forms.Button button1;
     }
 }

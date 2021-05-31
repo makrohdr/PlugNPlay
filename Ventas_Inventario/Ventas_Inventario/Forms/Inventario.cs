@@ -46,19 +46,14 @@ namespace Ventas_Inventario.Forms
             }
 
         }
-        
-        
-        
-        
+
+
+
+
         private void txtFiltro2_TextChanged(object sender, EventArgs e)
         {
-            //dataGridView1.DefaultView.RowFilter = $"nombre LIKE '{txtFiltro2.Text}%'";
         }
-        
-        /// <summary>
-        /// 
-        /// 
-        /// </summary>
+
 
         private void Limpiar()
         {
@@ -102,12 +97,25 @@ namespace Ventas_Inventario.Forms
         */
 
         //trabando aquí
-        private void FiltroNombre()
+        private void FiltroSencillo()
         {
             try
             {
                 CN_Inventario filtro = new CN_Inventario();
-                dataGridView1.DataSource = filtro.FiltroNombre(txtFiltro1.Text ,txtFiltro2.Text);
+                dataGridView1.DataSource = filtro.FiltroSencillo(txtFiltro1.Text ,txtFiltro2.Text);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void FiltroAvanzado()
+        {
+            try
+            {
+                CN_Inventario filtro = new CN_Inventario();
+                dataGridView1.DataSource = filtro.FiltroAvanzado(txtFiltro1.Text, txtFiltro2.Text, txtFiltro3.Text, txtFiltro4.Text);
             }
             catch (Exception)
             {
@@ -119,12 +127,18 @@ namespace Ventas_Inventario.Forms
         {
             try
             {
-                if (txtFiltro1.Text != "")
+                if (txtFiltro2.Text != "" && txtFiltro4.Text == "" || txtFiltro4.Text != "" && txtFiltro2.Text == "")
                 {
-                    obInventario.FiltroNombre(txtFiltro1.Text, txtFiltro2.Text);
+                    obInventario.FiltroSencillo(txtFiltro1.Text, txtFiltro2.Text);
                 }
 
-                FiltroNombre();
+                else if (txtFiltro2.Text != "" && txtFiltro4.Text != "")
+                {
+                    obInventario.FiltroAvanzado(txtFiltro1.Text, txtFiltro2.Text, txtFiltro3.Text, txtFiltro4.Text);
+                }
+
+                FiltroSencillo();
+                FiltroAvanzado();
             }
             catch (Exception)
             {
@@ -137,7 +151,8 @@ namespace Ventas_Inventario.Forms
         {
             txtFiltro1.SelectedIndex = 0;
             txtFiltro2.Clear();
-
+            txtFiltro3.SelectedIndex = 0;
+            txtFiltro4.Clear();
             MostrarInventario();
         }
 

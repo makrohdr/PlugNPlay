@@ -18,10 +18,20 @@ namespace librerías
         SqlCommand comando = new SqlCommand();
 
         #region Filtros
-        public DataTable FiltroNombre(string Auxiliar1, string Auxiliar2)
+        public DataTable FiltroSencillo(string Auxiliar1, string Auxiliar2)
         {
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "Select * from Inventario where " + Auxiliar1 + " like '" + Auxiliar2 + "%'" ;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.cerrarConexion();
+            return tabla;
+        }
+
+        public DataTable FiltroAvanzado(string Auxiliar1, string Auxiliar2, string Auxiliar3, string Auxiliar4)
+        {
+            comando.Connection = conexion.abriConexion();
+            comando.CommandText = "Select * from Inventario where " + Auxiliar1 + " like '" + Auxiliar2 + "%'" + Auxiliar3 + " like '" + Auxiliar4 + "%'";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
