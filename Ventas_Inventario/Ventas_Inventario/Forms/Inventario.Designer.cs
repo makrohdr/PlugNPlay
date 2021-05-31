@@ -56,7 +56,6 @@
             this.btnTabla = new System.Windows.Forms.Button();
             this.txtFiltro3 = new System.Windows.Forms.ComboBox();
             this.txtFiltro4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -376,22 +375,12 @@
             this.txtFiltro4.Size = new System.Drawing.Size(100, 20);
             this.txtFiltro4.TabIndex = 105;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(360, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 50);
-            this.button1.TabIndex = 106;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtFiltro3);
             this.Controls.Add(this.txtFiltro4);
             this.Controls.Add(this.btnTabla);
@@ -459,6 +448,5 @@
         private System.Windows.Forms.Button btnTabla;
         private System.Windows.Forms.ComboBox txtFiltro3;
         private System.Windows.Forms.TextBox txtFiltro4;
-        private System.Windows.Forms.Button button1;
     }
 }

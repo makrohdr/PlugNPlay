@@ -96,7 +96,7 @@ namespace Ventas_Inventario.Forms
 	        }
         */
 
-        //trabando aquí
+        
         private void FiltroSencillo()
         {
             try
@@ -127,11 +127,10 @@ namespace Ventas_Inventario.Forms
         {
             try
             {
-                if (txtFiltro2.Text != "" && txtFiltro4.Text == "" || txtFiltro4.Text != "" && txtFiltro2.Text == "")
+                if (txtFiltro2.Text != "" && txtFiltro4.Text == "" || txtFiltro2.Text != "" && txtFiltro4.Text == "")
                 {
                     obInventario.FiltroSencillo(txtFiltro1.Text, txtFiltro2.Text);
                 }
-
                 else if (txtFiltro2.Text != "" && txtFiltro4.Text != "")
                 {
                     obInventario.FiltroAvanzado(txtFiltro1.Text, txtFiltro2.Text, txtFiltro3.Text, txtFiltro4.Text);
@@ -144,6 +143,16 @@ namespace Ventas_Inventario.Forms
             {
                 MessageBox.Show("No se ha podido encontrar un articulo.");
                 txtFiltro2.Focus();
+            }
+
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
         //Regresar a la tabla a la normalidad
