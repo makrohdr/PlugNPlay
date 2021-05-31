@@ -33,6 +33,8 @@ namespace Ventas_Inventario.Forms
             dataGridView1.DataSource = cliente.MostrarCl();
         }
 
+
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             //Insertar
@@ -40,9 +42,10 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    clienteOB.InsertarCliente(txtCelular.Text, txtApellido.Text, txtNombre.Text, txtPuntaje.Text);
+                    clienteOB.InsertarCliente(txtRedSocial.Text, txtContacto.Text, txtApellido.Text, txtNombre.Text, txtPuntaje.Text);
                     MessageBox.Show("Tus datos se insertaron");
                     MostrarClientes();
+                    //No Olvidar
                     Limpiar();
                 }
                 catch (Exception ex)
@@ -55,7 +58,7 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    clienteOB.EditarCliente(txtCelular.Text, txtApellido.Text, txtNombre.Text, txtPuntaje.Text, IDcliente);
+                    clienteOB.EditarCliente(txtContacto.Text, txtApellido.Text, txtNombre.Text, txtPuntaje.Text, IDcliente);
                     MessageBox.Show("Tus datos se editaron");
                     MostrarClientes();
                     Limpiar();
@@ -63,7 +66,6 @@ namespace Ventas_Inventario.Forms
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show("No se pudo editar los datos por: " + ex);
                 }
             }
@@ -74,7 +76,7 @@ namespace Ventas_Inventario.Forms
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 Editar = true;
-                txtCelular.Text = dataGridView1.CurrentRow.Cells["Celular"].Value.ToString();
+                txtContacto.Text = dataGridView1.CurrentRow.Cells["Celular"].Value.ToString();
                 txtApellido.Text = dataGridView1.CurrentRow.Cells["Apellido"].Value.ToString();
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
                 txtPuntaje.Text = dataGridView1.CurrentRow.Cells["Puntaje"].Value.ToString();
@@ -88,7 +90,7 @@ namespace Ventas_Inventario.Forms
 
         private void Limpiar()
         {
-            txtCelular.Clear();
+            txtContacto.Clear();
             txtApellido.Clear();
             txtNombre.Clear();
             txtPuntaje.Clear();
@@ -120,5 +122,43 @@ namespace Ventas_Inventario.Forms
                 MessageBox.Show("No se pudo realizar la operacion.");
             }
         }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            ExportarDatos(dataGridView1);
+        }
+
+        //Exportar datos
+        #region exportar datos
+        public void ExportarDatos(DataGridView dataGridView1)
+        {
+            Microsoft.Office.Interop.Excel.Application ExportarExcel = new Microsoft.Office.Interop.Excel.Application();
+
+            ExportarExcel.Application.Workbooks.Add(true);
+
+            int IndiceColumna = 0;
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                IndiceColumna++;
+
+                ExportarExcel.Cells[1, IndiceColumna] = column.Name;
+            }
+
+            int IndiceFila = 0;
+            foreach (DataGridViewRow fILA in dataGridView1.Rows)
+            {
+                IndiceFila++;
+                IndiceColumna = 0;
+
+                foreach (DataGridViewColumn column in dataGridView1.Columns)
+                {
+                    IndiceColumna++;
+                    ExportarExcel.Cells[IndiceFila + 1, IndiceColumna] = fILA.Cells[column.Name].Value;
+                }
+            }
+
+            ExportarExcel.Visible = true;
+        }
+        #endregion
     }
 }

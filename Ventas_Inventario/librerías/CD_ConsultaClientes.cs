@@ -28,16 +28,17 @@ namespace librerías
             return tabla;
         }
 
-        public void Insertar(string numero, string apellido, string nombre, int puntaje)
+        public void Insertar(string RedSocial, string Contacto, string Apellido, string Nombre, int Puntaje)
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "AgregarCliente";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@celular", numero);
-            comando.Parameters.AddWithValue("@apellido", apellido);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@puntaje", puntaje);
+            comando.Parameters.AddWithValue("@RedSocial", RedSocial);
+            comando.Parameters.AddWithValue("@celular", Contacto);
+            comando.Parameters.AddWithValue("@apellido", Apellido);
+            comando.Parameters.AddWithValue("@nombre", Nombre);
+            comando.Parameters.AddWithValue("@puntaje", Puntaje);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();

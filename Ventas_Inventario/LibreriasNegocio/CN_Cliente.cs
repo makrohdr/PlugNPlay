@@ -20,9 +20,9 @@ namespace LibreriasNegocio
             return tabla;
         }
 
-        public void InsertarCliente (string numero, string apellido, string nombre, string puntaje)
+        public void InsertarCliente (string redSocial, string contacto, string apellido, string nombre, string puntaje)
         {
-            ConsultaClientesOB.Insertar(numero, apellido, nombre, int.Parse(puntaje));
+            ConsultaClientesOB.Insertar(redSocial, contacto, apellido, nombre, int.Parse(puntaje));
         }
 
         public void EditarCliente(string numero, string apellido, string nombre, string puntaje, string IDcliente)
