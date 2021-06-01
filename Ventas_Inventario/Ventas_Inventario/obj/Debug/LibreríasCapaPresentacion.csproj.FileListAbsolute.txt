@@ -16,7 +16,6 @@ D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inve
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.ResolveComReference.cache
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Form1.resources
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Cliente.resources
-D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Inventario.resources
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Properties.Resources.resources
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.GenerateResource.cache
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.CoreCompileInputs.cache
@@ -47,3 +46,4 @@ C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventar
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.CopyComplete
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.exe
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.pdb
+D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Lirbos.resources

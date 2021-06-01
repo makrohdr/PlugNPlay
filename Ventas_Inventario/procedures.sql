@@ -14,19 +14,9 @@ create proc AgregarCliente
 @puntaje int
 as
 insert into Cliente values(@celular,@apellido,@nombre,@puntaje)
-go
-
-create table Cliente(
-IDcliente int identity (1,1) primary key,
-Celular varchar(15),
-Nombre_Facebook varchar(30),
-Apellido varchar(25),
-Nombre varchar(25),
-Puntaje int)
-
-insert into Cliente values('6861234567', 'Gastelum','Marco', 0)
 
 go
+
 create proc EditarCliente
 @celular varchar (100),
 @apellido varchar (100),
@@ -46,10 +36,7 @@ go
 
 exec NombreDelProceso 'ejemplo1', 'ejemplo2'
 ---------------------------------------
-go
 
-create table Inventario(IDinventario int identity primary key, Nombre varchar(100), Volumen varchar(5), Portada varchar(5), 
-Categoria varchar(100), Empresa varchar(50), Precio float, Cantidad int, Punataje int)
 go
 
 alter proc MostrarInventario
@@ -58,18 +45,6 @@ select * from Inventario
 go
 select IDinventario from Inventario
 go
-
------------------------------------------------------------------------------
-
-alter proc FiltroNombre
-@Aux1 varchar(50)
-as
-select * from Inventario where Nombre like @Aux1;
-go
-
-exec FiltroNombre @Aux1 = 'mi'; 
-go
-
 ------------------------------------------------------------------------------
 
 create proc AgregarInventario
@@ -109,12 +84,83 @@ go
 
 exec AgregarInventario 'Oreigaru', '1', 'A', 'Manga', 'Kamite', '85', '1', '45'
 go
+--------------------------------------------
+--Crear tablas
+create table Inventario(
+IDinventario int identity primary key,
+Nombre varchar(100),
+Volumen varchar(5),
+Portada varchar(5), 
+Categoria varchar(100),
+Empresa varchar(50),
+Precio float,
+Cantidad int,
+Punataje int)
 
-alter proc FiltroInventario
-@filtro varchar(100)
-as
-select Nombre, [Volumen/Edicion], Portada, Categoria, Empresa, Precio, Cantidad, Puntaje 
-from Inventario
-where Nombre like @filtro + '%'
+create table Clientes(
+IDTelefono int identity (1,1) primary key,
+RedSocial varchar(100),
+Contacto varchar(100),
+Nombre varchar(100),
+Apellido varchar(100),
+Puntaje int)
 
-go
+create table ReporteVentaLibros(
+IDReporteLibros int identity(1,1) primary key,
+IDlibros int foreign key (IDLibros) references inventario(IDinventario),
+IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+Fecha varchar(100), 
+Nombre varchar(100),
+Volumen varchar(100),
+Portada varchar(100),
+Editorial varchar(100),
+Precio int,
+Puntaje int)
+
+create table JuegosDeMesa(
+IDJuegosDeMesa int identity (1,1) primary key,
+Nombre varchar(100),
+Precio int,
+Puntaje int);
+
+create table ReporteVentaJuegosDeMesa(
+IDReporteJuegosDeMesa int identity(1,1) primary key,
+IDJuegosDeMesa int foreign key (IDJuegosDeMesa) references JuegosDeMesa(IDJuegosDeMesa),
+IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+Nombre varchar(100),
+Precio int,
+Puntaje int);
+
+create table TCG(
+IDTCG int identity (1,1) primary key,
+Nombre Varchar(100),
+Producto varchar(100),
+Precio int,
+Puntaje int);
+
+create table ReporteVentasTCG(
+ReporteTCG int identity (1,1) primary key,
+IDTCG int foreign key (IDTCG) references TCG(IDTCG),
+IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+Nombre Varchar(100),
+Producto varchar(100),
+Precio int,
+Puntaje int);
+
+create table Annetys(
+IDAnnetys int identity(1,1) primary key,
+Categoria varchar(100),
+Nombre varchar(100),
+Descripcion varchar(100),
+Precio int,
+Punatje int)
+
+create table ReporteVentasAnnetys(
+IDReporteAnnetys int identity(1,1) primary key,
+IDAnnetys int foreign key (IDAnnetys) references Annetys(IDAnnetys),
+IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+Categoria varchar(100),
+Nombre varchar(100),
+Descripcion varchar(100),
+Precio int,
+Punatje int)

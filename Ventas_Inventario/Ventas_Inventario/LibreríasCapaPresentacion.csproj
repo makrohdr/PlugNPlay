@@ -72,28 +72,73 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Annetys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Annetys.Designer.cs">
+      <DependentUpon>Annetys.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Inventario.cs">
+    <Compile Include="Forms\Dollar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inventario.Designer.cs">
-      <DependentUpon>Inventario.cs</DependentUpon>
+    <Compile Include="Forms\Dollar.Designer.cs">
+      <DependentUpon>Dollar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lirbos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lirbos.Designer.cs">
+      <DependentUpon>Lirbos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JuegosDeMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JuegosDeMesa.Designer.cs">
+      <DependentUpon>JuegosDeMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TCG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TCG.Designer.cs">
+      <DependentUpon>TCG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Annetys.resx">
+      <DependentUpon>Annetys.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inventario.resx">
-      <DependentUpon>Inventario.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Dollar.resx">
+      <DependentUpon>Dollar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JuegosDeMesa.resx">
+      <DependentUpon>JuegosDeMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lirbos.resx">
+      <DependentUpon>Lirbos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TCG.resx">
+      <DependentUpon>TCG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

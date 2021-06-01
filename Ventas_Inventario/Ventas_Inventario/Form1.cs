@@ -71,7 +71,7 @@ namespace Ventas_Inventario
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(255, 255, 109);
+                currentBtn.BackColor = Color.FromArgb(255, 128, 0);
                 currentBtn.ForeColor = Color.Black;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Black;
@@ -80,11 +80,12 @@ namespace Ventas_Inventario
             }
         }
 
+        //abrir un formulario hijo
         private void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
             {
-                //open only form
+                //abrir un unico form
                 currentChildForm.Close();
             }
             currentChildForm = childForm;
@@ -121,6 +122,7 @@ namespace Ventas_Inventario
         private void btnVenta_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Forms.Venta());
             OcultarSubMenu();
         }
 
@@ -141,11 +143,32 @@ namespace Ventas_Inventario
         private void btnDollar_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new Forms.Dollar());
             OcultarSubMenu();
         }
         #endregion
 
-        #region menu desplegable
+        #region botones de paneles desplegables
+        //btnlibros
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.Lirbos());
+        }
+        private void brnJuegosMesa_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.JuegosDeMesa());
+        }
+        private void btnTCG_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.TCG());
+        }
+        private void btnAnnetys_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.Annetys());
+        }
+        #endregion
+
+        #region paneles desplegables
         private void PersonalizarDiseño()
         {
             panelSubMenuInventario.Visible = false;
@@ -173,6 +196,7 @@ namespace Ventas_Inventario
         }
         #endregion
 
+        //btnHome
         private void reset()
         {
             DisableButton();
@@ -216,18 +240,13 @@ namespace Ventas_Inventario
         }
         #endregion
 
+        //relog
         private void clock_Tick(object sender, EventArgs e)
         {
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Now.ToShortDateString();
         }
 
-        #region botones de paneles
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            //
-            OpenChildForm(new Forms.Inventario());
-        }
-        #endregion
+        
     }
 }

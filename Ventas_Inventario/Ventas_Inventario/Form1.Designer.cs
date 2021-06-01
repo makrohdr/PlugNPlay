@@ -34,8 +34,8 @@
             this.btnDollar = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
             this.panelSubMenuInventario = new System.Windows.Forms.Panel();
-            this.brnJasmin = new FontAwesome.Sharp.IconButton();
-            this.btnJorge = new FontAwesome.Sharp.IconButton();
+            this.brnJuegosMesa = new FontAwesome.Sharp.IconButton();
+            this.btnLibros = new FontAwesome.Sharp.IconButton();
             this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnVenta = new FontAwesome.Sharp.IconButton();
             this.panelimg = new System.Windows.Forms.Panel();
@@ -52,6 +52,8 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clock = new System.Windows.Forms.Timer(this.components);
+            this.btnTCG = new FontAwesome.Sharp.IconButton();
+            this.btnAnnetys = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelSubMenuInventario.SuspendLayout();
             this.panelimg.SuspendLayout();
@@ -68,7 +70,7 @@
             // panelMenu
             // 
             this.panelMenu.AutoScroll = true;
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(109)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panelMenu.Controls.Add(this.btnDollar);
             this.panelMenu.Controls.Add(this.btnClientes);
             this.panelMenu.Controls.Add(this.panelSubMenuInventario);
@@ -93,7 +95,7 @@
             this.btnDollar.IconColor = System.Drawing.Color.Black;
             this.btnDollar.IconSize = 32;
             this.btnDollar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDollar.Location = new System.Drawing.Point(0, 458);
+            this.btnDollar.Location = new System.Drawing.Point(0, 467);
             this.btnDollar.Name = "btnDollar";
             this.btnDollar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnDollar.Rotation = 0D;
@@ -117,7 +119,7 @@
             this.btnClientes.IconColor = System.Drawing.Color.Black;
             this.btnClientes.IconSize = 32;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 408);
+            this.btnClientes.Location = new System.Drawing.Point(0, 417);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnClientes.Rotation = 0D;
@@ -131,63 +133,66 @@
             // 
             // panelSubMenuInventario
             // 
-            this.panelSubMenuInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(109)))));
-            this.panelSubMenuInventario.Controls.Add(this.brnJasmin);
-            this.panelSubMenuInventario.Controls.Add(this.btnJorge);
+            this.panelSubMenuInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(0)))));
+            this.panelSubMenuInventario.Controls.Add(this.btnAnnetys);
+            this.panelSubMenuInventario.Controls.Add(this.btnTCG);
+            this.panelSubMenuInventario.Controls.Add(this.brnJuegosMesa);
+            this.panelSubMenuInventario.Controls.Add(this.btnLibros);
             this.panelSubMenuInventario.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuInventario.Location = new System.Drawing.Point(0, 210);
             this.panelSubMenuInventario.Name = "panelSubMenuInventario";
-            this.panelSubMenuInventario.Size = new System.Drawing.Size(179, 198);
+            this.panelSubMenuInventario.Size = new System.Drawing.Size(179, 207);
             this.panelSubMenuInventario.TabIndex = 7;
             // 
-            // brnJasmin
+            // brnJuegosMesa
             // 
-            this.brnJasmin.BackColor = System.Drawing.Color.Transparent;
-            this.brnJasmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.brnJasmin.FlatAppearance.BorderSize = 0;
-            this.brnJasmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brnJasmin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.brnJasmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brnJasmin.ForeColor = System.Drawing.Color.Black;
-            this.brnJasmin.IconChar = FontAwesome.Sharp.IconChar.CreditCard;
-            this.brnJasmin.IconColor = System.Drawing.Color.Black;
-            this.brnJasmin.IconSize = 32;
-            this.brnJasmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.brnJasmin.Location = new System.Drawing.Point(0, 50);
-            this.brnJasmin.Name = "brnJasmin";
-            this.brnJasmin.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
-            this.brnJasmin.Rotation = 0D;
-            this.brnJasmin.Size = new System.Drawing.Size(179, 50);
-            this.brnJasmin.TabIndex = 5;
-            this.brnJasmin.Text = "Jasmin";
-            this.brnJasmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.brnJasmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.brnJasmin.UseVisualStyleBackColor = false;
+            this.brnJuegosMesa.BackColor = System.Drawing.Color.Transparent;
+            this.brnJuegosMesa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.brnJuegosMesa.FlatAppearance.BorderSize = 0;
+            this.brnJuegosMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.brnJuegosMesa.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.brnJuegosMesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brnJuegosMesa.ForeColor = System.Drawing.Color.Black;
+            this.brnJuegosMesa.IconChar = FontAwesome.Sharp.IconChar.Dice;
+            this.brnJuegosMesa.IconColor = System.Drawing.Color.Black;
+            this.brnJuegosMesa.IconSize = 32;
+            this.brnJuegosMesa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.brnJuegosMesa.Location = new System.Drawing.Point(0, 50);
+            this.brnJuegosMesa.Name = "brnJuegosMesa";
+            this.brnJuegosMesa.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.brnJuegosMesa.Rotation = 0D;
+            this.brnJuegosMesa.Size = new System.Drawing.Size(179, 50);
+            this.brnJuegosMesa.TabIndex = 5;
+            this.brnJuegosMesa.Text = "Juegos de mesa";
+            this.brnJuegosMesa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.brnJuegosMesa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.brnJuegosMesa.UseVisualStyleBackColor = false;
+            this.brnJuegosMesa.Click += new System.EventHandler(this.brnJuegosMesa_Click);
             // 
-            // btnJorge
+            // btnLibros
             // 
-            this.btnJorge.BackColor = System.Drawing.Color.Transparent;
-            this.btnJorge.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnJorge.FlatAppearance.BorderSize = 0;
-            this.btnJorge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnJorge.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnJorge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJorge.ForeColor = System.Drawing.Color.Black;
-            this.btnJorge.IconChar = FontAwesome.Sharp.IconChar.CreditCard;
-            this.btnJorge.IconColor = System.Drawing.Color.Black;
-            this.btnJorge.IconSize = 32;
-            this.btnJorge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJorge.Location = new System.Drawing.Point(0, 0);
-            this.btnJorge.Name = "btnJorge";
-            this.btnJorge.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
-            this.btnJorge.Rotation = 0D;
-            this.btnJorge.Size = new System.Drawing.Size(179, 50);
-            this.btnJorge.TabIndex = 4;
-            this.btnJorge.Text = "Jorge";
-            this.btnJorge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJorge.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnJorge.UseVisualStyleBackColor = false;
-            this.btnJorge.Click += new System.EventHandler(this.iconButton2_Click);
+            this.btnLibros.BackColor = System.Drawing.Color.Transparent;
+            this.btnLibros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLibros.FlatAppearance.BorderSize = 0;
+            this.btnLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLibros.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibros.ForeColor = System.Drawing.Color.Black;
+            this.btnLibros.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            this.btnLibros.IconColor = System.Drawing.Color.Black;
+            this.btnLibros.IconSize = 32;
+            this.btnLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLibros.Location = new System.Drawing.Point(0, 0);
+            this.btnLibros.Name = "btnLibros";
+            this.btnLibros.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.btnLibros.Rotation = 0D;
+            this.btnLibros.Size = new System.Drawing.Size(179, 50);
+            this.btnLibros.TabIndex = 4;
+            this.btnLibros.Text = "Libros";
+            this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLibros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLibros.UseVisualStyleBackColor = true;
+            this.btnLibros.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // btnInventario
             // 
@@ -215,7 +220,7 @@
             // 
             // btnVenta
             // 
-            this.btnVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(109)))));
+            this.btnVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnVenta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnVenta.FlatAppearance.BorderSize = 0;
             this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -262,7 +267,7 @@
             // 
             // PanelTitulo
             // 
-            this.PanelTitulo.BackColor = System.Drawing.Color.LimeGreen;
+            this.PanelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.PanelTitulo.Controls.Add(this.btnMin);
             this.PanelTitulo.Controls.Add(this.btnMinyMax);
             this.PanelTitulo.Controls.Add(this.btnCerrar);
@@ -280,9 +285,8 @@
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.BackColor = System.Drawing.Color.Transparent;
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMin.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMin.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMin.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnMin.IconColor = System.Drawing.Color.White;
             this.btnMin.Location = new System.Drawing.Point(668, 3);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(32, 32);
@@ -295,9 +299,8 @@
             this.btnMinyMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinyMax.BackColor = System.Drawing.Color.Transparent;
             this.btnMinyMax.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinyMax.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMinyMax.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btnMinyMax.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnMinyMax.IconColor = System.Drawing.Color.White;
             this.btnMinyMax.Location = new System.Drawing.Point(706, 3);
             this.btnMinyMax.Name = "btnMinyMax";
             this.btnMinyMax.Size = new System.Drawing.Size(32, 32);
@@ -310,9 +313,8 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.btnCerrar.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar.IconColor = System.Drawing.Color.White;
             this.btnCerrar.Location = new System.Drawing.Point(744, 3);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(32, 32);
@@ -323,11 +325,11 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(58, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(52, 20);
+            this.lblTitulo.Size = new System.Drawing.Size(68, 25);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Home";
             // 
@@ -346,7 +348,7 @@
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.ForestGreen;
+            this.panelShadow.BackColor = System.Drawing.Color.Navy;
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(179, 38);
             this.panelShadow.Name = "panelShadow";
@@ -369,35 +371,37 @@
             // 
             this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFecha.AutoSize = true;
+            this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Pristina", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Gold;
             this.lblFecha.Location = new System.Drawing.Point(186, 340);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(218, 126);
+            this.lblFecha.Size = new System.Drawing.Size(244, 126);
             this.lblFecha.TabIndex = 3;
-            this.lblFecha.Text = "label1";
+            this.lblFecha.Text = "Fecha";
             // 
             // lblHora
             // 
             this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHora.AutoSize = true;
+            this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Pristina", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Gold;
             this.lblHora.Location = new System.Drawing.Point(186, 242);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(218, 126);
+            this.lblHora.Size = new System.Drawing.Size(221, 126);
             this.lblHora.TabIndex = 2;
-            this.lblHora.Text = "label1";
+            this.lblHora.Text = "Hora";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(252, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(3);
             this.pictureBox1.Size = new System.Drawing.Size(200, 146);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -405,6 +409,56 @@
             // 
             this.clock.Enabled = true;
             this.clock.Tick += new System.EventHandler(this.clock_Tick);
+            // 
+            // btnTCG
+            // 
+            this.btnTCG.BackColor = System.Drawing.Color.Transparent;
+            this.btnTCG.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTCG.FlatAppearance.BorderSize = 0;
+            this.btnTCG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTCG.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnTCG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCG.ForeColor = System.Drawing.Color.Black;
+            this.btnTCG.IconChar = FontAwesome.Sharp.IconChar.DiceD20;
+            this.btnTCG.IconColor = System.Drawing.Color.Black;
+            this.btnTCG.IconSize = 32;
+            this.btnTCG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTCG.Location = new System.Drawing.Point(0, 100);
+            this.btnTCG.Name = "btnTCG";
+            this.btnTCG.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.btnTCG.Rotation = 0D;
+            this.btnTCG.Size = new System.Drawing.Size(179, 50);
+            this.btnTCG.TabIndex = 6;
+            this.btnTCG.Text = "TCG";
+            this.btnTCG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTCG.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTCG.UseVisualStyleBackColor = false;
+            this.btnTCG.Click += new System.EventHandler(this.btnTCG_Click);
+            // 
+            // btnAnnetys
+            // 
+            this.btnAnnetys.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnnetys.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAnnetys.FlatAppearance.BorderSize = 0;
+            this.btnAnnetys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnnetys.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAnnetys.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnetys.ForeColor = System.Drawing.Color.Black;
+            this.btnAnnetys.IconChar = FontAwesome.Sharp.IconChar.Gifts;
+            this.btnAnnetys.IconColor = System.Drawing.Color.Black;
+            this.btnAnnetys.IconSize = 32;
+            this.btnAnnetys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnnetys.Location = new System.Drawing.Point(0, 150);
+            this.btnAnnetys.Name = "btnAnnetys";
+            this.btnAnnetys.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.btnAnnetys.Rotation = 0D;
+            this.btnAnnetys.Size = new System.Drawing.Size(179, 50);
+            this.btnAnnetys.TabIndex = 7;
+            this.btnAnnetys.Text = "Annetys";
+            this.btnAnnetys.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnnetys.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnnetys.UseVisualStyleBackColor = false;
+            this.btnAnnetys.Click += new System.EventHandler(this.btnAnnetys_Click);
             // 
             // Form1
             // 
@@ -458,8 +512,10 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer clock;
         private System.Windows.Forms.Panel panelSubMenuInventario;
-        private FontAwesome.Sharp.IconButton brnJasmin;
-        private FontAwesome.Sharp.IconButton btnJorge;
+        private FontAwesome.Sharp.IconButton brnJuegosMesa;
+        private FontAwesome.Sharp.IconButton btnLibros;
+        private FontAwesome.Sharp.IconButton btnAnnetys;
+        private FontAwesome.Sharp.IconButton btnTCG;
     }
 }
 
