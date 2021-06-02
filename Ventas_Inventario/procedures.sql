@@ -105,6 +105,15 @@ Nombre varchar(100),
 Apellido varchar(100),
 Puntaje int)
 
+drop table ReporteVentaLibros;
+drop table ReporteVentaJuegosDeMesa
+drop table ReporteVentasTCG
+drop table ReporteVentasAnnetys
+
+drop table JuegosDeMesa;
+drop table TCG
+drop table Annetys
+
 create table ReporteVentaLibros(
 IDReporteLibros int identity(1,1) primary key,
 IDlibros int foreign key (IDLibros) references inventario(IDinventario),
@@ -115,12 +124,14 @@ Volumen varchar(100),
 Portada varchar(100),
 Editorial varchar(100),
 Precio int,
+Cantidad int,
 Puntaje int)
 
 create table JuegosDeMesa(
 IDJuegosDeMesa int identity (1,1) primary key,
 Nombre varchar(100),
 Precio int,
+Cantidad int,
 Puntaje int);
 
 create table ReporteVentaJuegosDeMesa(
@@ -129,6 +140,7 @@ IDJuegosDeMesa int foreign key (IDJuegosDeMesa) references JuegosDeMesa(IDJuegos
 IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
 Nombre varchar(100),
 Precio int,
+Cantidad int,
 Puntaje int);
 
 create table TCG(
@@ -136,6 +148,7 @@ IDTCG int identity (1,1) primary key,
 Nombre Varchar(100),
 Producto varchar(100),
 Precio int,
+Cantidad int,
 Puntaje int);
 
 create table ReporteVentasTCG(
@@ -145,6 +158,7 @@ IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
 Nombre Varchar(100),
 Producto varchar(100),
 Precio int,
+Cantidad int,
 Puntaje int);
 
 create table Annetys(
@@ -153,6 +167,7 @@ Categoria varchar(100),
 Nombre varchar(100),
 Descripcion varchar(100),
 Precio int,
+Cantidad int,
 Punatje int)
 
 create table ReporteVentasAnnetys(
@@ -163,4 +178,5 @@ Categoria varchar(100),
 Nombre varchar(100),
 Descripcion varchar(100),
 Precio int,
+Cantidad int,
 Punatje int)
