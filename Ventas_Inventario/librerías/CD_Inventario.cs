@@ -72,6 +72,7 @@ namespace librerías
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
+            
         }
 
         public void Editar(string nombre, string volumen, string portada, string categoria, string editorial, double precio,

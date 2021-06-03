@@ -31,40 +31,11 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblFechatxt = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.GbAreaLibros = new System.Windows.Forms.GroupBox();
+            this.GroupLibros = new System.Windows.Forms.GroupBox();
             this.CbVolumenL = new System.Windows.Forms.ComboBox();
             this.lblVolumenL = new System.Windows.Forms.Label();
-            this.CbPortadaL = new System.Windows.Forms.ComboBox();
-            this.lblPortadaL = new System.Windows.Forms.Label();
-            this.CbCategoriaL = new System.Windows.Forms.ComboBox();
-            this.lbCategoriaL = new System.Windows.Forms.Label();
-            this.CheckLibros = new System.Windows.Forms.CheckBox();
-            this.txtNombreL = new System.Windows.Forms.TextBox();
-            this.lblPuntajeL = new System.Windows.Forms.Label();
-            this.lblTextoPuntajeL = new System.Windows.Forms.Label();
-            this.CbEditorialL = new System.Windows.Forms.ComboBox();
-            this.lblEditorialL = new System.Windows.Forms.Label();
-            this.lblCantidadL = new System.Windows.Forms.Label();
-            this.lblPrecioL = new System.Windows.Forms.Label();
-            this.lblTextoPrecioL = new System.Windows.Forms.Label();
-            this.txtCantidadL = new System.Windows.Forms.TextBox();
-            this.lblNombreL = new System.Windows.Forms.Label();
-            this.CbAreaVenta = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GbAreaAnntys = new System.Windows.Forms.GroupBox();
-            this.txtDescripcionA = new System.Windows.Forms.TextBox();
-            this.CbCategoriaA = new System.Windows.Forms.ComboBox();
-            this.lblCategoriaA = new System.Windows.Forms.Label();
-            this.CheckAnnetys = new System.Windows.Forms.CheckBox();
-            this.CbNombreA = new System.Windows.Forms.TextBox();
-            this.lblPuntajeA = new System.Windows.Forms.Label();
-            this.lblTextoPuntajeA = new System.Windows.Forms.Label();
-            this.lblDescripcionA = new System.Windows.Forms.Label();
-            this.lblCantidadA = new System.Windows.Forms.Label();
-            this.lblPrecioA = new System.Windows.Forms.Label();
-            this.lblTextoPrecioA = new System.Windows.Forms.Label();
-            this.txtCantidadA = new System.Windows.Forms.TextBox();
-            this.lblNombreA = new System.Windows.Forms.Label();
+            this.GroupAnnetys = new System.Windows.Forms.GroupBox();
+            this.GroupTCG = new System.Windows.Forms.GroupBox();
             this.GroupJuegosMesa = new System.Windows.Forms.GroupBox();
             this.CheckJuegos = new System.Windows.Forms.CheckBox();
             this.txtNombreJ = new System.Windows.Forms.TextBox();
@@ -75,7 +46,6 @@
             this.lblTextoPrecioJ = new System.Windows.Forms.Label();
             this.txtCantidadJ = new System.Windows.Forms.TextBox();
             this.lblNombreJ = new System.Windows.Forms.Label();
-            this.AreaTCG = new System.Windows.Forms.GroupBox();
             this.CheckTCG = new System.Windows.Forms.CheckBox();
             this.txtProductoT = new System.Windows.Forms.TextBox();
             this.lblPuntajeT = new System.Windows.Forms.Label();
@@ -87,10 +57,53 @@
             this.lblTextoPrecioT = new System.Windows.Forms.Label();
             this.txtCantidadT = new System.Windows.Forms.TextBox();
             this.lblTextoProductoT = new System.Windows.Forms.Label();
-            this.GbAreaLibros.SuspendLayout();
-            this.GbAreaAnntys.SuspendLayout();
+            this.txtDescripcionA = new System.Windows.Forms.TextBox();
+            this.CbCategoriaA = new System.Windows.Forms.ComboBox();
+            this.lblCategoriaA = new System.Windows.Forms.Label();
+            this.CheckAnnetys = new System.Windows.Forms.CheckBox();
+            this.txtNombreA = new System.Windows.Forms.TextBox();
+            this.lblPuntajeA = new System.Windows.Forms.Label();
+            this.lblTextoPuntajeA = new System.Windows.Forms.Label();
+            this.lblDescripcionA = new System.Windows.Forms.Label();
+            this.lblCantidadA = new System.Windows.Forms.Label();
+            this.lblPrecioA = new System.Windows.Forms.Label();
+            this.lblTextoPrecioA = new System.Windows.Forms.Label();
+            this.txtCantidadA = new System.Windows.Forms.TextBox();
+            this.lblNombreA = new System.Windows.Forms.Label();
+            this.CbPortadaL = new System.Windows.Forms.ComboBox();
+            this.lblPortadaL = new System.Windows.Forms.Label();
+            this.CbCategoriaL = new System.Windows.Forms.ComboBox();
+            this.lbCategoriaL = new System.Windows.Forms.Label();
+            this.txtNombreL = new System.Windows.Forms.TextBox();
+            this.lblPuntajeL = new System.Windows.Forms.Label();
+            this.lblTextoPuntajeL = new System.Windows.Forms.Label();
+            this.lblCantidadL = new System.Windows.Forms.Label();
+            this.lblPrecioL = new System.Windows.Forms.Label();
+            this.lblTextoPrecioL = new System.Windows.Forms.Label();
+            this.txtCantidadL = new System.Windows.Forms.TextBox();
+            this.lblNombreL = new System.Windows.Forms.Label();
+            this.CbAreaVenta = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.BtnGuardar = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.CheckClienteL = new System.Windows.Forms.CheckBox();
+            this.txtClienteL = new System.Windows.Forms.TextBox();
+            this.lblTextoClienteL = new System.Windows.Forms.Label();
+            this.txtClienteA = new System.Windows.Forms.TextBox();
+            this.lblTextoClienteA = new System.Windows.Forms.Label();
+            this.CheckClienteA = new System.Windows.Forms.CheckBox();
+            this.txtClienteT = new System.Windows.Forms.TextBox();
+            this.lblTextoClienteT = new System.Windows.Forms.Label();
+            this.CheckClienteT = new System.Windows.Forms.CheckBox();
+            this.txtClienteJ = new System.Windows.Forms.TextBox();
+            this.lblTextoClienteJ = new System.Windows.Forms.Label();
+            this.CheckClienteJ = new System.Windows.Forms.CheckBox();
+            this.GroupLibros.SuspendLayout();
+            this.GroupAnnetys.SuspendLayout();
+            this.GroupTCG.SuspendLayout();
             this.GroupJuegosMesa.SuspendLayout();
-            this.AreaTCG.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -98,7 +111,7 @@
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(-1, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(802, 20);
             this.lblTitulo.TabIndex = 36;
@@ -111,7 +124,7 @@
             this.lblFechatxt.AutoSize = true;
             this.lblFechatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechatxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblFechatxt.Location = new System.Drawing.Point(639, 20);
+            this.lblFechatxt.Location = new System.Drawing.Point(637, 20);
             this.lblFechatxt.Name = "lblFechatxt";
             this.lblFechatxt.Size = new System.Drawing.Size(58, 20);
             this.lblFechatxt.TabIndex = 37;
@@ -124,43 +137,43 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblFecha.Location = new System.Drawing.Point(696, 20);
+            this.lblFecha.Location = new System.Drawing.Point(694, 20);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(77, 20);
             this.lblFecha.TabIndex = 38;
             this.lblFecha.Text = "lblFecha";
             this.lblFecha.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // GbAreaLibros
+            // GroupLibros
             // 
-            this.GbAreaLibros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.GroupLibros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GbAreaLibros.AutoSize = true;
-            this.GbAreaLibros.Controls.Add(this.CbVolumenL);
-            this.GbAreaLibros.Controls.Add(this.lblVolumenL);
-            this.GbAreaLibros.Controls.Add(this.CbPortadaL);
-            this.GbAreaLibros.Controls.Add(this.lblPortadaL);
-            this.GbAreaLibros.Controls.Add(this.CbCategoriaL);
-            this.GbAreaLibros.Controls.Add(this.lbCategoriaL);
-            this.GbAreaLibros.Controls.Add(this.CheckLibros);
-            this.GbAreaLibros.Controls.Add(this.txtNombreL);
-            this.GbAreaLibros.Controls.Add(this.lblPuntajeL);
-            this.GbAreaLibros.Controls.Add(this.lblTextoPuntajeL);
-            this.GbAreaLibros.Controls.Add(this.CbEditorialL);
-            this.GbAreaLibros.Controls.Add(this.lblEditorialL);
-            this.GbAreaLibros.Controls.Add(this.lblCantidadL);
-            this.GbAreaLibros.Controls.Add(this.lblPrecioL);
-            this.GbAreaLibros.Controls.Add(this.lblTextoPrecioL);
-            this.GbAreaLibros.Controls.Add(this.txtCantidadL);
-            this.GbAreaLibros.Controls.Add(this.lblNombreL);
-            this.GbAreaLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbAreaLibros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GbAreaLibros.Location = new System.Drawing.Point(12, 72);
-            this.GbAreaLibros.Name = "GbAreaLibros";
-            this.GbAreaLibros.Size = new System.Drawing.Size(776, 198);
-            this.GbAreaLibros.TabIndex = 39;
-            this.GbAreaLibros.TabStop = false;
-            this.GbAreaLibros.Text = "Area de venta Libros";
+            this.GroupLibros.AutoSize = true;
+            this.GroupLibros.Controls.Add(this.txtClienteL);
+            this.GroupLibros.Controls.Add(this.lblTextoClienteL);
+            this.GroupLibros.Controls.Add(this.CheckClienteL);
+            this.GroupLibros.Controls.Add(this.CbVolumenL);
+            this.GroupLibros.Controls.Add(this.lblVolumenL);
+            this.GroupLibros.Controls.Add(this.CbPortadaL);
+            this.GroupLibros.Controls.Add(this.lblPortadaL);
+            this.GroupLibros.Controls.Add(this.CbCategoriaL);
+            this.GroupLibros.Controls.Add(this.lbCategoriaL);
+            this.GroupLibros.Controls.Add(this.txtNombreL);
+            this.GroupLibros.Controls.Add(this.lblPuntajeL);
+            this.GroupLibros.Controls.Add(this.lblTextoPuntajeL);
+            this.GroupLibros.Controls.Add(this.lblCantidadL);
+            this.GroupLibros.Controls.Add(this.lblPrecioL);
+            this.GroupLibros.Controls.Add(this.lblTextoPrecioL);
+            this.GroupLibros.Controls.Add(this.txtCantidadL);
+            this.GroupLibros.Controls.Add(this.lblNombreL);
+            this.GroupLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupLibros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GroupLibros.Location = new System.Drawing.Point(12, 72);
+            this.GroupLibros.Name = "GroupLibros";
+            this.GroupLibros.Size = new System.Drawing.Size(776, 198);
+            this.GroupLibros.TabIndex = 39;
+            this.GroupLibros.TabStop = false;
+            this.GroupLibros.Text = "Area de venta Libros";
             // 
             // CbVolumenL
             // 
@@ -174,341 +187,78 @@
             // 
             this.lblVolumenL.AutoSize = true;
             this.lblVolumenL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVolumenL.Location = new System.Drawing.Point(169, 66);
+            this.lblVolumenL.Location = new System.Drawing.Point(166, 66);
             this.lblVolumenL.Name = "lblVolumenL";
             this.lblVolumenL.Size = new System.Drawing.Size(135, 16);
             this.lblVolumenL.TabIndex = 18;
             this.lblVolumenL.Text = "Seleccione Volumen:";
             // 
-            // CbPortadaL
+            // GroupAnnetys
             // 
-            this.CbPortadaL.FormattingEnabled = true;
-            this.CbPortadaL.Location = new System.Drawing.Point(169, 34);
-            this.CbPortadaL.Name = "CbPortadaL";
-            this.CbPortadaL.Size = new System.Drawing.Size(157, 24);
-            this.CbPortadaL.TabIndex = 17;
-            // 
-            // lblPortadaL
-            // 
-            this.lblPortadaL.AutoSize = true;
-            this.lblPortadaL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPortadaL.Location = new System.Drawing.Point(169, 18);
-            this.lblPortadaL.Name = "lblPortadaL";
-            this.lblPortadaL.Size = new System.Drawing.Size(130, 16);
-            this.lblPortadaL.TabIndex = 16;
-            this.lblPortadaL.Text = "Seleccione Portada:";
-            // 
-            // CbCategoriaL
-            // 
-            this.CbCategoriaL.FormattingEnabled = true;
-            this.CbCategoriaL.Location = new System.Drawing.Point(6, 82);
-            this.CbCategoriaL.Name = "CbCategoriaL";
-            this.CbCategoriaL.Size = new System.Drawing.Size(157, 24);
-            this.CbCategoriaL.TabIndex = 15;
-            // 
-            // lbCategoriaL
-            // 
-            this.lbCategoriaL.AutoSize = true;
-            this.lbCategoriaL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbCategoriaL.Location = new System.Drawing.Point(6, 66);
-            this.lbCategoriaL.Name = "lbCategoriaL";
-            this.lbCategoriaL.Size = new System.Drawing.Size(141, 16);
-            this.lbCategoriaL.TabIndex = 14;
-            this.lbCategoriaL.Text = "Seleccione Categoria:";
-            // 
-            // CheckLibros
-            // 
-            this.CheckLibros.AutoSize = true;
-            this.CheckLibros.Location = new System.Drawing.Point(6, 157);
-            this.CheckLibros.Name = "CheckLibros";
-            this.CheckLibros.Size = new System.Drawing.Size(178, 20);
-            this.CheckLibros.TabIndex = 13;
-            this.CheckLibros.Text = "Buscar producto por lista:";
-            this.CheckLibros.UseVisualStyleBackColor = true;
-            // 
-            // txtNombreL
-            // 
-            this.txtNombreL.Location = new System.Drawing.Point(6, 129);
-            this.txtNombreL.Name = "txtNombreL";
-            this.txtNombreL.Size = new System.Drawing.Size(157, 22);
-            this.txtNombreL.TabIndex = 12;
-            // 
-            // lblPuntajeL
-            // 
-            this.lblPuntajeL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPuntajeL.AutoSize = true;
-            this.lblPuntajeL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuntajeL.ForeColor = System.Drawing.Color.Crimson;
-            this.lblPuntajeL.Location = new System.Drawing.Point(650, 113);
-            this.lblPuntajeL.Name = "lblPuntajeL";
-            this.lblPuntajeL.Size = new System.Drawing.Size(93, 20);
-            this.lblPuntajeL.TabIndex = 11;
-            this.lblPuntajeL.Text = " lblPuntaje";
-            // 
-            // lblTextoPuntajeL
-            // 
-            this.lblTextoPuntajeL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTextoPuntajeL.AutoSize = true;
-            this.lblTextoPuntajeL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoPuntajeL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTextoPuntajeL.Location = new System.Drawing.Point(633, 80);
-            this.lblTextoPuntajeL.Name = "lblTextoPuntajeL";
-            this.lblTextoPuntajeL.Size = new System.Drawing.Size(134, 16);
-            this.lblTextoPuntajeL.TabIndex = 10;
-            this.lblTextoPuntajeL.Text = "Puntaje del producto:";
-            // 
-            // CbEditorialL
-            // 
-            this.CbEditorialL.FormattingEnabled = true;
-            this.CbEditorialL.Location = new System.Drawing.Point(6, 34);
-            this.CbEditorialL.Name = "CbEditorialL";
-            this.CbEditorialL.Size = new System.Drawing.Size(157, 24);
-            this.CbEditorialL.TabIndex = 9;
-            // 
-            // lblEditorialL
-            // 
-            this.lblEditorialL.AutoSize = true;
-            this.lblEditorialL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEditorialL.Location = new System.Drawing.Point(6, 18);
-            this.lblEditorialL.Name = "lblEditorialL";
-            this.lblEditorialL.Size = new System.Drawing.Size(131, 16);
-            this.lblEditorialL.TabIndex = 8;
-            this.lblEditorialL.Text = "Seleccione Editorial:";
-            // 
-            // lblCantidadL
-            // 
-            this.lblCantidadL.AutoSize = true;
-            this.lblCantidadL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCantidadL.Location = new System.Drawing.Point(166, 109);
-            this.lblCantidadL.Name = "lblCantidadL";
-            this.lblCantidadL.Size = new System.Drawing.Size(62, 16);
-            this.lblCantidadL.TabIndex = 7;
-            this.lblCantidadL.Text = "Cantidad";
-            // 
-            // lblPrecioL
-            // 
-            this.lblPrecioL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPrecioL.AutoSize = true;
-            this.lblPrecioL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioL.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblPrecioL.Location = new System.Drawing.Point(659, 49);
-            this.lblPrecioL.Name = "lblPrecioL";
-            this.lblPrecioL.Size = new System.Drawing.Size(77, 20);
-            this.lblPrecioL.TabIndex = 6;
-            this.lblPrecioL.Text = "lblPrecio";
-            // 
-            // lblTextoPrecioL
-            // 
-            this.lblTextoPrecioL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTextoPrecioL.AutoSize = true;
-            this.lblTextoPrecioL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoPrecioL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTextoPrecioL.Location = new System.Drawing.Point(633, 16);
-            this.lblTextoPrecioL.Name = "lblTextoPrecioL";
-            this.lblTextoPrecioL.Size = new System.Drawing.Size(128, 16);
-            this.lblTextoPrecioL.TabIndex = 5;
-            this.lblTextoPrecioL.Text = "Precio del producto:";
-            // 
-            // txtCantidadL
-            // 
-            this.txtCantidadL.Location = new System.Drawing.Point(169, 129);
-            this.txtCantidadL.Name = "txtCantidadL";
-            this.txtCantidadL.Size = new System.Drawing.Size(37, 22);
-            this.txtCantidadL.TabIndex = 4;
-            // 
-            // lblNombreL
-            // 
-            this.lblNombreL.AutoSize = true;
-            this.lblNombreL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNombreL.Location = new System.Drawing.Point(6, 109);
-            this.lblNombreL.Name = "lblNombreL";
-            this.lblNombreL.Size = new System.Drawing.Size(135, 16);
-            this.lblNombreL.TabIndex = 1;
-            this.lblNombreL.Text = "Nombre del producto";
-            // 
-            // CbAreaVenta
-            // 
-            this.CbAreaVenta.FormattingEnabled = true;
-            this.CbAreaVenta.Items.AddRange(new object[] {
-            "Libros",
-            "Annetys",
-            "Juegos de Mesa",
-            "TCG"});
-            this.CbAreaVenta.Location = new System.Drawing.Point(12, 42);
-            this.CbAreaVenta.Name = "CbAreaVenta";
-            this.CbAreaVenta.Size = new System.Drawing.Size(157, 21);
-            this.CbAreaVenta.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(8, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Seleccione area de venta:";
-            // 
-            // GbAreaAnntys
-            // 
-            this.GbAreaAnntys.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.GroupAnnetys.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GbAreaAnntys.AutoSize = true;
-            this.GbAreaAnntys.Controls.Add(this.txtDescripcionA);
-            this.GbAreaAnntys.Controls.Add(this.CbCategoriaA);
-            this.GbAreaAnntys.Controls.Add(this.lblCategoriaA);
-            this.GbAreaAnntys.Controls.Add(this.CheckAnnetys);
-            this.GbAreaAnntys.Controls.Add(this.CbNombreA);
-            this.GbAreaAnntys.Controls.Add(this.lblPuntajeA);
-            this.GbAreaAnntys.Controls.Add(this.lblTextoPuntajeA);
-            this.GbAreaAnntys.Controls.Add(this.lblDescripcionA);
-            this.GbAreaAnntys.Controls.Add(this.lblCantidadA);
-            this.GbAreaAnntys.Controls.Add(this.lblPrecioA);
-            this.GbAreaAnntys.Controls.Add(this.lblTextoPrecioA);
-            this.GbAreaAnntys.Controls.Add(this.txtCantidadA);
-            this.GbAreaAnntys.Controls.Add(this.lblNombreA);
-            this.GbAreaAnntys.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbAreaAnntys.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GbAreaAnntys.Location = new System.Drawing.Point(12, 261);
-            this.GbAreaAnntys.Name = "GbAreaAnntys";
-            this.GbAreaAnntys.Size = new System.Drawing.Size(776, 198);
-            this.GbAreaAnntys.TabIndex = 40;
-            this.GbAreaAnntys.TabStop = false;
-            this.GbAreaAnntys.Text = "Area de venta Annetys";
+            this.GroupAnnetys.AutoSize = true;
+            this.GroupAnnetys.Controls.Add(this.txtClienteA);
+            this.GroupAnnetys.Controls.Add(this.lblTextoClienteA);
+            this.GroupAnnetys.Controls.Add(this.CheckClienteA);
+            this.GroupAnnetys.Controls.Add(this.txtDescripcionA);
+            this.GroupAnnetys.Controls.Add(this.CbCategoriaA);
+            this.GroupAnnetys.Controls.Add(this.lblCategoriaA);
+            this.GroupAnnetys.Controls.Add(this.CheckAnnetys);
+            this.GroupAnnetys.Controls.Add(this.txtNombreA);
+            this.GroupAnnetys.Controls.Add(this.lblPuntajeA);
+            this.GroupAnnetys.Controls.Add(this.lblTextoPuntajeA);
+            this.GroupAnnetys.Controls.Add(this.lblDescripcionA);
+            this.GroupAnnetys.Controls.Add(this.lblCantidadA);
+            this.GroupAnnetys.Controls.Add(this.lblPrecioA);
+            this.GroupAnnetys.Controls.Add(this.lblTextoPrecioA);
+            this.GroupAnnetys.Controls.Add(this.txtCantidadA);
+            this.GroupAnnetys.Controls.Add(this.lblNombreA);
+            this.GroupAnnetys.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupAnnetys.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GroupAnnetys.Location = new System.Drawing.Point(794, 12);
+            this.GroupAnnetys.Name = "GroupAnnetys";
+            this.GroupAnnetys.Size = new System.Drawing.Size(776, 198);
+            this.GroupAnnetys.TabIndex = 40;
+            this.GroupAnnetys.TabStop = false;
+            this.GroupAnnetys.Text = "Area de venta Annetys";
             // 
-            // txtDescripcionA
+            // GroupTCG
             // 
-            this.txtDescripcionA.Location = new System.Drawing.Point(6, 125);
-            this.txtDescripcionA.Name = "txtDescripcionA";
-            this.txtDescripcionA.Size = new System.Drawing.Size(320, 22);
-            this.txtDescripcionA.TabIndex = 16;
-            // 
-            // CbCategoriaA
-            // 
-            this.CbCategoriaA.FormattingEnabled = true;
-            this.CbCategoriaA.Location = new System.Drawing.Point(6, 34);
-            this.CbCategoriaA.Name = "CbCategoriaA";
-            this.CbCategoriaA.Size = new System.Drawing.Size(157, 24);
-            this.CbCategoriaA.TabIndex = 15;
-            // 
-            // lblCategoriaA
-            // 
-            this.lblCategoriaA.AutoSize = true;
-            this.lblCategoriaA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCategoriaA.Location = new System.Drawing.Point(6, 18);
-            this.lblCategoriaA.Name = "lblCategoriaA";
-            this.lblCategoriaA.Size = new System.Drawing.Size(141, 16);
-            this.lblCategoriaA.TabIndex = 14;
-            this.lblCategoriaA.Text = "Seleccione Categoria:";
-            // 
-            // CheckAnnetys
-            // 
-            this.CheckAnnetys.AutoSize = true;
-            this.CheckAnnetys.Location = new System.Drawing.Point(6, 157);
-            this.CheckAnnetys.Name = "CheckAnnetys";
-            this.CheckAnnetys.Size = new System.Drawing.Size(178, 20);
-            this.CheckAnnetys.TabIndex = 13;
-            this.CheckAnnetys.Text = "Buscar producto por lista:";
-            this.CheckAnnetys.UseVisualStyleBackColor = true;
-            // 
-            // CbNombreA
-            // 
-            this.CbNombreA.Location = new System.Drawing.Point(6, 81);
-            this.CbNombreA.Name = "CbNombreA";
-            this.CbNombreA.Size = new System.Drawing.Size(157, 22);
-            this.CbNombreA.TabIndex = 12;
-            // 
-            // lblPuntajeA
-            // 
-            this.lblPuntajeA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPuntajeA.AutoSize = true;
-            this.lblPuntajeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuntajeA.ForeColor = System.Drawing.Color.Crimson;
-            this.lblPuntajeA.Location = new System.Drawing.Point(650, 113);
-            this.lblPuntajeA.Name = "lblPuntajeA";
-            this.lblPuntajeA.Size = new System.Drawing.Size(93, 20);
-            this.lblPuntajeA.TabIndex = 11;
-            this.lblPuntajeA.Text = " lblPuntaje";
-            // 
-            // lblTextoPuntajeA
-            // 
-            this.lblTextoPuntajeA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTextoPuntajeA.AutoSize = true;
-            this.lblTextoPuntajeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoPuntajeA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTextoPuntajeA.Location = new System.Drawing.Point(633, 80);
-            this.lblTextoPuntajeA.Name = "lblTextoPuntajeA";
-            this.lblTextoPuntajeA.Size = new System.Drawing.Size(134, 16);
-            this.lblTextoPuntajeA.TabIndex = 10;
-            this.lblTextoPuntajeA.Text = "Puntaje del producto:";
-            // 
-            // lblDescripcionA
-            // 
-            this.lblDescripcionA.AutoSize = true;
-            this.lblDescripcionA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblDescripcionA.Location = new System.Drawing.Point(6, 106);
-            this.lblDescripcionA.Name = "lblDescripcionA";
-            this.lblDescripcionA.Size = new System.Drawing.Size(83, 16);
-            this.lblDescripcionA.TabIndex = 8;
-            this.lblDescripcionA.Text = "Descripcion:";
-            // 
-            // lblCantidadA
-            // 
-            this.lblCantidadA.AutoSize = true;
-            this.lblCantidadA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCantidadA.Location = new System.Drawing.Point(166, 61);
-            this.lblCantidadA.Name = "lblCantidadA";
-            this.lblCantidadA.Size = new System.Drawing.Size(62, 16);
-            this.lblCantidadA.TabIndex = 7;
-            this.lblCantidadA.Text = "Cantidad";
-            // 
-            // lblPrecioA
-            // 
-            this.lblPrecioA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPrecioA.AutoSize = true;
-            this.lblPrecioA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioA.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblPrecioA.Location = new System.Drawing.Point(659, 49);
-            this.lblPrecioA.Name = "lblPrecioA";
-            this.lblPrecioA.Size = new System.Drawing.Size(77, 20);
-            this.lblPrecioA.TabIndex = 6;
-            this.lblPrecioA.Text = "lblPrecio";
-            // 
-            // lblTextoPrecioA
-            // 
-            this.lblTextoPrecioA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTextoPrecioA.AutoSize = true;
-            this.lblTextoPrecioA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoPrecioA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTextoPrecioA.Location = new System.Drawing.Point(633, 16);
-            this.lblTextoPrecioA.Name = "lblTextoPrecioA";
-            this.lblTextoPrecioA.Size = new System.Drawing.Size(128, 16);
-            this.lblTextoPrecioA.TabIndex = 5;
-            this.lblTextoPrecioA.Text = "Precio del producto:";
-            // 
-            // txtCantidadA
-            // 
-            this.txtCantidadA.Location = new System.Drawing.Point(169, 81);
-            this.txtCantidadA.Name = "txtCantidadA";
-            this.txtCantidadA.Size = new System.Drawing.Size(37, 22);
-            this.txtCantidadA.TabIndex = 4;
-            // 
-            // lblNombreA
-            // 
-            this.lblNombreA.AutoSize = true;
-            this.lblNombreA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNombreA.Location = new System.Drawing.Point(6, 61);
-            this.lblNombreA.Name = "lblNombreA";
-            this.lblNombreA.Size = new System.Drawing.Size(135, 16);
-            this.lblNombreA.TabIndex = 1;
-            this.lblNombreA.Text = "Nombre del producto";
+            this.GroupTCG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupTCG.AutoSize = true;
+            this.GroupTCG.Controls.Add(this.txtClienteT);
+            this.GroupTCG.Controls.Add(this.lblTextoClienteT);
+            this.GroupTCG.Controls.Add(this.CheckTCG);
+            this.GroupTCG.Controls.Add(this.CheckClienteT);
+            this.GroupTCG.Controls.Add(this.txtProductoT);
+            this.GroupTCG.Controls.Add(this.lblPuntajeT);
+            this.GroupTCG.Controls.Add(this.lblTextopuntajeT);
+            this.GroupTCG.Controls.Add(this.CbNombreT);
+            this.GroupTCG.Controls.Add(this.lblTextoNombreT);
+            this.GroupTCG.Controls.Add(this.lblTextoCantidadT);
+            this.GroupTCG.Controls.Add(this.lblPrecioT);
+            this.GroupTCG.Controls.Add(this.lblTextoPrecioT);
+            this.GroupTCG.Controls.Add(this.txtCantidadT);
+            this.GroupTCG.Controls.Add(this.lblTextoProductoT);
+            this.GroupTCG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupTCG.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GroupTCG.Location = new System.Drawing.Point(794, 235);
+            this.GroupTCG.Name = "GroupTCG";
+            this.GroupTCG.Size = new System.Drawing.Size(776, 198);
+            this.GroupTCG.TabIndex = 41;
+            this.GroupTCG.TabStop = false;
+            this.GroupTCG.Text = "Area de venta TCG";
             // 
             // GroupJuegosMesa
             // 
             this.GroupJuegosMesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupJuegosMesa.AutoSize = true;
+            this.GroupJuegosMesa.Controls.Add(this.txtClienteJ);
+            this.GroupJuegosMesa.Controls.Add(this.lblTextoClienteJ);
+            this.GroupJuegosMesa.Controls.Add(this.CheckClienteJ);
             this.GroupJuegosMesa.Controls.Add(this.CheckJuegos);
             this.GroupJuegosMesa.Controls.Add(this.txtNombreJ);
             this.GroupJuegosMesa.Controls.Add(this.lblPuntajeJ);
@@ -520,7 +270,7 @@
             this.GroupJuegosMesa.Controls.Add(this.lblNombreJ);
             this.GroupJuegosMesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupJuegosMesa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GroupJuegosMesa.Location = new System.Drawing.Point(12, 450);
+            this.GroupJuegosMesa.Location = new System.Drawing.Point(794, 420);
             this.GroupJuegosMesa.Name = "GroupJuegosMesa";
             this.GroupJuegosMesa.Size = new System.Drawing.Size(776, 198);
             this.GroupJuegosMesa.TabIndex = 40;
@@ -618,31 +368,6 @@
             this.lblNombreJ.Size = new System.Drawing.Size(135, 16);
             this.lblNombreJ.TabIndex = 1;
             this.lblNombreJ.Text = "Nombre del producto";
-            // 
-            // AreaTCG
-            // 
-            this.AreaTCG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AreaTCG.AutoSize = true;
-            this.AreaTCG.Controls.Add(this.CheckTCG);
-            this.AreaTCG.Controls.Add(this.txtProductoT);
-            this.AreaTCG.Controls.Add(this.lblPuntajeT);
-            this.AreaTCG.Controls.Add(this.lblTextopuntajeT);
-            this.AreaTCG.Controls.Add(this.CbNombreT);
-            this.AreaTCG.Controls.Add(this.lblTextoNombreT);
-            this.AreaTCG.Controls.Add(this.lblTextoCantidadT);
-            this.AreaTCG.Controls.Add(this.lblPrecioT);
-            this.AreaTCG.Controls.Add(this.lblTextoPrecioT);
-            this.AreaTCG.Controls.Add(this.txtCantidadT);
-            this.AreaTCG.Controls.Add(this.lblTextoProductoT);
-            this.AreaTCG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AreaTCG.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AreaTCG.Location = new System.Drawing.Point(12, 653);
-            this.AreaTCG.Name = "AreaTCG";
-            this.AreaTCG.Size = new System.Drawing.Size(776, 198);
-            this.AreaTCG.TabIndex = 41;
-            this.AreaTCG.TabStop = false;
-            this.AreaTCG.Text = "Area de venta TCG";
             // 
             // CheckTCG
             // 
@@ -754,31 +479,489 @@
             this.lblTextoProductoT.TabIndex = 1;
             this.lblTextoProductoT.Text = "Nombre del producto";
             // 
+            // txtDescripcionA
+            // 
+            this.txtDescripcionA.Location = new System.Drawing.Point(6, 125);
+            this.txtDescripcionA.Name = "txtDescripcionA";
+            this.txtDescripcionA.Size = new System.Drawing.Size(320, 22);
+            this.txtDescripcionA.TabIndex = 16;
+            // 
+            // CbCategoriaA
+            // 
+            this.CbCategoriaA.FormattingEnabled = true;
+            this.CbCategoriaA.Location = new System.Drawing.Point(6, 34);
+            this.CbCategoriaA.Name = "CbCategoriaA";
+            this.CbCategoriaA.Size = new System.Drawing.Size(157, 24);
+            this.CbCategoriaA.TabIndex = 15;
+            // 
+            // lblCategoriaA
+            // 
+            this.lblCategoriaA.AutoSize = true;
+            this.lblCategoriaA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCategoriaA.Location = new System.Drawing.Point(6, 18);
+            this.lblCategoriaA.Name = "lblCategoriaA";
+            this.lblCategoriaA.Size = new System.Drawing.Size(141, 16);
+            this.lblCategoriaA.TabIndex = 14;
+            this.lblCategoriaA.Text = "Seleccione Categoria:";
+            // 
+            // CheckAnnetys
+            // 
+            this.CheckAnnetys.AutoSize = true;
+            this.CheckAnnetys.Location = new System.Drawing.Point(6, 157);
+            this.CheckAnnetys.Name = "CheckAnnetys";
+            this.CheckAnnetys.Size = new System.Drawing.Size(178, 20);
+            this.CheckAnnetys.TabIndex = 13;
+            this.CheckAnnetys.Text = "Buscar producto por lista:";
+            this.CheckAnnetys.UseVisualStyleBackColor = true;
+            // 
+            // txtNombreA
+            // 
+            this.txtNombreA.Location = new System.Drawing.Point(6, 81);
+            this.txtNombreA.Name = "txtNombreA";
+            this.txtNombreA.Size = new System.Drawing.Size(157, 22);
+            this.txtNombreA.TabIndex = 12;
+            // 
+            // lblPuntajeA
+            // 
+            this.lblPuntajeA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPuntajeA.AutoSize = true;
+            this.lblPuntajeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuntajeA.ForeColor = System.Drawing.Color.Crimson;
+            this.lblPuntajeA.Location = new System.Drawing.Point(650, 113);
+            this.lblPuntajeA.Name = "lblPuntajeA";
+            this.lblPuntajeA.Size = new System.Drawing.Size(93, 20);
+            this.lblPuntajeA.TabIndex = 11;
+            this.lblPuntajeA.Text = " lblPuntaje";
+            // 
+            // lblTextoPuntajeA
+            // 
+            this.lblTextoPuntajeA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTextoPuntajeA.AutoSize = true;
+            this.lblTextoPuntajeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoPuntajeA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoPuntajeA.Location = new System.Drawing.Point(633, 80);
+            this.lblTextoPuntajeA.Name = "lblTextoPuntajeA";
+            this.lblTextoPuntajeA.Size = new System.Drawing.Size(134, 16);
+            this.lblTextoPuntajeA.TabIndex = 10;
+            this.lblTextoPuntajeA.Text = "Puntaje del producto:";
+            // 
+            // lblDescripcionA
+            // 
+            this.lblDescripcionA.AutoSize = true;
+            this.lblDescripcionA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDescripcionA.Location = new System.Drawing.Point(6, 106);
+            this.lblDescripcionA.Name = "lblDescripcionA";
+            this.lblDescripcionA.Size = new System.Drawing.Size(83, 16);
+            this.lblDescripcionA.TabIndex = 8;
+            this.lblDescripcionA.Text = "Descripcion:";
+            // 
+            // lblCantidadA
+            // 
+            this.lblCantidadA.AutoSize = true;
+            this.lblCantidadA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCantidadA.Location = new System.Drawing.Point(166, 61);
+            this.lblCantidadA.Name = "lblCantidadA";
+            this.lblCantidadA.Size = new System.Drawing.Size(62, 16);
+            this.lblCantidadA.TabIndex = 7;
+            this.lblCantidadA.Text = "Cantidad";
+            // 
+            // lblPrecioA
+            // 
+            this.lblPrecioA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPrecioA.AutoSize = true;
+            this.lblPrecioA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioA.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPrecioA.Location = new System.Drawing.Point(659, 49);
+            this.lblPrecioA.Name = "lblPrecioA";
+            this.lblPrecioA.Size = new System.Drawing.Size(77, 20);
+            this.lblPrecioA.TabIndex = 6;
+            this.lblPrecioA.Text = "lblPrecio";
+            // 
+            // lblTextoPrecioA
+            // 
+            this.lblTextoPrecioA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTextoPrecioA.AutoSize = true;
+            this.lblTextoPrecioA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoPrecioA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoPrecioA.Location = new System.Drawing.Point(633, 16);
+            this.lblTextoPrecioA.Name = "lblTextoPrecioA";
+            this.lblTextoPrecioA.Size = new System.Drawing.Size(128, 16);
+            this.lblTextoPrecioA.TabIndex = 5;
+            this.lblTextoPrecioA.Text = "Precio del producto:";
+            // 
+            // txtCantidadA
+            // 
+            this.txtCantidadA.Location = new System.Drawing.Point(169, 81);
+            this.txtCantidadA.Name = "txtCantidadA";
+            this.txtCantidadA.Size = new System.Drawing.Size(37, 22);
+            this.txtCantidadA.TabIndex = 4;
+            // 
+            // lblNombreA
+            // 
+            this.lblNombreA.AutoSize = true;
+            this.lblNombreA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNombreA.Location = new System.Drawing.Point(6, 61);
+            this.lblNombreA.Name = "lblNombreA";
+            this.lblNombreA.Size = new System.Drawing.Size(135, 16);
+            this.lblNombreA.TabIndex = 1;
+            this.lblNombreA.Text = "Nombre del producto";
+            // 
+            // CbPortadaL
+            // 
+            this.CbPortadaL.FormattingEnabled = true;
+            this.CbPortadaL.Location = new System.Drawing.Point(169, 34);
+            this.CbPortadaL.Name = "CbPortadaL";
+            this.CbPortadaL.Size = new System.Drawing.Size(157, 24);
+            this.CbPortadaL.TabIndex = 17;
+            // 
+            // lblPortadaL
+            // 
+            this.lblPortadaL.AutoSize = true;
+            this.lblPortadaL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPortadaL.Location = new System.Drawing.Point(166, 16);
+            this.lblPortadaL.Name = "lblPortadaL";
+            this.lblPortadaL.Size = new System.Drawing.Size(130, 16);
+            this.lblPortadaL.TabIndex = 16;
+            this.lblPortadaL.Text = "Seleccione Portada:";
+            // 
+            // CbCategoriaL
+            // 
+            this.CbCategoriaL.FormattingEnabled = true;
+            this.CbCategoriaL.Location = new System.Drawing.Point(6, 82);
+            this.CbCategoriaL.Name = "CbCategoriaL";
+            this.CbCategoriaL.Size = new System.Drawing.Size(157, 24);
+            this.CbCategoriaL.TabIndex = 15;
+            // 
+            // lbCategoriaL
+            // 
+            this.lbCategoriaL.AutoSize = true;
+            this.lbCategoriaL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbCategoriaL.Location = new System.Drawing.Point(3, 66);
+            this.lbCategoriaL.Name = "lbCategoriaL";
+            this.lbCategoriaL.Size = new System.Drawing.Size(141, 16);
+            this.lbCategoriaL.TabIndex = 14;
+            this.lbCategoriaL.Text = "Seleccione Categoria:";
+            // 
+            // txtNombreL
+            // 
+            this.txtNombreL.Location = new System.Drawing.Point(6, 36);
+            this.txtNombreL.Name = "txtNombreL";
+            this.txtNombreL.Size = new System.Drawing.Size(157, 22);
+            this.txtNombreL.TabIndex = 12;
+            // 
+            // lblPuntajeL
+            // 
+            this.lblPuntajeL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPuntajeL.AutoSize = true;
+            this.lblPuntajeL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuntajeL.ForeColor = System.Drawing.Color.Crimson;
+            this.lblPuntajeL.Location = new System.Drawing.Point(650, 113);
+            this.lblPuntajeL.Name = "lblPuntajeL";
+            this.lblPuntajeL.Size = new System.Drawing.Size(93, 20);
+            this.lblPuntajeL.TabIndex = 11;
+            this.lblPuntajeL.Text = " lblPuntaje";
+            // 
+            // lblTextoPuntajeL
+            // 
+            this.lblTextoPuntajeL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTextoPuntajeL.AutoSize = true;
+            this.lblTextoPuntajeL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoPuntajeL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoPuntajeL.Location = new System.Drawing.Point(633, 80);
+            this.lblTextoPuntajeL.Name = "lblTextoPuntajeL";
+            this.lblTextoPuntajeL.Size = new System.Drawing.Size(134, 16);
+            this.lblTextoPuntajeL.TabIndex = 10;
+            this.lblTextoPuntajeL.Text = "Puntaje del producto:";
+            // 
+            // lblCantidadL
+            // 
+            this.lblCantidadL.AutoSize = true;
+            this.lblCantidadL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCantidadL.Location = new System.Drawing.Point(3, 109);
+            this.lblCantidadL.Name = "lblCantidadL";
+            this.lblCantidadL.Size = new System.Drawing.Size(62, 16);
+            this.lblCantidadL.TabIndex = 7;
+            this.lblCantidadL.Text = "Cantidad";
+            // 
+            // lblPrecioL
+            // 
+            this.lblPrecioL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPrecioL.AutoSize = true;
+            this.lblPrecioL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioL.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblPrecioL.Location = new System.Drawing.Point(659, 49);
+            this.lblPrecioL.Name = "lblPrecioL";
+            this.lblPrecioL.Size = new System.Drawing.Size(77, 20);
+            this.lblPrecioL.TabIndex = 6;
+            this.lblPrecioL.Text = "lblPrecio";
+            // 
+            // lblTextoPrecioL
+            // 
+            this.lblTextoPrecioL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTextoPrecioL.AutoSize = true;
+            this.lblTextoPrecioL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoPrecioL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoPrecioL.Location = new System.Drawing.Point(633, 16);
+            this.lblTextoPrecioL.Name = "lblTextoPrecioL";
+            this.lblTextoPrecioL.Size = new System.Drawing.Size(128, 16);
+            this.lblTextoPrecioL.TabIndex = 5;
+            this.lblTextoPrecioL.Text = "Precio del producto:";
+            // 
+            // txtCantidadL
+            // 
+            this.txtCantidadL.Location = new System.Drawing.Point(6, 129);
+            this.txtCantidadL.Name = "txtCantidadL";
+            this.txtCantidadL.Size = new System.Drawing.Size(37, 22);
+            this.txtCantidadL.TabIndex = 4;
+            // 
+            // lblNombreL
+            // 
+            this.lblNombreL.AutoSize = true;
+            this.lblNombreL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNombreL.Location = new System.Drawing.Point(3, 16);
+            this.lblNombreL.Name = "lblNombreL";
+            this.lblNombreL.Size = new System.Drawing.Size(135, 16);
+            this.lblNombreL.TabIndex = 1;
+            this.lblNombreL.Text = "Nombre del producto";
+            // 
+            // CbAreaVenta
+            // 
+            this.CbAreaVenta.FormattingEnabled = true;
+            this.CbAreaVenta.Items.AddRange(new object[] {
+            "Libros",
+            "Annetys",
+            "Juegos de Mesa",
+            "TCG"});
+            this.CbAreaVenta.Location = new System.Drawing.Point(12, 42);
+            this.CbAreaVenta.Name = "CbAreaVenta";
+            this.CbAreaVenta.Size = new System.Drawing.Size(157, 21);
+            this.CbAreaVenta.TabIndex = 2;
+            this.CbAreaVenta.SelectedIndexChanged += new System.EventHandler(this.CbAreaVenta_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(8, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(192, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Seleccione area de venta:";
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.AutoSize = true;
+            this.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.BtnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BtnGuardar.IconColor = System.Drawing.Color.Black;
+            this.BtnGuardar.IconSize = 16;
+            this.BtnGuardar.Location = new System.Drawing.Point(288, 276);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Rotation = 0D;
+            this.BtnGuardar.Size = new System.Drawing.Size(102, 38);
+            this.BtnGuardar.TabIndex = 40;
+            this.BtnGuardar.Text = "Registrar";
+            this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.AutoSize = true;
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconSize = 16;
+            this.iconButton2.Location = new System.Drawing.Point(425, 276);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Rotation = 0D;
+            this.iconButton2.Size = new System.Drawing.Size(102, 38);
+            this.iconButton2.TabIndex = 41;
+            this.iconButton2.Text = "Cancelar";
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconSize = 16;
+            this.iconButton3.Location = new System.Drawing.Point(654, 504);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(140, 38);
+            this.iconButton3.TabIndex = 43;
+            this.iconButton3.Text = "Guardar Registro";
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // listView1
+            // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.BackColor = System.Drawing.SystemColors.Window;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(12, 321);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(776, 177);
+            this.listView1.TabIndex = 44;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // CheckClienteL
+            // 
+            this.CheckClienteL.AutoSize = true;
+            this.CheckClienteL.Location = new System.Drawing.Point(190, 157);
+            this.CheckClienteL.Name = "CheckClienteL";
+            this.CheckClienteL.Size = new System.Drawing.Size(132, 20);
+            this.CheckClienteL.TabIndex = 20;
+            this.CheckClienteL.Text = "Cliente registrado";
+            this.CheckClienteL.UseVisualStyleBackColor = true;
+            // 
+            // txtClienteL
+            // 
+            this.txtClienteL.Location = new System.Drawing.Point(169, 134);
+            this.txtClienteL.Name = "txtClienteL";
+            this.txtClienteL.Size = new System.Drawing.Size(157, 22);
+            this.txtClienteL.TabIndex = 22;
+            // 
+            // lblTextoClienteL
+            // 
+            this.lblTextoClienteL.AutoSize = true;
+            this.lblTextoClienteL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoClienteL.Location = new System.Drawing.Point(166, 113);
+            this.lblTextoClienteL.Name = "lblTextoClienteL";
+            this.lblTextoClienteL.Size = new System.Drawing.Size(122, 16);
+            this.lblTextoClienteL.TabIndex = 21;
+            this.lblTextoClienteL.Text = "Numero de Cliente:";
+            // 
+            // txtClienteA
+            // 
+            this.txtClienteA.Location = new System.Drawing.Point(169, 35);
+            this.txtClienteA.Name = "txtClienteA";
+            this.txtClienteA.Size = new System.Drawing.Size(157, 22);
+            this.txtClienteA.TabIndex = 25;
+            // 
+            // lblTextoClienteA
+            // 
+            this.lblTextoClienteA.AutoSize = true;
+            this.lblTextoClienteA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoClienteA.Location = new System.Drawing.Point(166, 16);
+            this.lblTextoClienteA.Name = "lblTextoClienteA";
+            this.lblTextoClienteA.Size = new System.Drawing.Size(122, 16);
+            this.lblTextoClienteA.TabIndex = 24;
+            this.lblTextoClienteA.Text = "Numero de Cliente:";
+            // 
+            // CheckClienteA
+            // 
+            this.CheckClienteA.AutoSize = true;
+            this.CheckClienteA.Location = new System.Drawing.Point(190, 156);
+            this.CheckClienteA.Name = "CheckClienteA";
+            this.CheckClienteA.Size = new System.Drawing.Size(132, 20);
+            this.CheckClienteA.TabIndex = 23;
+            this.CheckClienteA.Text = "Cliente registrado";
+            this.CheckClienteA.UseVisualStyleBackColor = true;
+            // 
+            // txtClienteT
+            // 
+            this.txtClienteT.Location = new System.Drawing.Point(190, 37);
+            this.txtClienteT.Name = "txtClienteT";
+            this.txtClienteT.Size = new System.Drawing.Size(157, 22);
+            this.txtClienteT.TabIndex = 25;
+            // 
+            // lblTextoClienteT
+            // 
+            this.lblTextoClienteT.AutoSize = true;
+            this.lblTextoClienteT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoClienteT.Location = new System.Drawing.Point(187, 18);
+            this.lblTextoClienteT.Name = "lblTextoClienteT";
+            this.lblTextoClienteT.Size = new System.Drawing.Size(122, 16);
+            this.lblTextoClienteT.TabIndex = 24;
+            this.lblTextoClienteT.Text = "Numero de Cliente:";
+            // 
+            // CheckClienteT
+            // 
+            this.CheckClienteT.AutoSize = true;
+            this.CheckClienteT.Location = new System.Drawing.Point(190, 157);
+            this.CheckClienteT.Name = "CheckClienteT";
+            this.CheckClienteT.Size = new System.Drawing.Size(132, 20);
+            this.CheckClienteT.TabIndex = 23;
+            this.CheckClienteT.Text = "Cliente registrado";
+            this.CheckClienteT.UseVisualStyleBackColor = true;
+            // 
+            // txtClienteJ
+            // 
+            this.txtClienteJ.Location = new System.Drawing.Point(172, 47);
+            this.txtClienteJ.Name = "txtClienteJ";
+            this.txtClienteJ.Size = new System.Drawing.Size(157, 22);
+            this.txtClienteJ.TabIndex = 25;
+            // 
+            // lblTextoClienteJ
+            // 
+            this.lblTextoClienteJ.AutoSize = true;
+            this.lblTextoClienteJ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoClienteJ.Location = new System.Drawing.Point(169, 28);
+            this.lblTextoClienteJ.Name = "lblTextoClienteJ";
+            this.lblTextoClienteJ.Size = new System.Drawing.Size(122, 16);
+            this.lblTextoClienteJ.TabIndex = 24;
+            this.lblTextoClienteJ.Text = "Numero de Cliente:";
+            // 
+            // CheckClienteJ
+            // 
+            this.CheckClienteJ.AutoSize = true;
+            this.CheckClienteJ.Location = new System.Drawing.Point(194, 157);
+            this.CheckClienteJ.Name = "CheckClienteJ";
+            this.CheckClienteJ.Size = new System.Drawing.Size(132, 20);
+            this.CheckClienteJ.TabIndex = 23;
+            this.CheckClienteJ.Text = "Cliente registrado";
+            this.CheckClienteJ.UseVisualStyleBackColor = true;
+            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
-            this.ClientSize = new System.Drawing.Size(802, 879);
-            this.Controls.Add(this.AreaTCG);
+            this.ClientSize = new System.Drawing.Size(800, 553);
             this.Controls.Add(this.GroupJuegosMesa);
-            this.Controls.Add(this.GbAreaAnntys);
-            this.Controls.Add(this.GbAreaLibros);
+            this.Controls.Add(this.GroupTCG);
+            this.Controls.Add(this.GroupAnnetys);
+            this.Controls.Add(this.iconButton3);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.BtnGuardar);
+            this.Controls.Add(this.GroupLibros);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblFechatxt);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.CbAreaVenta);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.listView1);
             this.Name = "Venta";
             this.Text = "Venta";
-            this.GbAreaLibros.ResumeLayout(false);
-            this.GbAreaLibros.PerformLayout();
-            this.GbAreaAnntys.ResumeLayout(false);
-            this.GbAreaAnntys.PerformLayout();
+            this.Load += new System.EventHandler(this.Venta_Load);
+            this.GroupLibros.ResumeLayout(false);
+            this.GroupLibros.PerformLayout();
+            this.GroupAnnetys.ResumeLayout(false);
+            this.GroupAnnetys.PerformLayout();
+            this.GroupTCG.ResumeLayout(false);
+            this.GroupTCG.PerformLayout();
             this.GroupJuegosMesa.ResumeLayout(false);
             this.GroupJuegosMesa.PerformLayout();
-            this.AreaTCG.ResumeLayout(false);
-            this.AreaTCG.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -789,7 +972,7 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblFechatxt;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.GroupBox GbAreaLibros;
+        private System.Windows.Forms.GroupBox GroupLibros;
         private System.Windows.Forms.ComboBox CbAreaVenta;
         private System.Windows.Forms.Label lblNombreL;
         private System.Windows.Forms.Label label3;
@@ -797,23 +980,20 @@
         private System.Windows.Forms.Label lblPrecioL;
         private System.Windows.Forms.Label lblTextoPrecioL;
         private System.Windows.Forms.TextBox txtCantidadL;
-        private System.Windows.Forms.ComboBox CbEditorialL;
-        private System.Windows.Forms.Label lblEditorialL;
         private System.Windows.Forms.Label lblPuntajeL;
         private System.Windows.Forms.Label lblTextoPuntajeL;
         private System.Windows.Forms.TextBox txtNombreL;
         private System.Windows.Forms.ComboBox CbCategoriaL;
         private System.Windows.Forms.Label lbCategoriaL;
-        private System.Windows.Forms.CheckBox CheckLibros;
         private System.Windows.Forms.ComboBox CbVolumenL;
         private System.Windows.Forms.Label lblVolumenL;
         private System.Windows.Forms.ComboBox CbPortadaL;
         private System.Windows.Forms.Label lblPortadaL;
-        private System.Windows.Forms.GroupBox GbAreaAnntys;
+        private System.Windows.Forms.GroupBox GroupAnnetys;
         private System.Windows.Forms.ComboBox CbCategoriaA;
         private System.Windows.Forms.Label lblCategoriaA;
         private System.Windows.Forms.CheckBox CheckAnnetys;
-        private System.Windows.Forms.TextBox CbNombreA;
+        private System.Windows.Forms.TextBox txtNombreA;
         private System.Windows.Forms.Label lblPuntajeA;
         private System.Windows.Forms.Label lblTextoPuntajeA;
         private System.Windows.Forms.Label lblDescripcionA;
@@ -833,7 +1013,7 @@
         private System.Windows.Forms.Label lblTextoPrecioJ;
         private System.Windows.Forms.TextBox txtCantidadJ;
         private System.Windows.Forms.Label lblNombreJ;
-        private System.Windows.Forms.GroupBox AreaTCG;
+        private System.Windows.Forms.GroupBox GroupTCG;
         private System.Windows.Forms.CheckBox CheckTCG;
         private System.Windows.Forms.TextBox txtProductoT;
         private System.Windows.Forms.Label lblPuntajeT;
@@ -845,5 +1025,21 @@
         private System.Windows.Forms.Label lblTextoPrecioT;
         private System.Windows.Forms.TextBox txtCantidadT;
         private System.Windows.Forms.Label lblTextoProductoT;
+        private FontAwesome.Sharp.IconButton BtnGuardar;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox txtClienteL;
+        private System.Windows.Forms.Label lblTextoClienteL;
+        private System.Windows.Forms.CheckBox CheckClienteL;
+        private System.Windows.Forms.TextBox txtClienteA;
+        private System.Windows.Forms.Label lblTextoClienteA;
+        private System.Windows.Forms.CheckBox CheckClienteA;
+        private System.Windows.Forms.TextBox txtClienteT;
+        private System.Windows.Forms.Label lblTextoClienteT;
+        private System.Windows.Forms.CheckBox CheckClienteT;
+        private System.Windows.Forms.TextBox txtClienteJ;
+        private System.Windows.Forms.Label lblTextoClienteJ;
+        private System.Windows.Forms.CheckBox CheckClienteJ;
     }
 }
