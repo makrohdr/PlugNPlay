@@ -40,10 +40,15 @@ C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventar
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.ResolveComReference.cache
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Form1.resources
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Cliente.resources
-C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Inventario.resources
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Properties.Resources.resources
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.GenerateResource.cache
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.CopyComplete
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.exe
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.pdb
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Lirbos.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Annetys.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Dollar.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.JuegosDeMesa.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Lirbos.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.TCG.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Venta.resources
