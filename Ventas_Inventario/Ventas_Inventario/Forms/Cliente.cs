@@ -42,15 +42,16 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    clienteOB.InsertarCliente(txtRedSocial.Text, txtContacto.Text, txtApellido.Text, txtNombre.Text, txtPuntaje.Text);
+                    clienteOB.InsertarCliente(txtTelefono.Text, txtRedSocial.Text, txtContacto.Text, txtNombre.Text, 
+                        txtApellido.Text, txtPuntaje.Text);
                     MessageBox.Show("Tus datos se insertaron");
                     MostrarClientes();
-                    //No Olvidar
+                    
                     Limpiar();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("No se puedo realizar la siguente accion: " + ex);
+                    MessageBox.Show("No se puedieron insertar los datos.");
                 }
             }
             //Editar
@@ -58,15 +59,16 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    clienteOB.EditarCliente(txtContacto.Text, txtApellido.Text, txtNombre.Text, txtPuntaje.Text, IDcliente);
+                    clienteOB.EditarCliente(txtTelefono.Text, txtRedSocial.Text, txtContacto.Text, txtNombre.Text,
+                        txtApellido.Text, txtPuntaje.Text, IDcliente);
                     MessageBox.Show("Tus datos se editaron");
                     MostrarClientes();
                     Limpiar();
                     Editar = false;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show("No se pudo editar los datos por: " + ex);
+                    MessageBox.Show("No se pudo editar los datos.");
                 }
             }
         }
@@ -76,11 +78,13 @@ namespace Ventas_Inventario.Forms
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 Editar = true;
-                txtContacto.Text = dataGridView1.CurrentRow.Cells["Celular"].Value.ToString();
-                txtApellido.Text = dataGridView1.CurrentRow.Cells["Apellido"].Value.ToString();
+                txtTelefono.Text = dataGridView1.CurrentRow.Cells["IDTelefono"].Value.ToString();
+                txtRedSocial.Text = dataGridView1.CurrentRow.Cells["RedSocial"].Value.ToString();
+                txtContacto.Text = dataGridView1.CurrentRow.Cells["Contacto"].Value.ToString();
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
+                txtApellido.Text = dataGridView1.CurrentRow.Cells["Apellido"].Value.ToString();
                 txtPuntaje.Text = dataGridView1.CurrentRow.Cells["Puntaje"].Value.ToString();
-                IDcliente = dataGridView1.CurrentRow.Cells["IDcliente"].Value.ToString();
+                IDcliente = dataGridView1.CurrentRow.Cells["IDTelefono"].Value.ToString();
             }
             else
             {
@@ -90,9 +94,11 @@ namespace Ventas_Inventario.Forms
 
         private void Limpiar()
         {
+            txtTelefono.Clear();
+            txtRedSocial.SelectedIndex = 0;
             txtContacto.Clear();
-            txtApellido.Clear();
             txtNombre.Clear();
+            txtApellido.Clear();
             txtPuntaje.Clear();
         }
 
@@ -100,7 +106,7 @@ namespace Ventas_Inventario.Forms
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                IDcliente = dataGridView1.CurrentRow.Cells["IDcliente"].Value.ToString();
+                IDcliente = dataGridView1.CurrentRow.Cells["IDTelefono"].Value.ToString();
                 if (
                 MessageBox.Show("Esta seguro que quiere eliminar a este cliente?", 
                     "Aviso", 

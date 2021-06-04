@@ -91,17 +91,23 @@
     <Compile Include="Forms\Dollar.Designer.cs">
       <DependentUpon>Dollar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Lirbos.cs">
+    <Compile Include="Forms\Libros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Lirbos.Designer.cs">
-      <DependentUpon>Lirbos.cs</DependentUpon>
+    <Compile Include="Forms\Libros.Designer.cs">
+      <DependentUpon>Libros.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\JuegosDeMesa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\JuegosDeMesa.Designer.cs">
       <DependentUpon>JuegosDeMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportesDeVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportesDeVentas.Designer.cs">
+      <DependentUpon>ReportesDeVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TCG.cs">
       <SubType>Form</SubType>
@@ -132,8 +138,11 @@
     <EmbeddedResource Include="Forms\JuegosDeMesa.resx">
       <DependentUpon>JuegosDeMesa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Lirbos.resx">
-      <DependentUpon>Lirbos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Libros.resx">
+      <DependentUpon>Libros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportesDeVentas.resx">
+      <DependentUpon>ReportesDeVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TCG.resx">
       <DependentUpon>TCG.cs</DependentUpon>

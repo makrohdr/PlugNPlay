@@ -1,6 +1,6 @@
 ﻿namespace Ventas_Inventario.Forms
 {
-    partial class Lirbos
+    partial class Libros
     {
         /// <summary>
         /// Required designer variable.

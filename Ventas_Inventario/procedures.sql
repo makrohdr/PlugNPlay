@@ -1,41 +1,46 @@
 ﻿use ControlVentas
 go
 
+---------------------------------------------------------------------------------------------------
+--procesos almacenados de tabla Clientes
 alter proc MostrarClientes
-
 as
-select * from Cliente
+select * from Clientes
 go
 
 create proc AgregarCliente
-@celular varchar (100),
-@apellido varchar (100),
-@nombre varchar (100),
-@puntaje int
+@Telefono varchar (100),
+@RedSocial varchar(100),
+@Contacto varchar (100),
+@Nombre varchar (100),
+@Apellido varchar (100),
+@Puntaje int
 as
-insert into Cliente values(@celular,@apellido,@nombre,@puntaje)
+insert into Clientes values(@Telefono, @RedSocial, @Contacto, @Nombre, @Apellido, @Puntaje)
 
 go
 
-create proc EditarCliente
-@celular varchar (100),
-@apellido varchar (100),
-@nombre varchar (100),
-@puntaje int,
-@id int
+alter proc EditarCliente
+@Telefono varchar (100),
+@RedSocial varchar(100),
+@Contacto varchar (100),
+@Nombre varchar (100),
+@Apellido varchar (100),
+@Puntaje int,
+@IDCliente varchar(100)
 as
-UPDATE Cliente SET Celular=@celular, Apellido=@apellido, Nombre=@Nombre, Puntaje=@puntaje
-where IDcliente=@id
+UPDATE Clientes SET IDTelefono=@Telefono, RedSocial=@RedSocial, Contacto=@Contacto, Nombre=@Nombre, Apellido=@Apellido, Puntaje=@puntaje
+where IDTelefono=@IDCliente
 go
 
-create proc EliminarCliente
-@id int
+Alter proc EliminarCliente
+@Telefono varchar(100)
 as
-delete from Cliente where IDcliente=@id;
+delete from Clientes where IDTelefono=@Telefono;
 go
 
 exec NombreDelProceso 'ejemplo1', 'ejemplo2'
----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 
 go
 
@@ -45,7 +50,6 @@ select * from Inventario
 go
 select IDinventario from Inventario
 go
-------------------------------------------------------------------------------
 
 create proc AgregarInventario
 @nombre varchar (100),
@@ -84,7 +88,7 @@ go
 
 exec AgregarInventario 'Oreigaru', '1', 'A', 'Manga', 'Kamite', '85', '1', '45'
 go
---------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 --Crear tablas
 create table Inventario(
 IDinventario int identity primary key,
@@ -98,7 +102,7 @@ Cantidad int,
 Punataje int)
 
 create table Clientes(
-IDTelefono int identity (1,1) primary key,
+IDTelefono varchar(100) primary key,
 RedSocial varchar(100),
 Contacto varchar(100),
 Nombre varchar(100),
@@ -110,6 +114,7 @@ drop table ReporteVentaJuegosDeMesa
 drop table ReporteVentasTCG
 drop table ReporteVentasAnnetys
 
+drop table Clientes
 drop table JuegosDeMesa;
 drop table TCG
 drop table Annetys
@@ -117,7 +122,7 @@ drop table Annetys
 create table ReporteVentaLibros(
 IDReporteLibros int identity(1,1) primary key,
 IDlibros int foreign key (IDLibros) references inventario(IDinventario),
-IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+IDClientes varchar(100) foreign key (IDClientes) references Clientes(IDTelefono),
 Fecha varchar(100), 
 Nombre varchar(100),
 Volumen varchar(100),
@@ -137,7 +142,7 @@ Puntaje int);
 create table ReporteVentaJuegosDeMesa(
 IDReporteJuegosDeMesa int identity(1,1) primary key,
 IDJuegosDeMesa int foreign key (IDJuegosDeMesa) references JuegosDeMesa(IDJuegosDeMesa),
-IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+IDClientes varchar(100) foreign key (IDClientes) references Clientes(IDTelefono),
 Nombre varchar(100),
 Precio int,
 Cantidad int,
@@ -154,7 +159,7 @@ Puntaje int);
 create table ReporteVentasTCG(
 ReporteTCG int identity (1,1) primary key,
 IDTCG int foreign key (IDTCG) references TCG(IDTCG),
-IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+IDClientes varchar(100) foreign key (IDClientes) references Clientes(IDTelefono),
 Nombre Varchar(100),
 Producto varchar(100),
 Precio int,
@@ -173,7 +178,7 @@ Punatje int)
 create table ReporteVentasAnnetys(
 IDReporteAnnetys int identity(1,1) primary key,
 IDAnnetys int foreign key (IDAnnetys) references Annetys(IDAnnetys),
-IDClientes int foreign key (IDClientes) references Clientes(IDTelefono),
+IDClientes varchar(100) foreign key (IDClientes) references Clientes(IDTelefono),
 Categoria varchar(100),
 Nombre varchar(100),
 Descripcion varchar(100),

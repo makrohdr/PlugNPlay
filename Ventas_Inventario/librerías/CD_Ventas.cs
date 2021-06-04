@@ -27,6 +27,7 @@ namespace librerías
             return tabla;
         }
 
+        /*
         public void Autocompletar()
         {
             //procedimiento almacenado
@@ -39,6 +40,7 @@ namespace librerías
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
         }
+        */
 
 
     }

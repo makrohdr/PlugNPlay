@@ -12,6 +12,6 @@ namespace LibreriasNegocio
     public class CN_Ventas
     {
 
-        private CD_Ventas OBinventario = new CD_Ventas();
+        private CD_Ventas OBVentas = new CD_Ventas();
     }
 }

@@ -28,45 +28,49 @@ namespace librerías
             return tabla;
         }
 
-        public void Insertar(string RedSocial, string Contacto, string Apellido, string Nombre, int Puntaje)
+        public void Insertar(string Telefono, string RedSocial, string Contacto, string Apellido, string Nombre, int Puntaje)
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "AgregarCliente";
             comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@Telefono", Telefono);
             comando.Parameters.AddWithValue("@RedSocial", RedSocial);
-            comando.Parameters.AddWithValue("@celular", Contacto);
-            comando.Parameters.AddWithValue("@apellido", Apellido);
-            comando.Parameters.AddWithValue("@nombre", Nombre);
+            comando.Parameters.AddWithValue("@Contacto", Contacto);
+            comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Apellido", Apellido);
             comando.Parameters.AddWithValue("@puntaje", Puntaje);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
         }
 
-        public void Editar(string numero, string apellido, string nombre, int puntaje, int IDcliente)
+        public void Editar(string Telefono, string RedSocial, string Contacto, string Nombre, string Apellido, 
+            int Puntaje, string IDCliente)
         {
             //Procedimiento almacenado
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "EditarCliente";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@celular", numero);
-            comando.Parameters.AddWithValue("@apellido", apellido);
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@puntaje", puntaje);
-            comando.Parameters.AddWithValue("@id", IDcliente);
+            comando.Parameters.AddWithValue("@Telefono", Telefono);
+            comando.Parameters.AddWithValue("@RedSocial", RedSocial);
+            comando.Parameters.AddWithValue("@Contacto", Contacto);
+            comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Apellido", Apellido);
+            comando.Parameters.AddWithValue("@puntaje", Puntaje);
+            comando.Parameters.AddWithValue("@IDCliente", IDCliente);
             comando.ExecuteNonQuery();
-            //comando.Connection = conexion.cerrarConexion();
+            comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
         }
 
-        public void Eliminar( int ID)
+        public void Eliminar( string IDTelefono)
         {
             //Procedimiento almacenado
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "EliminarCliente";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("id", ID);
+            comando.Parameters.AddWithValue("Telefono", IDTelefono);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();

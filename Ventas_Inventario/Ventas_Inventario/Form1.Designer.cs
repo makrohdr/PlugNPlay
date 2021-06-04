@@ -34,6 +34,8 @@
             this.btnDollar = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
             this.panelSubMenuInventario = new System.Windows.Forms.Panel();
+            this.btnAnnetys = new FontAwesome.Sharp.IconButton();
+            this.btnTCG = new FontAwesome.Sharp.IconButton();
             this.brnJuegosMesa = new FontAwesome.Sharp.IconButton();
             this.btnLibros = new FontAwesome.Sharp.IconButton();
             this.btnInventario = new FontAwesome.Sharp.IconButton();
@@ -52,8 +54,7 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clock = new System.Windows.Forms.Timer(this.components);
-            this.btnTCG = new FontAwesome.Sharp.IconButton();
-            this.btnAnnetys = new FontAwesome.Sharp.IconButton();
+            this.btnReportes = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelSubMenuInventario.SuspendLayout();
             this.panelimg.SuspendLayout();
@@ -71,6 +72,7 @@
             // 
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelMenu.Controls.Add(this.btnReportes);
             this.panelMenu.Controls.Add(this.btnDollar);
             this.panelMenu.Controls.Add(this.btnClientes);
             this.panelMenu.Controls.Add(this.panelSubMenuInventario);
@@ -99,7 +101,7 @@
             this.btnDollar.Name = "btnDollar";
             this.btnDollar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnDollar.Rotation = 0D;
-            this.btnDollar.Size = new System.Drawing.Size(179, 50);
+            this.btnDollar.Size = new System.Drawing.Size(162, 50);
             this.btnDollar.TabIndex = 6;
             this.btnDollar.Text = "Tipo de cambio";
             this.btnDollar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,7 +125,7 @@
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnClientes.Rotation = 0D;
-            this.btnClientes.Size = new System.Drawing.Size(179, 50);
+            this.btnClientes.Size = new System.Drawing.Size(162, 50);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,8 +143,58 @@
             this.panelSubMenuInventario.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuInventario.Location = new System.Drawing.Point(0, 210);
             this.panelSubMenuInventario.Name = "panelSubMenuInventario";
-            this.panelSubMenuInventario.Size = new System.Drawing.Size(179, 207);
+            this.panelSubMenuInventario.Size = new System.Drawing.Size(162, 207);
             this.panelSubMenuInventario.TabIndex = 7;
+            // 
+            // btnAnnetys
+            // 
+            this.btnAnnetys.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnnetys.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAnnetys.FlatAppearance.BorderSize = 0;
+            this.btnAnnetys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnnetys.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAnnetys.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnetys.ForeColor = System.Drawing.Color.Black;
+            this.btnAnnetys.IconChar = FontAwesome.Sharp.IconChar.Gifts;
+            this.btnAnnetys.IconColor = System.Drawing.Color.Black;
+            this.btnAnnetys.IconSize = 32;
+            this.btnAnnetys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnnetys.Location = new System.Drawing.Point(0, 150);
+            this.btnAnnetys.Name = "btnAnnetys";
+            this.btnAnnetys.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.btnAnnetys.Rotation = 0D;
+            this.btnAnnetys.Size = new System.Drawing.Size(162, 50);
+            this.btnAnnetys.TabIndex = 7;
+            this.btnAnnetys.Text = "Annetys";
+            this.btnAnnetys.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnnetys.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnnetys.UseVisualStyleBackColor = false;
+            this.btnAnnetys.Click += new System.EventHandler(this.btnAnnetys_Click);
+            // 
+            // btnTCG
+            // 
+            this.btnTCG.BackColor = System.Drawing.Color.Transparent;
+            this.btnTCG.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTCG.FlatAppearance.BorderSize = 0;
+            this.btnTCG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTCG.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnTCG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCG.ForeColor = System.Drawing.Color.Black;
+            this.btnTCG.IconChar = FontAwesome.Sharp.IconChar.DiceD20;
+            this.btnTCG.IconColor = System.Drawing.Color.Black;
+            this.btnTCG.IconSize = 32;
+            this.btnTCG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTCG.Location = new System.Drawing.Point(0, 100);
+            this.btnTCG.Name = "btnTCG";
+            this.btnTCG.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
+            this.btnTCG.Rotation = 0D;
+            this.btnTCG.Size = new System.Drawing.Size(162, 50);
+            this.btnTCG.TabIndex = 6;
+            this.btnTCG.Text = "TCG";
+            this.btnTCG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTCG.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTCG.UseVisualStyleBackColor = false;
+            this.btnTCG.Click += new System.EventHandler(this.btnTCG_Click);
             // 
             // brnJuegosMesa
             // 
@@ -161,7 +213,7 @@
             this.brnJuegosMesa.Name = "brnJuegosMesa";
             this.brnJuegosMesa.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
             this.brnJuegosMesa.Rotation = 0D;
-            this.brnJuegosMesa.Size = new System.Drawing.Size(179, 50);
+            this.brnJuegosMesa.Size = new System.Drawing.Size(162, 50);
             this.brnJuegosMesa.TabIndex = 5;
             this.brnJuegosMesa.Text = "Juegos de mesa";
             this.brnJuegosMesa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,7 +238,7 @@
             this.btnLibros.Name = "btnLibros";
             this.btnLibros.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
             this.btnLibros.Rotation = 0D;
-            this.btnLibros.Size = new System.Drawing.Size(179, 50);
+            this.btnLibros.Size = new System.Drawing.Size(162, 50);
             this.btnLibros.TabIndex = 4;
             this.btnLibros.Text = "Libros";
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,7 +262,7 @@
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnInventario.Rotation = 0D;
-            this.btnInventario.Size = new System.Drawing.Size(179, 50);
+            this.btnInventario.Size = new System.Drawing.Size(162, 50);
             this.btnInventario.TabIndex = 2;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,7 +287,7 @@
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnVenta.Rotation = 0D;
-            this.btnVenta.Size = new System.Drawing.Size(179, 50);
+            this.btnVenta.Size = new System.Drawing.Size(162, 50);
             this.btnVenta.TabIndex = 1;
             this.btnVenta.Text = "Venta";
             this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -249,7 +301,7 @@
             this.panelimg.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelimg.Location = new System.Drawing.Point(0, 0);
             this.panelimg.Name = "panelimg";
-            this.panelimg.Size = new System.Drawing.Size(179, 110);
+            this.panelimg.Size = new System.Drawing.Size(162, 110);
             this.panelimg.TabIndex = 0;
             // 
             // btnInicio
@@ -259,7 +311,7 @@
             this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
             this.btnInicio.Location = new System.Drawing.Point(0, 0);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(179, 110);
+            this.btnInicio.Size = new System.Drawing.Size(162, 110);
             this.btnInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnInicio.TabIndex = 0;
             this.btnInicio.TabStop = false;
@@ -410,55 +462,29 @@
             this.clock.Enabled = true;
             this.clock.Tick += new System.EventHandler(this.clock_Tick);
             // 
-            // btnTCG
+            // btnReportes
             // 
-            this.btnTCG.BackColor = System.Drawing.Color.Transparent;
-            this.btnTCG.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTCG.FlatAppearance.BorderSize = 0;
-            this.btnTCG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTCG.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnTCG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTCG.ForeColor = System.Drawing.Color.Black;
-            this.btnTCG.IconChar = FontAwesome.Sharp.IconChar.DiceD20;
-            this.btnTCG.IconColor = System.Drawing.Color.Black;
-            this.btnTCG.IconSize = 32;
-            this.btnTCG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTCG.Location = new System.Drawing.Point(0, 100);
-            this.btnTCG.Name = "btnTCG";
-            this.btnTCG.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
-            this.btnTCG.Rotation = 0D;
-            this.btnTCG.Size = new System.Drawing.Size(179, 50);
-            this.btnTCG.TabIndex = 6;
-            this.btnTCG.Text = "TCG";
-            this.btnTCG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTCG.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTCG.UseVisualStyleBackColor = false;
-            this.btnTCG.Click += new System.EventHandler(this.btnTCG_Click);
-            // 
-            // btnAnnetys
-            // 
-            this.btnAnnetys.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnnetys.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnnetys.FlatAppearance.BorderSize = 0;
-            this.btnAnnetys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnnetys.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnAnnetys.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnetys.ForeColor = System.Drawing.Color.Black;
-            this.btnAnnetys.IconChar = FontAwesome.Sharp.IconChar.Gifts;
-            this.btnAnnetys.IconColor = System.Drawing.Color.Black;
-            this.btnAnnetys.IconSize = 32;
-            this.btnAnnetys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnnetys.Location = new System.Drawing.Point(0, 150);
-            this.btnAnnetys.Name = "btnAnnetys";
-            this.btnAnnetys.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
-            this.btnAnnetys.Rotation = 0D;
-            this.btnAnnetys.Size = new System.Drawing.Size(179, 50);
-            this.btnAnnetys.TabIndex = 7;
-            this.btnAnnetys.Text = "Annetys";
-            this.btnAnnetys.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnnetys.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAnnetys.UseVisualStyleBackColor = false;
-            this.btnAnnetys.Click += new System.EventHandler(this.btnAnnetys_Click);
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.Black;
+            this.btnReportes.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
+            this.btnReportes.IconColor = System.Drawing.Color.Black;
+            this.btnReportes.IconSize = 32;
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes.Location = new System.Drawing.Point(0, 517);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnReportes.Rotation = 0D;
+            this.btnReportes.Size = new System.Drawing.Size(162, 50);
+            this.btnReportes.TabIndex = 8;
+            this.btnReportes.Text = "Reportes de ventas";
+            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // Form1
             // 
@@ -516,6 +542,7 @@
         private FontAwesome.Sharp.IconButton btnLibros;
         private FontAwesome.Sharp.IconButton btnAnnetys;
         private FontAwesome.Sharp.IconButton btnTCG;
+        private FontAwesome.Sharp.IconButton btnReportes;
     }
 }
 

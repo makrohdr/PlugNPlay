@@ -40,6 +40,7 @@ namespace Ventas_Inventario
             public static Color color2 = Color.FromArgb(17, 27, 153);
             public static Color color3 = Color.FromArgb(83, 64, 13);
             public static Color color4 = Color.FromArgb(103, 21, 142);
+            public static Color color5 = Color.FromArgb(200, 255, 255);
         }
 
         //Methods
@@ -146,13 +147,20 @@ namespace Ventas_Inventario
             OpenChildForm(new Forms.Dollar());
             OcultarSubMenu();
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Forms.ReportesDeVentas());
+            OcultarSubMenu();
+        }
         #endregion
 
         #region botones de paneles desplegables
         //btnlibros
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Lirbos());
+            OpenChildForm(new Forms.Libros());
         }
         private void brnJuegosMesa_Click(object sender, EventArgs e)
         {

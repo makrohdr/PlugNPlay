@@ -13,7 +13,7 @@ using SpreadsheetLight;
 
 namespace Ventas_Inventario.Forms
 {
-    public partial class Lirbos : Form
+    public partial class Libros : Form
     {
         CN_Inventario obInventario = new CN_Inventario();
         private string IDinventario = null;
@@ -22,7 +22,7 @@ namespace Ventas_Inventario.Forms
 
         DataTable tabla = new DataTable();
 
-        public Lirbos()
+        public Libros()
         {
             InitializeComponent();
         }
@@ -122,6 +122,7 @@ namespace Ventas_Inventario.Forms
                 throw;
             }
         }
+
         //Buscar
         private void btsBuscar_Click(object sender, EventArgs e)
         {
