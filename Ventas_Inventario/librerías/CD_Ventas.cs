@@ -27,6 +27,17 @@ namespace librerías
             return tabla;
         }
 
+        public DataTable Mostrar()
+        {
+            //Llenado de datos Combobox Editorial-Libros (Sin condicion)
+            comando.Connection = conexion.abriConexion();
+            comando.CommandText = "Select Editorial From Inventario";
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.cerrarConexion();
+            return tabla;
+        }
+
         /*
         public void Autocompletar()
         {

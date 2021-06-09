@@ -89,13 +89,14 @@ namespace Ventas_Inventario.Forms
                 MessageBox.Show("Debe de seleccionar un Area de ventas...!!!");
             }
 
-            if (txtNombreJ.Text == "" && txtNombreL.Text == "" && txtNombreA.Text == "" && txtProductoT.Text == "")
+            if (txtNombreJ.Text == "" && CbNombreL.Text == "" && txtNombreA.Text == "" && txtProductoT.Text == "")
             {
                 MessageBox.Show("Debe de seleccionar un Producto...!!!");
             }
 
             if (!CheckClienteA.Checked && !CheckClienteJ.Checked && !CheckClienteT.Checked && !CheckClienteL.Checked)
             {
+                if (txtClienteL.Text == "" && txtClienteA.Text == "" && txtClienteT.Text == "" && txtClienteJ.Text == "")
                 MessageBox.Show("Favor de ingresar el numero de telefono del cliente...!!!");
             }
         }

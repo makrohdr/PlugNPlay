@@ -32,6 +32,9 @@
             this.lblFechatxt = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.GroupLibros = new System.Windows.Forms.GroupBox();
+            this.CbNombreL = new System.Windows.Forms.ComboBox();
+            this.CbEditorialL = new System.Windows.Forms.ComboBox();
+            this.lblTextoEditorialL = new System.Windows.Forms.Label();
             this.txtClienteL = new System.Windows.Forms.TextBox();
             this.lblTextoClienteL = new System.Windows.Forms.Label();
             this.CheckClienteL = new System.Windows.Forms.CheckBox();
@@ -41,7 +44,6 @@
             this.lblPortadaL = new System.Windows.Forms.Label();
             this.CbCategoriaL = new System.Windows.Forms.ComboBox();
             this.lbCategoriaL = new System.Windows.Forms.Label();
-            this.txtNombreL = new System.Windows.Forms.TextBox();
             this.lblPuntajeL = new System.Windows.Forms.Label();
             this.lblTextoPuntajeL = new System.Windows.Forms.Label();
             this.lblCantidadL = new System.Windows.Forms.Label();
@@ -149,6 +151,9 @@
             this.GroupLibros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupLibros.AutoSize = true;
+            this.GroupLibros.Controls.Add(this.CbNombreL);
+            this.GroupLibros.Controls.Add(this.CbEditorialL);
+            this.GroupLibros.Controls.Add(this.lblTextoEditorialL);
             this.GroupLibros.Controls.Add(this.txtClienteL);
             this.GroupLibros.Controls.Add(this.lblTextoClienteL);
             this.GroupLibros.Controls.Add(this.CheckClienteL);
@@ -158,7 +163,6 @@
             this.GroupLibros.Controls.Add(this.lblPortadaL);
             this.GroupLibros.Controls.Add(this.CbCategoriaL);
             this.GroupLibros.Controls.Add(this.lbCategoriaL);
-            this.GroupLibros.Controls.Add(this.txtNombreL);
             this.GroupLibros.Controls.Add(this.lblPuntajeL);
             this.GroupLibros.Controls.Add(this.lblTextoPuntajeL);
             this.GroupLibros.Controls.Add(this.lblCantidadL);
@@ -170,14 +174,40 @@
             this.GroupLibros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.GroupLibros.Location = new System.Drawing.Point(12, 72);
             this.GroupLibros.Name = "GroupLibros";
-            this.GroupLibros.Size = new System.Drawing.Size(776, 198);
+            this.GroupLibros.Size = new System.Drawing.Size(776, 190);
             this.GroupLibros.TabIndex = 39;
             this.GroupLibros.TabStop = false;
             this.GroupLibros.Text = "Area de venta Libros";
             // 
+            // CbNombreL
+            // 
+            this.CbNombreL.FormattingEnabled = true;
+            this.CbNombreL.Location = new System.Drawing.Point(6, 77);
+            this.CbNombreL.Name = "CbNombreL";
+            this.CbNombreL.Size = new System.Drawing.Size(157, 24);
+            this.CbNombreL.TabIndex = 25;
+            // 
+            // CbEditorialL
+            // 
+            this.CbEditorialL.FormattingEnabled = true;
+            this.CbEditorialL.Location = new System.Drawing.Point(7, 119);
+            this.CbEditorialL.Name = "CbEditorialL";
+            this.CbEditorialL.Size = new System.Drawing.Size(157, 24);
+            this.CbEditorialL.TabIndex = 24;
+            // 
+            // lblTextoEditorialL
+            // 
+            this.lblTextoEditorialL.AutoSize = true;
+            this.lblTextoEditorialL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTextoEditorialL.Location = new System.Drawing.Point(7, 104);
+            this.lblTextoEditorialL.Name = "lblTextoEditorialL";
+            this.lblTextoEditorialL.Size = new System.Drawing.Size(131, 16);
+            this.lblTextoEditorialL.TabIndex = 23;
+            this.lblTextoEditorialL.Text = "Seleccione Editorial:";
+            // 
             // txtClienteL
             // 
-            this.txtClienteL.Location = new System.Drawing.Point(169, 134);
+            this.txtClienteL.Location = new System.Drawing.Point(350, 34);
             this.txtClienteL.Name = "txtClienteL";
             this.txtClienteL.Size = new System.Drawing.Size(157, 22);
             this.txtClienteL.TabIndex = 22;
@@ -186,7 +216,7 @@
             // 
             this.lblTextoClienteL.AutoSize = true;
             this.lblTextoClienteL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTextoClienteL.Location = new System.Drawing.Point(166, 113);
+            this.lblTextoClienteL.Location = new System.Drawing.Point(347, 15);
             this.lblTextoClienteL.Name = "lblTextoClienteL";
             this.lblTextoClienteL.Size = new System.Drawing.Size(122, 16);
             this.lblTextoClienteL.TabIndex = 21;
@@ -195,7 +225,7 @@
             // CheckClienteL
             // 
             this.CheckClienteL.AutoSize = true;
-            this.CheckClienteL.Location = new System.Drawing.Point(190, 157);
+            this.CheckClienteL.Location = new System.Drawing.Point(6, 149);
             this.CheckClienteL.Name = "CheckClienteL";
             this.CheckClienteL.Size = new System.Drawing.Size(132, 20);
             this.CheckClienteL.TabIndex = 20;
@@ -205,7 +235,7 @@
             // CbVolumenL
             // 
             this.CbVolumenL.FormattingEnabled = true;
-            this.CbVolumenL.Location = new System.Drawing.Point(169, 82);
+            this.CbVolumenL.Location = new System.Drawing.Point(170, 77);
             this.CbVolumenL.Name = "CbVolumenL";
             this.CbVolumenL.Size = new System.Drawing.Size(157, 24);
             this.CbVolumenL.TabIndex = 19;
@@ -214,7 +244,7 @@
             // 
             this.lblVolumenL.AutoSize = true;
             this.lblVolumenL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblVolumenL.Location = new System.Drawing.Point(166, 66);
+            this.lblVolumenL.Location = new System.Drawing.Point(170, 61);
             this.lblVolumenL.Name = "lblVolumenL";
             this.lblVolumenL.Size = new System.Drawing.Size(135, 16);
             this.lblVolumenL.TabIndex = 18;
@@ -223,7 +253,7 @@
             // CbPortadaL
             // 
             this.CbPortadaL.FormattingEnabled = true;
-            this.CbPortadaL.Location = new System.Drawing.Point(169, 34);
+            this.CbPortadaL.Location = new System.Drawing.Point(170, 34);
             this.CbPortadaL.Name = "CbPortadaL";
             this.CbPortadaL.Size = new System.Drawing.Size(157, 24);
             this.CbPortadaL.TabIndex = 17;
@@ -232,7 +262,7 @@
             // 
             this.lblPortadaL.AutoSize = true;
             this.lblPortadaL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPortadaL.Location = new System.Drawing.Point(166, 16);
+            this.lblPortadaL.Location = new System.Drawing.Point(170, 15);
             this.lblPortadaL.Name = "lblPortadaL";
             this.lblPortadaL.Size = new System.Drawing.Size(130, 16);
             this.lblPortadaL.TabIndex = 16;
@@ -241,7 +271,7 @@
             // CbCategoriaL
             // 
             this.CbCategoriaL.FormattingEnabled = true;
-            this.CbCategoriaL.Location = new System.Drawing.Point(6, 82);
+            this.CbCategoriaL.Location = new System.Drawing.Point(7, 34);
             this.CbCategoriaL.Name = "CbCategoriaL";
             this.CbCategoriaL.Size = new System.Drawing.Size(157, 24);
             this.CbCategoriaL.TabIndex = 15;
@@ -250,18 +280,11 @@
             // 
             this.lbCategoriaL.AutoSize = true;
             this.lbCategoriaL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbCategoriaL.Location = new System.Drawing.Point(3, 66);
+            this.lbCategoriaL.Location = new System.Drawing.Point(7, 18);
             this.lbCategoriaL.Name = "lbCategoriaL";
             this.lbCategoriaL.Size = new System.Drawing.Size(141, 16);
             this.lbCategoriaL.TabIndex = 14;
             this.lbCategoriaL.Text = "Seleccione Categoria:";
-            // 
-            // txtNombreL
-            // 
-            this.txtNombreL.Location = new System.Drawing.Point(6, 36);
-            this.txtNombreL.Name = "txtNombreL";
-            this.txtNombreL.Size = new System.Drawing.Size(157, 22);
-            this.txtNombreL.TabIndex = 12;
             // 
             // lblPuntajeL
             // 
@@ -293,7 +316,7 @@
             // 
             this.lblCantidadL.AutoSize = true;
             this.lblCantidadL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCantidadL.Location = new System.Drawing.Point(3, 109);
+            this.lblCantidadL.Location = new System.Drawing.Point(170, 104);
             this.lblCantidadL.Name = "lblCantidadL";
             this.lblCantidadL.Size = new System.Drawing.Size(62, 16);
             this.lblCantidadL.TabIndex = 7;
@@ -327,7 +350,7 @@
             // 
             // txtCantidadL
             // 
-            this.txtCantidadL.Location = new System.Drawing.Point(6, 129);
+            this.txtCantidadL.Location = new System.Drawing.Point(173, 119);
             this.txtCantidadL.Name = "txtCantidadL";
             this.txtCantidadL.Size = new System.Drawing.Size(37, 22);
             this.txtCantidadL.TabIndex = 4;
@@ -336,7 +359,7 @@
             // 
             this.lblNombreL.AutoSize = true;
             this.lblNombreL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNombreL.Location = new System.Drawing.Point(3, 16);
+            this.lblNombreL.Location = new System.Drawing.Point(7, 61);
             this.lblNombreL.Name = "lblNombreL";
             this.lblNombreL.Size = new System.Drawing.Size(138, 16);
             this.lblNombreL.TabIndex = 1;
@@ -982,7 +1005,6 @@
         private System.Windows.Forms.TextBox txtCantidadL;
         private System.Windows.Forms.Label lblPuntajeL;
         private System.Windows.Forms.Label lblTextoPuntajeL;
-        private System.Windows.Forms.TextBox txtNombreL;
         private System.Windows.Forms.ComboBox CbCategoriaL;
         private System.Windows.Forms.Label lbCategoriaL;
         private System.Windows.Forms.ComboBox CbVolumenL;
@@ -1041,5 +1063,8 @@
         private System.Windows.Forms.TextBox txtClienteJ;
         private System.Windows.Forms.Label lblTextoClienteJ;
         private System.Windows.Forms.CheckBox CheckClienteJ;
+        private System.Windows.Forms.ComboBox CbNombreL;
+        private System.Windows.Forms.ComboBox CbEditorialL;
+        private System.Windows.Forms.Label lblTextoEditorialL;
     }
 }
