@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblFechatxt = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -102,10 +103,17 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.dBplugYplayDataSet = new Ventas_Inventario.DBplugYplayDataSet();
+            this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.inventarioTableAdapter = new Ventas_Inventario.DBplugYplayDataSetTableAdapters.InventarioTableAdapter();
+            this.inventarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.GroupLibros.SuspendLayout();
             this.GroupAnnetys.SuspendLayout();
             this.GroupTCG.SuspendLayout();
             this.GroupJuegosMesa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dBplugYplayDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -861,12 +869,13 @@
             // 
             // CbAreaVenta
             // 
+            this.CbAreaVenta.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.inventarioBindingSource1, "Categoria", true));
             this.CbAreaVenta.FormattingEnabled = true;
             this.CbAreaVenta.Items.AddRange(new object[] {
             "Libros",
             "Annetys",
-            "Juegos de Mesa",
-            "TCG"});
+            "TCG",
+            "Juegos de mesa"});
             this.CbAreaVenta.Location = new System.Drawing.Point(12, 42);
             this.CbAreaVenta.Name = "CbAreaVenta";
             this.CbAreaVenta.Size = new System.Drawing.Size(157, 21);
@@ -955,6 +964,25 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
+            // dBplugYplayDataSet
+            // 
+            this.dBplugYplayDataSet.DataSetName = "DBplugYplayDataSet";
+            this.dBplugYplayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inventarioBindingSource
+            // 
+            this.inventarioBindingSource.DataMember = "Inventario";
+            this.inventarioBindingSource.DataSource = this.dBplugYplayDataSet;
+            // 
+            // inventarioTableAdapter
+            // 
+            this.inventarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // inventarioBindingSource1
+            // 
+            this.inventarioBindingSource1.DataMember = "Inventario";
+            this.inventarioBindingSource1.DataSource = this.dBplugYplayDataSet;
+            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -985,6 +1013,9 @@
             this.GroupTCG.PerformLayout();
             this.GroupJuegosMesa.ResumeLayout(false);
             this.GroupJuegosMesa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dBplugYplayDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1066,5 +1097,9 @@
         private System.Windows.Forms.ComboBox CbNombreL;
         private System.Windows.Forms.ComboBox CbEditorialL;
         private System.Windows.Forms.Label lblTextoEditorialL;
+        private DBplugYplayDataSet dBplugYplayDataSet;
+        private System.Windows.Forms.BindingSource inventarioBindingSource;
+        private DBplugYplayDataSetTableAdapters.InventarioTableAdapter inventarioTableAdapter;
+        private System.Windows.Forms.BindingSource inventarioBindingSource1;
     }
 }

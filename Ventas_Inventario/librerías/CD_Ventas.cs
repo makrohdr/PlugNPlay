@@ -27,11 +27,11 @@ namespace librerías
             return tabla;
         }
 
-        public DataTable Mostrar()
+        public DataTable MostrarCatL()
         {
-            //Llenado de datos Combobox Editorial-Libros (Sin condicion)
+            //Llenado de datos sin repeticiones de Combobox Categoria-Libros (Sin condicion)
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "Select Editorial From Inventario";
+            comando.CommandText = "Select distinct Categoria From Inventario";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using LibreriasNegocio;
 
 namespace Ventas_Inventario.Forms
 {
@@ -18,9 +19,26 @@ namespace Ventas_Inventario.Forms
             InitializeComponent();
         }
 
+        private void MostrarInventario()
+        {
+            try
+            {
+                CN_Ventas inventario = new CN_Ventas();
+                CbCategoriaL.DataSource = inventario.MostrarCategoriaL();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No se ha podido cargar la base de datos");
+            }
+
+        }
+
         private void Venta_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'dBplugYplayDataSet.Inventario' table. You can move, or remove it, as needed.
+            this.inventarioTableAdapter.Fill(this.dBplugYplayDataSet.Inventario);
+
             GroupJuegosMesa.Hide();
             GroupLibros.Hide();
             GroupTCG.Hide();
@@ -53,6 +71,7 @@ namespace Ventas_Inventario.Forms
                 GroupJuegosMesa.Hide();
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
+                MostrarInventario();
 
             }
             if (CbAreaVenta.SelectedIndex == 1)
@@ -66,16 +85,16 @@ namespace Ventas_Inventario.Forms
             }
             if (CbAreaVenta.SelectedIndex == 2)
             {
-                GroupJuegosMesa.Show();
-                GroupJuegosMesa.Location = new Point(12, 72);
+                GroupTCG.Show();
+                GroupTCG.Location = new Point(12, 72);
                 GroupLibros.Hide();
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
             }
             if (CbAreaVenta.SelectedIndex == 3)
             {
-                GroupTCG.Show();
-                GroupTCG.Location = new Point(12, 72);
+                GroupJuegosMesa.Show();
+                GroupJuegosMesa.Location = new Point(12, 72);
                 GroupJuegosMesa.Hide();
                 GroupLibros.Hide();
                 GroupAnnetys.Hide();
