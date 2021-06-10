@@ -14,9 +14,9 @@ namespace LibreriasNegocio
 
         private CD_Ventas OBVentas = new CD_Ventas();
         //Se obtiene la tabla
-        public DataTable MostrarCategoriaL()
+        public string[] MostrarCategoriaL(string categoria)
         {
-            DataTable tabla = new DataTable();
+            
             tabla = OBVentas.MostrarCatL();
             return tabla;
         }

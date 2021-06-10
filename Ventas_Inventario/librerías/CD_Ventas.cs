@@ -26,17 +26,36 @@ namespace librerías
             conexion.cerrarConexion();
             return tabla;
         }
-
-        public DataTable MostrarCatL()
+        
+        public string[] MostrarCatL(string categoria)
         {
             //Llenado de datos sin repeticiones de Combobox Categoria-Libros (Sin condicion)
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "Select distinct Categoria From Inventario";
             leer = comando.ExecuteReader();
-            tabla.Load(leer);
+            string[] tabla = null;
+            while (leer.Read())
+            {
+                string[] valores =
+                {
+                leer[0].ToString(),
+                leer[1].ToString(),
+                leer[2].ToString(),
+                leer[3].ToString(),
+                leer[5].ToString(),
+                leer[6].ToString(),
+                leer[7].ToString(),
+                leer[8].ToString()
+            };
+                tabla = valores;
+            }
+
             conexion.cerrarConexion();
             return tabla;
+
         }
+
+        
 
         /*
         public void Autocompletar()

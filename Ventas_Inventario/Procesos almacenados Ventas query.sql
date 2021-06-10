@@ -15,7 +15,7 @@ END
 go
 Exec VentasCliente @Telefono = '6862338885'
 ----------------------------------------
---Procesos Libros--
+--Procesos Libros-- (No proceso para categoria)
 ----------------------------------------
 GO
 Alter proc [dbo].[VentasCbEditorialL]
@@ -116,7 +116,7 @@ END
 go
 Exec VentaslblPuntajeL @Nombre = 'Naruto', @Volumen = 9, @Portada = 'A'
 -----------------------------------------
---Procesos Annetys--
+--Procesos Annetys-- (No proceso para Categoria)
 -----------------------------------------
 GO
 Create proc [dbo].[VentasCbDescripcionA]
