@@ -98,22 +98,22 @@
             this.txtCantidadJ = new System.Windows.Forms.TextBox();
             this.lblNombreJ = new System.Windows.Forms.Label();
             this.CbAreaVenta = new System.Windows.Forms.ComboBox();
+            this.inventarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dBplugYplayDataSet = new Ventas_Inventario.DBplugYplayDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnGuardar = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.dBplugYplayDataSet = new Ventas_Inventario.DBplugYplayDataSet();
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventarioTableAdapter = new Ventas_Inventario.DBplugYplayDataSetTableAdapters.InventarioTableAdapter();
-            this.inventarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.GroupLibros.SuspendLayout();
             this.GroupAnnetys.SuspendLayout();
             this.GroupTCG.SuspendLayout();
             this.GroupJuegosMesa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBplugYplayDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -396,7 +396,7 @@
             this.GroupAnnetys.Controls.Add(this.lblNombreA);
             this.GroupAnnetys.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupAnnetys.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GroupAnnetys.Location = new System.Drawing.Point(794, 12);
+            this.GroupAnnetys.Location = new System.Drawing.Point(794, 31);
             this.GroupAnnetys.Name = "GroupAnnetys";
             this.GroupAnnetys.Size = new System.Drawing.Size(776, 198);
             this.GroupAnnetys.TabIndex = 40;
@@ -882,6 +882,16 @@
             this.CbAreaVenta.TabIndex = 2;
             this.CbAreaVenta.SelectedIndexChanged += new System.EventHandler(this.CbAreaVenta_SelectedIndexChanged);
             // 
+            // inventarioBindingSource1
+            // 
+            this.inventarioBindingSource1.DataMember = "Inventario";
+            this.inventarioBindingSource1.DataSource = this.dBplugYplayDataSet;
+            // 
+            // dBplugYplayDataSet
+            // 
+            this.dBplugYplayDataSet.DataSetName = "DBplugYplayDataSet";
+            this.dBplugYplayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -964,11 +974,6 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // dBplugYplayDataSet
-            // 
-            this.dBplugYplayDataSet.DataSetName = "DBplugYplayDataSet";
-            this.dBplugYplayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // inventarioBindingSource
             // 
             this.inventarioBindingSource.DataMember = "Inventario";
@@ -977,11 +982,6 @@
             // inventarioTableAdapter
             // 
             this.inventarioTableAdapter.ClearBeforeFill = true;
-            // 
-            // inventarioBindingSource1
-            // 
-            this.inventarioBindingSource1.DataMember = "Inventario";
-            this.inventarioBindingSource1.DataSource = this.dBplugYplayDataSet;
             // 
             // Venta
             // 
@@ -1013,9 +1013,9 @@
             this.GroupTCG.PerformLayout();
             this.GroupJuegosMesa.ResumeLayout(false);
             this.GroupJuegosMesa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBplugYplayDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

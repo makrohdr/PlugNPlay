@@ -27,29 +27,13 @@ namespace librerías
             return tabla;
         }
         
-        public string[] MostrarCatL(string categoria)
+        public DataTable CategoriaL()
         {
             //Llenado de datos sin repeticiones de Combobox Categoria-Libros (Sin condicion)
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "Select distinct Categoria From Inventario";
             leer = comando.ExecuteReader();
-            string[] tabla = null;
-            while (leer.Read())
-            {
-                string[] valores =
-                {
-                leer[0].ToString(),
-                leer[1].ToString(),
-                leer[2].ToString(),
-                leer[3].ToString(),
-                leer[5].ToString(),
-                leer[6].ToString(),
-                leer[7].ToString(),
-                leer[8].ToString()
-            };
-                tabla = valores;
-            }
-
+            tabla.Load(leer);
             conexion.cerrarConexion();
             return tabla;
 

@@ -19,7 +19,29 @@ namespace Ventas_Inventario.Forms
             InitializeComponent();
         }
 
-      
+        private void ComboboxCategoriaL()
+        {
+            try
+            {
+
+                CN_Ventas inventario = new CN_Ventas();
+                DataTable dt;
+                dt = inventario.ObCategoriaL();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    CbCategoriaL.Items.Add(dr["Categoria"].ToString());
+                }
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No se ha podido cargar la base de datos");
+            }
+
+        }
+
+
         private void Venta_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dBplugYplayDataSet.Inventario' table. You can move, or remove it, as needed.
@@ -57,6 +79,7 @@ namespace Ventas_Inventario.Forms
                 GroupJuegosMesa.Hide();
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
+                ComboboxCategoriaL();
                 
 
             }

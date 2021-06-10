@@ -11,13 +11,11 @@ namespace LibreriasNegocio
 {
     public class CN_Ventas
     {
-
-        private CD_Ventas OBVentas = new CD_Ventas();
-        //Se obtiene la tabla
-        public string[] MostrarCategoriaL(string categoria)
+        private CD_Ventas OBinventario = new CD_Ventas();
+        public DataTable ObCategoriaL()
         {
-            
-            tabla = OBVentas.MostrarCatL();
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.CategoriaL();
             return tabla;
         }
     } 

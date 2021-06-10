@@ -25,6 +25,7 @@ namespace Ventas_Inventario.Forms
         public Libros()
         {
             InitializeComponent();
+            
         }
 
         private void Inventario_Load(object sender, EventArgs e)
