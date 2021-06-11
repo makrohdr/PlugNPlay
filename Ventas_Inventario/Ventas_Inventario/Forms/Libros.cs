@@ -18,14 +18,13 @@ namespace Ventas_Inventario.Forms
         CN_Inventario obInventario = new CN_Inventario();
         private string IDinventario = null;
         private bool Editar = false;
-        
 
         DataTable tabla = new DataTable();
 
         public Libros()
         {
             InitializeComponent();
-            
+
         }
 
         private void Inventario_Load(object sender, EventArgs e)
@@ -48,47 +47,18 @@ namespace Ventas_Inventario.Forms
 
         }
 
-
-
-
-        private void txtFiltro2_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-
         private void Limpiar()
         {
             txtNombre.Clear();
             txtVolumen.Clear();
             txtPortada.Clear();
-            cbCategoria.SelectedIndex = 0;
-            cbAuxiliar.SelectedIndex = 0;
+            cbCategoria.Items.Clear();
+            cbAuxiliar.Items.Clear();
             txtPrecio.Clear();
             txtCantidad.Clear();
             txtPuntaje.Clear();
         }
-
-        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbCategoria.SelectedItem.ToString() == "Comic")
-            {
-                cbAuxiliar.Items.Add("Panini");
-                cbAuxiliar.Items.Add("Kamite");
-                cbAuxiliar.Items.Add("Smach");
-            }
-            else if (cbCategoria.SelectedItem.ToString() == "Manga")
-            {
-                cbAuxiliar.Items.Add("Panini");
-                cbAuxiliar.Items.Add("Kamite");
-            }
-            else if (cbCategoria.SelectedItem.ToString() == "Libro")
-            {
-
-            }
-        }
-
-
-
+        
         //crear evento en un nevo textbox para lector de barras 
         /*
         if (e.KeyChar == (char) Keys.Enter)
@@ -97,13 +67,13 @@ namespace Ventas_Inventario.Forms
 	        }
         */
 
-        
+
         private void FiltroSencillo()
         {
             try
             {
                 CN_Inventario filtro = new CN_Inventario();
-                dataGridView1.DataSource = filtro.FiltroSencillo(txtFiltro1.Text ,txtFiltro2.Text);
+                dataGridView1.DataSource = filtro.FiltroSencillo(txtFiltro1.Text, txtFiltro2.Text);
             }
             catch (Exception)
             {
@@ -129,7 +99,7 @@ namespace Ventas_Inventario.Forms
         {
             try
             {
-                if (txtFiltro2.Text != "" && txtFiltro4.Text == "" || txtFiltro2.Text != "" && txtFiltro4.Text == "")
+                if (txtFiltro2.Text != "" && txtFiltro4.Text == "" || txtFiltro4.Text != "" && txtFiltro2.Text == "")
                 {
                     obInventario.FiltroSencillo(txtFiltro1.Text, txtFiltro2.Text);
                 }
@@ -143,30 +113,41 @@ namespace Ventas_Inventario.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("No se ha podido encontrar un articulo.");
+                //MessageBox.Show("No se ha podido encontrar un articulo.");
                 txtFiltro2.Focus();
             }
-
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
         }
+
         //Regresar a la tabla a la normalidad
         private void btnTabla_Click(object sender, EventArgs e)
         {
-            txtFiltro1.SelectedIndex = 0;
+            txtFiltro1.Items.Clear();
             txtFiltro2.Clear();
-            txtFiltro3.SelectedIndex = 0;
+            txtFiltro3.Items.Clear();
             txtFiltro4.Clear();
             MostrarInventario();
         }
 
+        //seleccionar categoria
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCategoria.SelectedItem.ToString() == "Comic")
+            {
+                cbAuxiliar.Items.Add("Panini");
+                cbAuxiliar.Items.Add("Kamite");
+                cbAuxiliar.Items.Add("Smash");
+            }
+            else if (cbCategoria.SelectedItem.ToString() == "Manga")
+            {
+                cbAuxiliar.Items.Add("Panini");
+                cbAuxiliar.Items.Add("Kamite");
+            }
+            else if (cbCategoria.SelectedItem.ToString() == "Libro")
+            {
+
+            }
+        }
+        
         //Guardar
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -174,7 +155,7 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    obInventario.Insertar(txtNombre.Text, txtVolumen.Text, txtPortada.Text, cbCategoria.Text, cbAuxiliar.Text, 
+                    obInventario.Insertar(txtNombre.Text, txtVolumen.Text, txtPortada.Text, cbCategoria.Text, cbAuxiliar.Text,
                         txtPrecio.Text, txtCantidad.Text, txtPuntaje.Text);
                     MessageBox.Show("Tus datos se insertaron");
                     MostrarInventario();
@@ -208,7 +189,7 @@ namespace Ventas_Inventario.Forms
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 Editar = true;
-                
+
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
                 txtVolumen.Text = dataGridView1.CurrentRow.Cells["Volumen"].Value.ToString();
                 txtPortada.Text = dataGridView1.CurrentRow.Cells["Portada"].Value.ToString();
@@ -253,7 +234,6 @@ namespace Ventas_Inventario.Forms
             }
         }
 
-
         //exportar a excel
         private void btnExportar_Click(object sender, EventArgs e)
         {
@@ -292,15 +272,5 @@ namespace Ventas_Inventario.Forms
             ExportarExcel.Visible = true;
         }
         #endregion
-
-        //no usar, lo coloque por error
-        
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        
-    }
+    }    
 }

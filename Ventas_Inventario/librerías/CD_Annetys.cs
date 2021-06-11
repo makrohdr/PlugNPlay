@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
+using System.Data;
 
 namespace librerías
 {
-    public class CD_Inventario
+    public class CD_Annetys
     {
         private Conexion conexion = new Conexion();
 
@@ -21,7 +20,7 @@ namespace librerías
         public DataTable FiltroSencillo(string Auxiliar1, string Auxiliar2)
         {
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "Select * from Inventario where " + Auxiliar1 + " like '" + Auxiliar2 + "%'" ;
+            comando.CommandText = "Select * from Annetys where " + Auxiliar1 + " like '" + Auxiliar2 + "%'";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
@@ -31,7 +30,7 @@ namespace librerías
         public DataTable FiltroAvanzado(string Auxiliar1, string Auxiliar2, string Auxiliar3, string Auxiliar4)
         {
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "Select * from Inventario where " + Auxiliar1 + " like '" + Auxiliar2 + "%' and " + Auxiliar3 + " like '" + Auxiliar4 + "%'";
+            comando.CommandText = "Select * from Annetys where " + Auxiliar1 + " like '" + Auxiliar2 + "%' and " + Auxiliar3 + " like '" + Auxiliar4 + "%'";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
@@ -41,54 +40,45 @@ namespace librerías
 
         public DataTable Mostrar()
         {
-            //Procedimiento almacenado (primero se ocupa crear uno)
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "MostrarInventario";
-            comando.CommandType = CommandType.StoredProcedure;
+            comando.CommandText = "Select * from Annetys";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
             return tabla;
         }
 
-
-        public void Insertar(string nombre, string volumen, string portada, string categoria, string editorial, double precio,
-            int cantidad, int punataje)
+        public void Insertar(string Categoria, string Nombre, string Descripcion, double Precio, int Cantidad, int Puntaje)
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "AgregarInventario";
+            comando.CommandText = "AgregarAnnetys";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@volumen", volumen);
-            comando.Parameters.AddWithValue("@portada", portada);
-            comando.Parameters.AddWithValue("@categoria", categoria);
-            comando.Parameters.AddWithValue("@empresa", editorial);
-            comando.Parameters.AddWithValue("@precio", precio);
-            comando.Parameters.AddWithValue("@cantidad", precio);
-            comando.Parameters.AddWithValue("@puntaje", punataje);
+            comando.Parameters.AddWithValue("@Categoria", Categoria);
+            comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Descripcion", Descripcion);
+            comando.Parameters.AddWithValue("@Precio", Precio);
+            comando.Parameters.AddWithValue("@Cantidad", Cantidad);
+            comando.Parameters.AddWithValue("@Puntaje", Puntaje);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
-            
+
         }
 
-        public void Editar(string nombre, string volumen, string portada, string categoria, string editorial, double precio,
-            int cantidad, int punataje, int id)
+        public void Editar(string Categoria, string Nombre, string Descripcion, double Precio, int Cantidad, int Puntaje, int IDannetys)
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "EditarInventario";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@volumen", volumen);
-            comando.Parameters.AddWithValue("@portada", portada);
-            comando.Parameters.AddWithValue("@categoria", categoria);
-            comando.Parameters.AddWithValue("@empresa", editorial);
-            comando.Parameters.AddWithValue("@precio", precio);
-            comando.Parameters.AddWithValue("@cantidad", precio);
-            comando.Parameters.AddWithValue("@puntaje", punataje);
-            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@Categoria", Categoria);
+            comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Descripcion", Descripcion);
+            comando.Parameters.AddWithValue("@Precio", Precio);
+            comando.Parameters.AddWithValue("@Cantidad", Cantidad);
+            comando.Parameters.AddWithValue("@Puntaje", Puntaje);
+            comando.Parameters.AddWithValue("@IDannetys", IDannetys);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
@@ -98,9 +88,9 @@ namespace librerías
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "EliminarInventario";
+            comando.CommandText = "EliminarAnnetys";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@IDannetys", id);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();

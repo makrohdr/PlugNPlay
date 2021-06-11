@@ -25,6 +25,7 @@ namespace LibreriasNegocio
             tabla = OBinventario.FiltroSencillo(Aux1, Aux2);
             return tabla;
         }
+
         public DataTable FiltroAvanzado(string Aux1, string Aux2, string Aux3, string Aux4)
         {
             DataTable tabla = new DataTable();

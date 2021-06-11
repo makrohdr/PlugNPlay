@@ -67,10 +67,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(127, 121);
+            this.dataGridView1.Location = new System.Drawing.Point(127, 106);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(661, 317);
+            this.dataGridView1.Size = new System.Drawing.Size(621, 347);
             this.dataGridView1.TabIndex = 20;
             // 
             // btnGuardar
@@ -261,7 +261,10 @@
             // btnEditar
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Location = new System.Drawing.Point(609, 50);
+            this.btnEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEditar.Location = new System.Drawing.Point(566, 64);
+            this.btnEditar.MaximumSize = new System.Drawing.Size(88, 23);
+            this.btnEditar.MinimumSize = new System.Drawing.Size(88, 23);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(88, 23);
             this.btnEditar.TabIndex = 101;
@@ -272,7 +275,10 @@
             // btnEliminar
             // 
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.Location = new System.Drawing.Point(703, 50);
+            this.btnEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEliminar.Location = new System.Drawing.Point(660, 64);
+            this.btnEliminar.MaximumSize = new System.Drawing.Size(88, 23);
+            this.btnEliminar.MinimumSize = new System.Drawing.Size(88, 23);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(88, 23);
             this.btnEliminar.TabIndex = 102;
@@ -283,12 +289,15 @@
             // btnExportar
             // 
             this.btnExportar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExportar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportar.IconChar = FontAwesome.Sharp.IconChar.FontAwesomeFlag;
             this.btnExportar.IconColor = System.Drawing.Color.Blue;
             this.btnExportar.IconSize = 32;
-            this.btnExportar.Location = new System.Drawing.Point(609, 6);
+            this.btnExportar.Location = new System.Drawing.Point(566, 20);
+            this.btnExportar.MaximumSize = new System.Drawing.Size(182, 38);
+            this.btnExportar.MinimumSize = new System.Drawing.Size(182, 38);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Rotation = 0D;
             this.btnExportar.Size = new System.Drawing.Size(182, 38);
@@ -300,7 +309,11 @@
             // 
             // btsBuscar
             // 
+            this.btsBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btsBuscar.Location = new System.Drawing.Point(360, 50);
+            this.btsBuscar.MaximumSize = new System.Drawing.Size(75, 50);
+            this.btsBuscar.MinimumSize = new System.Drawing.Size(75, 50);
             this.btsBuscar.Name = "btsBuscar";
             this.btsBuscar.Size = new System.Drawing.Size(75, 50);
             this.btsBuscar.TabIndex = 52;
@@ -310,13 +323,13 @@
             // 
             // lblBuscar
             // 
-            this.lblBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBuscar.AutoSize = true;
             this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscar.ForeColor = System.Drawing.Color.White;
             this.lblBuscar.Location = new System.Drawing.Point(173, 24);
+            this.lblBuscar.MaximumSize = new System.Drawing.Size(120, 20);
+            this.lblBuscar.MinimumSize = new System.Drawing.Size(120, 20);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(120, 20);
             this.lblBuscar.TabIndex = 35;
@@ -324,14 +337,19 @@
             // 
             // txtFiltro2
             // 
+            this.txtFiltro2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFiltro2.Location = new System.Drawing.Point(254, 52);
+            this.txtFiltro2.MaximumSize = new System.Drawing.Size(100, 20);
+            this.txtFiltro2.MinimumSize = new System.Drawing.Size(100, 20);
             this.txtFiltro2.Name = "txtFiltro2";
             this.txtFiltro2.Size = new System.Drawing.Size(100, 20);
             this.txtFiltro2.TabIndex = 51;
-            this.txtFiltro2.TextChanged += new System.EventHandler(this.txtFiltro2_TextChanged);
             // 
             // txtFiltro1
             // 
+            this.txtFiltro1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFiltro1.FormattingEnabled = true;
             this.txtFiltro1.Items.AddRange(new object[] {
             "Nombre",
@@ -340,13 +358,17 @@
             "Categoria",
             "Editorial"});
             this.txtFiltro1.Location = new System.Drawing.Point(127, 52);
+            this.txtFiltro1.MaximumSize = new System.Drawing.Size(121, 0);
+            this.txtFiltro1.MinimumSize = new System.Drawing.Size(121, 0);
             this.txtFiltro1.Name = "txtFiltro1";
             this.txtFiltro1.Size = new System.Drawing.Size(121, 21);
             this.txtFiltro1.TabIndex = 50;
             // 
             // btnTabla
             // 
-            this.btnTabla.Location = new System.Drawing.Point(467, 40);
+            this.btnTabla.Location = new System.Drawing.Point(462, 63);
+            this.btnTabla.MaximumSize = new System.Drawing.Size(75, 35);
+            this.btnTabla.MinimumSize = new System.Drawing.Size(75, 35);
             this.btnTabla.Name = "btnTabla";
             this.btnTabla.Size = new System.Drawing.Size(75, 35);
             this.btnTabla.TabIndex = 103;
@@ -356,6 +378,8 @@
             // 
             // txtFiltro3
             // 
+            this.txtFiltro3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFiltro3.FormattingEnabled = true;
             this.txtFiltro3.Items.AddRange(new object[] {
             "Nombre",
@@ -364,23 +388,31 @@
             "Categoria",
             "Editorial"});
             this.txtFiltro3.Location = new System.Drawing.Point(127, 79);
+            this.txtFiltro3.MaximumSize = new System.Drawing.Size(121, 0);
+            this.txtFiltro3.MinimumSize = new System.Drawing.Size(121, 0);
             this.txtFiltro3.Name = "txtFiltro3";
             this.txtFiltro3.Size = new System.Drawing.Size(121, 21);
             this.txtFiltro3.TabIndex = 104;
             // 
             // txtFiltro4
             // 
+            this.txtFiltro4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFiltro4.Location = new System.Drawing.Point(254, 79);
+            this.txtFiltro4.MaximumSize = new System.Drawing.Size(100, 20);
+            this.txtFiltro4.MinimumSize = new System.Drawing.Size(100, 20);
             this.txtFiltro4.Name = "txtFiltro4";
             this.txtFiltro4.Size = new System.Drawing.Size(100, 20);
             this.txtFiltro4.TabIndex = 105;
             // 
-            // Inventario
+            // Libros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(760, 465);
             this.Controls.Add(this.txtFiltro3);
             this.Controls.Add(this.txtFiltro4);
             this.Controls.Add(this.btnTabla);
@@ -409,7 +441,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Inventario";
+            this.Name = "Libros";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

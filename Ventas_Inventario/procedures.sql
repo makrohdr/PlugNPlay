@@ -88,6 +88,38 @@ go
 
 exec AgregarInventario 'Oreigaru', '1', 'A', 'Manga', 'Kamite', '85', '1', '45'
 go
+-----------------------------------------------------------------------
+create proc AgregarAnnetys
+@Categoria varchar(100),
+@Nombre varchar(100),
+@Descripcion varchar(100),
+@Precio int,
+@Cantidad int,
+@Puntaje int
+as
+insert into Annetys values(@Categoria,@Nombre,@Descripcion,@Precio,@Cantidad,@Puntaje)
+
+go
+
+create proc EditarAnnetys
+@Categoria varchar(100),
+@Nombre varchar(100),
+@Descripcion varchar(100),
+@Precio int,
+@Cantidad int,
+@Puntaje int,
+@IDannetys int
+as
+UPDATE Annetys SET Categoria = @Categoria, Nombre = @Nombre, Descripcion = @Descripcion, Precio = @Precio, 
+		Cantidad = @Cantidad, @Puntaje = @Puntaje
+where IDAnnetys = @IDannetys;
+
+go
+
+create proc EliminarAnnetys
+@IDannetys int
+as
+delete from Annetys where IDAnnetys=@IDannetys
 ------------------------------------------------------------------------------------------------------------------
 --Crear tablas
 create table Inventario(
