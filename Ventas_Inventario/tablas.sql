@@ -139,6 +139,7 @@ RedSocial varchar(100),
 Contacto varchar(100),
 Nombre varchar(100),
 Apellido varchar(100),
+GrupoPiña char(2),
 Puntaje int)
 
 drop table ReporteVentaLibros;
@@ -184,36 +185,40 @@ create table TCG(
 IDTCG int identity (1,1) primary key,
 Nombre Varchar(100),
 Producto varchar(100),
+Descripcion varchar(100),
 Precio int,
 Cantidad int,
 Puntaje int);
 
 create table ReporteVentasTCG(
-ReporteTCG int identity (1,1) primary key,
+IDReporteTCG int identity (1,1) primary key,
 IDTCG int foreign key (IDTCG) references TCG(IDTCG),
 IDClientes varchar(100) foreign key (IDClientes) references Clientes(IDTelefono),
 Nombre Varchar(100),
 Producto varchar(100),
+Descripcion varchar(100),
 Precio int,
 Cantidad int,
 Puntaje int);
 
 create table Annetys(
 IDAnnetys int identity(1,1) primary key,
-Categoria varchar(100),
+CategoriaGeneral varchar(100),
+CategoriaEspecifica varchar(100),
 Nombre varchar(100),
 Descripcion varchar(100),
 Precio int,
 Cantidad int,
-Punatje int)
+Puntaje int)
 
 create table ReporteVentasAnnetys(
 IDReporteAnnetys int identity(1,1) primary key,
 IDAnnetys int foreign key (IDAnnetys) references Annetys(IDAnnetys),
 IDClientes varchar(100) foreign key (IDClientes) references Clientes(IDTelefono),
-Categoria varchar(100),
+CategoriaGeneral varchar(100),
+CategoriaEspecifica varchar(100),
 Nombre varchar(100),
 Descripcion varchar(100),
 Precio int,
 Cantidad int,
-Punatje int)
+Puntaje int)

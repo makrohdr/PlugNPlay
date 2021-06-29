@@ -36,14 +36,14 @@ namespace Ventas_Inventario
 
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(203, 24, 21);
-            public static Color color2 = Color.FromArgb(17, 27, 153);
-            public static Color color3 = Color.FromArgb(83, 64, 13);
-            public static Color color4 = Color.FromArgb(103, 21, 142);
+            public static Color color1 = Color.FromArgb(255, 24, 21);
+            public static Color color2 = Color.FromArgb(0, 194, 0);
+            public static Color color3 = Color.FromArgb(206, 245, 18);
+            public static Color color4 = Color.FromArgb(203, 24, 128);
             public static Color color5 = Color.FromArgb(200, 255, 255);
         }
 
-        //Methods
+        //metodos
         private void ActivateButton(object senderBtn, Color color)
         {
             if (senderBtn != null)
@@ -51,7 +51,7 @@ namespace Ventas_Inventario
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(255, 211, 0);
+                currentBtn.BackColor = Color.FromArgb(0, 0, 128);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -67,15 +67,15 @@ namespace Ventas_Inventario
                 IconCurrentChild.IconColor = color;
             }
         }
-
+         //Cuando los botones de desactivan.
         private void DisableButton()
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(255, 128, 0);
-                currentBtn.ForeColor = Color.Black;
+                currentBtn.BackColor = SystemColors.Desktop;
+                currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Black;
+                currentBtn.IconColor = Color.White;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -160,18 +160,22 @@ namespace Ventas_Inventario
         //btnlibros
         private void iconButton2_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Forms.Libros());
         }
         private void brnJuegosMesa_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Forms.JuegosDeMesa());
         }
         private void btnTCG_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Forms.TCG());
         }
         private void btnAnnetys_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new Forms.Annetys());
         }
         #endregion
