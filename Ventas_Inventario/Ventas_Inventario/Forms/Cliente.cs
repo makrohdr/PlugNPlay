@@ -33,7 +33,28 @@ namespace Ventas_Inventario.Forms
             dataGridView1.DataSource = cliente.MostrarCl();
         }
 
+        private void Limpiar()
+        {
+            txtTelefono.Clear();
+            txtRedSocial.Items.Clear();
+            txtContacto.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtPuntaje.Clear();
+        }
 
+        //CheckBox para activar el textbox de puntaje.
+        private void CBpuntaje_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBpuntaje.Checked == true)
+            {
+                txtPuntaje.Enabled = true;
+            }
+            else if (CBpuntaje.Checked == false)
+            {
+                txtPuntaje.Enabled = false;
+            }
+        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -92,16 +113,6 @@ namespace Ventas_Inventario.Forms
             }
         }
 
-        private void Limpiar()
-        {
-            txtTelefono.Clear();
-            txtRedSocial.SelectedIndex = 0;
-            txtContacto.Clear();
-            txtNombre.Clear();
-            txtApellido.Clear();
-            txtPuntaje.Clear();
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -128,6 +139,7 @@ namespace Ventas_Inventario.Forms
                 MessageBox.Show("No se pudo realizar la operacion.");
             }
         }
+
 
         private void btnExportar_Click(object sender, EventArgs e)
         {
@@ -166,5 +178,7 @@ namespace Ventas_Inventario.Forms
             ExportarExcel.Visible = true;
         }
         #endregion
+
+        
     }
 }

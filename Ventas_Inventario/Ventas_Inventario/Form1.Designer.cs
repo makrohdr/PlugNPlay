@@ -55,6 +55,7 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clock = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelSubMenuInventario.SuspendLayout();
             this.panelimg.SuspendLayout();
@@ -72,6 +73,7 @@
             // 
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Controls.Add(this.btnReportes);
             this.panelMenu.Controls.Add(this.btnDollar);
             this.panelMenu.Controls.Add(this.btnClientes);
@@ -82,7 +84,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(179, 582);
+            this.panelMenu.Size = new System.Drawing.Size(179, 667);
             this.panelMenu.TabIndex = 0;
             // 
             // btnReportes
@@ -102,7 +104,7 @@
             this.btnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnReportes.Rotation = 0D;
             this.btnReportes.Size = new System.Drawing.Size(179, 50);
-            this.btnReportes.TabIndex = 8;
+            this.btnReportes.TabIndex = 9;
             this.btnReportes.Text = "Reportes de ventas";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -126,7 +128,7 @@
             this.btnDollar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnDollar.Rotation = 0D;
             this.btnDollar.Size = new System.Drawing.Size(179, 50);
-            this.btnDollar.TabIndex = 6;
+            this.btnDollar.TabIndex = 8;
             this.btnDollar.Text = "Tipo de cambio";
             this.btnDollar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDollar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -150,7 +152,7 @@
             this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnClientes.Rotation = 0D;
             this.btnClientes.Size = new System.Drawing.Size(179, 50);
-            this.btnClientes.TabIndex = 4;
+            this.btnClientes.TabIndex = 7;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -188,7 +190,7 @@
             this.btnAnnetys.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
             this.btnAnnetys.Rotation = 0D;
             this.btnAnnetys.Size = new System.Drawing.Size(179, 50);
-            this.btnAnnetys.TabIndex = 7;
+            this.btnAnnetys.TabIndex = 6;
             this.btnAnnetys.Text = "Annetys";
             this.btnAnnetys.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnnetys.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -213,7 +215,7 @@
             this.btnTCG.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
             this.btnTCG.Rotation = 0D;
             this.btnTCG.Size = new System.Drawing.Size(179, 50);
-            this.btnTCG.TabIndex = 6;
+            this.btnTCG.TabIndex = 5;
             this.btnTCG.Text = "TCG";
             this.btnTCG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTCG.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -238,7 +240,7 @@
             this.brnJuegosMesa.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
             this.brnJuegosMesa.Rotation = 0D;
             this.brnJuegosMesa.Size = new System.Drawing.Size(179, 50);
-            this.brnJuegosMesa.TabIndex = 5;
+            this.brnJuegosMesa.TabIndex = 4;
             this.brnJuegosMesa.Text = "Juegos de mesa";
             this.brnJuegosMesa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.brnJuegosMesa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -263,7 +265,7 @@
             this.btnLibros.Padding = new System.Windows.Forms.Padding(35, 0, 20, 0);
             this.btnLibros.Rotation = 0D;
             this.btnLibros.Size = new System.Drawing.Size(179, 50);
-            this.btnLibros.TabIndex = 4;
+            this.btnLibros.TabIndex = 3;
             this.btnLibros.Text = "Libros";
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLibros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -440,7 +442,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(179, 45);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(783, 537);
+            this.panelDesktop.Size = new System.Drawing.Size(783, 622);
             this.panelDesktop.TabIndex = 3;
             // 
             // lblFecha
@@ -450,7 +452,7 @@
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Pristina", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Gold;
-            this.lblFecha.Location = new System.Drawing.Point(189, 356);
+            this.lblFecha.Location = new System.Drawing.Point(189, 399);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(244, 126);
             this.lblFecha.TabIndex = 3;
@@ -463,7 +465,7 @@
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Pristina", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Gold;
-            this.lblHora.Location = new System.Drawing.Point(189, 258);
+            this.lblHora.Location = new System.Drawing.Point(189, 301);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(221, 126);
             this.lblHora.TabIndex = 2;
@@ -474,7 +476,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(255, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(255, 124);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(3);
             this.pictureBox1.Size = new System.Drawing.Size(200, 146);
@@ -486,11 +488,20 @@
             this.clock.Enabled = true;
             this.clock.Tick += new System.EventHandler(this.clock_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 567);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(179, 100);
+            this.panel1.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 582);
+            this.ClientSize = new System.Drawing.Size(962, 667);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.PanelTitulo);
@@ -543,6 +554,7 @@
         private FontAwesome.Sharp.IconButton btnAnnetys;
         private FontAwesome.Sharp.IconButton btnTCG;
         private FontAwesome.Sharp.IconButton btnReportes;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

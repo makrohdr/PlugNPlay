@@ -45,6 +45,9 @@
             this.btnExportar = new FontAwesome.Sharp.IconButton();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.CBpuntaje = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +108,7 @@
             this.lblPuntaje.AutoSize = true;
             this.lblPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntaje.ForeColor = System.Drawing.Color.White;
-            this.lblPuntaje.Location = new System.Drawing.Point(12, 266);
+            this.lblPuntaje.Location = new System.Drawing.Point(12, 310);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(75, 20);
             this.lblPuntaje.TabIndex = 4;
@@ -120,7 +123,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(16, 241);
+            this.txtApellido.Location = new System.Drawing.Point(14, 241);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(92, 20);
             this.txtApellido.TabIndex = 4;
@@ -128,10 +131,10 @@
             // txtPuntaje
             // 
             this.txtPuntaje.Enabled = false;
-            this.txtPuntaje.Location = new System.Drawing.Point(16, 289);
+            this.txtPuntaje.Location = new System.Drawing.Point(14, 333);
             this.txtPuntaje.Name = "txtPuntaje";
             this.txtPuntaje.Size = new System.Drawing.Size(92, 20);
-            this.txtPuntaje.TabIndex = 5;
+            this.txtPuntaje.TabIndex = 6;
             this.txtPuntaje.Text = "0";
             // 
             // dataGridView1
@@ -150,10 +153,10 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(16, 339);
+            this.btnGuardar.Location = new System.Drawing.Point(14, 400);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(92, 23);
-            this.btnGuardar.TabIndex = 6;
+            this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -247,13 +250,47 @@
             this.txtTelefono.Size = new System.Drawing.Size(94, 20);
             this.txtTelefono.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(14, 287);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(92, 20);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(12, 264);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.TabIndex = 103;
+            this.label2.Text = "Grupo piña:";
+            // 
+            // CBpuntaje
+            // 
+            this.CBpuntaje.AutoSize = true;
+            this.CBpuntaje.Location = new System.Drawing.Point(112, 336);
+            this.CBpuntaje.Name = "CBpuntaje";
+            this.CBpuntaje.Size = new System.Drawing.Size(15, 14);
+            this.CBpuntaje.TabIndex = 6;
+            this.CBpuntaje.UseVisualStyleBackColor = true;
+            this.CBpuntaje.CheckedChanged += new System.EventHandler(this.CBpuntaje_CheckedChanged);
+            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
+            this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CBpuntaje);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.btnExportar);
@@ -299,5 +336,8 @@
         private FontAwesome.Sharp.IconButton btnExportar;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox CBpuntaje;
     }
 }
