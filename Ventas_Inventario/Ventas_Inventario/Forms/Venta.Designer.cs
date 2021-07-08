@@ -987,7 +987,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
+            this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(800, 553);
             this.Controls.Add(this.GroupJuegosMesa);
             this.Controls.Add(this.GroupTCG);

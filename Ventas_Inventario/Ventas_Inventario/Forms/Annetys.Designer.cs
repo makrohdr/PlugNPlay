@@ -54,6 +54,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,13 +134,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscar.ForeColor = System.Drawing.Color.White;
-            this.lblBuscar.Location = new System.Drawing.Point(173, 25);
-            this.lblBuscar.MaximumSize = new System.Drawing.Size(120, 20);
-            this.lblBuscar.MinimumSize = new System.Drawing.Size(120, 20);
+            this.lblBuscar.Location = new System.Drawing.Point(185, 25);
+            this.lblBuscar.MaximumSize = new System.Drawing.Size(125, 24);
+            this.lblBuscar.MinimumSize = new System.Drawing.Size(120, 24);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(120, 20);
+            this.lblBuscar.Size = new System.Drawing.Size(125, 24);
             this.lblBuscar.TabIndex = 124;
-            this.lblBuscar.Text = "Buscar objeto";
+            this.lblBuscar.Text = "Buscar objeto:";
             // 
             // btsBuscar
             // 
@@ -211,7 +213,7 @@
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.Color.White;
-            this.lblCantidad.Location = new System.Drawing.Point(12, 284);
+            this.lblCantidad.Location = new System.Drawing.Point(12, 339);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(86, 20);
             this.lblCantidad.TabIndex = 119;
@@ -224,41 +226,41 @@
             "Peluche",
             "Miselanio",
             "Figuras"});
-            this.cbCategoria.Location = new System.Drawing.Point(16, 48);
+            this.cbCategoria.Location = new System.Drawing.Point(16, 68);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(88, 21);
-            this.cbCategoria.TabIndex = 109;
+            this.cbCategoria.TabIndex = 1;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(16, 388);
+            this.btnGuardar.Location = new System.Drawing.Point(16, 434);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(88, 23);
-            this.btnGuardar.TabIndex = 114;
+            this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtPuntaje
             // 
-            this.txtPuntaje.Location = new System.Drawing.Point(16, 353);
+            this.txtPuntaje.Location = new System.Drawing.Point(16, 408);
             this.txtPuntaje.Name = "txtPuntaje";
             this.txtPuntaje.Size = new System.Drawing.Size(88, 20);
-            this.txtPuntaje.TabIndex = 113;
+            this.txtPuntaje.TabIndex = 7;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(16, 307);
+            this.txtCantidad.Location = new System.Drawing.Point(16, 362);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(88, 20);
-            this.txtCantidad.TabIndex = 112;
+            this.txtCantidad.TabIndex = 6;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(16, 261);
+            this.txtPrecio.Location = new System.Drawing.Point(16, 316);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(88, 20);
-            this.txtPrecio.TabIndex = 111;
+            this.txtPrecio.TabIndex = 5;
             // 
             // lblPuntaje
             // 
@@ -268,7 +270,7 @@
             this.lblPuntaje.AutoSize = true;
             this.lblPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntaje.ForeColor = System.Drawing.Color.White;
-            this.lblPuntaje.Location = new System.Drawing.Point(12, 330);
+            this.lblPuntaje.Location = new System.Drawing.Point(12, 385);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(75, 20);
             this.lblPuntaje.TabIndex = 118;
@@ -282,7 +284,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.White;
-            this.lblPrecio.Location = new System.Drawing.Point(12, 238);
+            this.lblPrecio.Location = new System.Drawing.Point(12, 293);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(64, 20);
             this.lblPrecio.TabIndex = 117;
@@ -298,9 +300,9 @@
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
             this.lblCategoria.Location = new System.Drawing.Point(12, 25);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(92, 20);
+            this.lblCategoria.Size = new System.Drawing.Size(87, 40);
             this.lblCategoria.TabIndex = 116;
-            this.lblCategoria.Text = "Categoria:";
+            this.lblCategoria.Text = "Categoria\r\ngeneral:";
             // 
             // lblNombre
             // 
@@ -310,7 +312,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(12, 72);
+            this.lblNombre.Location = new System.Drawing.Point(12, 157);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(76, 20);
             this.lblNombre.TabIndex = 115;
@@ -318,10 +320,10 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(16, 95);
+            this.txtNombre.Location = new System.Drawing.Point(16, 180);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(88, 20);
-            this.txtNombre.TabIndex = 106;
+            this.txtNombre.TabIndex = 3;
             // 
             // dataGridView1
             // 
@@ -361,7 +363,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.Color.White;
-            this.lblDescripcion.Location = new System.Drawing.Point(12, 118);
+            this.lblDescripcion.Location = new System.Drawing.Point(12, 203);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(108, 20);
             this.lblDescripcion.TabIndex = 135;
@@ -369,11 +371,38 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(16, 141);
+            this.txtDescripcion.Location = new System.Drawing.Point(16, 226);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(88, 94);
-            this.txtDescripcion.TabIndex = 134;
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtDescripcion.Size = new System.Drawing.Size(88, 64);
+            this.txtDescripcion.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Peluche",
+            "Miselanio",
+            "Figuras"});
+            this.comboBox1.Location = new System.Drawing.Point(16, 135);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(88, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 40);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "Categoria\r\nEspeficica:";
             // 
             // Annetys
             // 
@@ -381,6 +410,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(760, 465);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtFiltro3);
@@ -440,5 +471,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

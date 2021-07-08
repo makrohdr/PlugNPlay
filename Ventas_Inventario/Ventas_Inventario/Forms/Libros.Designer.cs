@@ -411,7 +411,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(160)))));
+            this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(760, 465);
             this.Controls.Add(this.txtFiltro3);
             this.Controls.Add(this.txtFiltro4);
