@@ -39,23 +39,35 @@ namespace librerías
 
         }
 
-        
-
-        /*
-        public void Autocompletar()
+        public DataTable NombreL(string Categoria)
         {
-            //procedimiento almacenado
+            //Llenado de datos con filtro CategoriaL (Proceso almacenado)
             comando.Connection = conexion.abriConexion();
-            AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
-            comando.CommandText = "Select * From Inventario";
+            comando.CommandText = "VentasCbNombreL";
+            comando.Parameters.AddWithValue("@Categoria", Categoria);
+            comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             tabla.Load(leer);
-            SqlDataAdapter adaptador = new SqlDataAdapter("Select * From Inventario", conexion);
-            comando.Connection = conexion.cerrarConexion();
-            comando.Parameters.Clear();
+            conexion.cerrarConexion();
+          //comando.Parameters.Clear();
+            return tabla;
+
+        }
+
+
+
+        /*public DataTable Mostrar()
+        {
+            //Procedimiento almacenado (primero se ocupa crear uno)
+            comando.Connection = conexion.abriConexion();
+            comando.CommandText = "MostrarInventario";
+            comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.cerrarConexion();
+            return tabla;
         }
         */
-
 
     }
 }

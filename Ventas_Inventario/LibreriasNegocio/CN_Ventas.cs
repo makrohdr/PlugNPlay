@@ -18,5 +18,11 @@ namespace LibreriasNegocio
             tabla = OBinventario.CategoriaL();
             return tabla;
         }
+        public DataTable OBNombreL(string Categoria)
+        {
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.NombreL(Categoria);
+            return tabla;
+        }
     } 
 }
