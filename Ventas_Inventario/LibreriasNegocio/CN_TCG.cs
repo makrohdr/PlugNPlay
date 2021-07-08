@@ -8,22 +8,22 @@ using librerías;
 
 namespace LibreriasNegocio
 {
-    public class CN_Annetys
+    public class CN_TCG
     {
-        private CD_Annetys OBannetysCD = new CD_Annetys();
+        CD_TCG OBtcg_CD = new CD_TCG();
 
         #region filtro
         public DataTable FiltroSencillo(string Aux1, string Aux2)
         {
             DataTable tabla = new DataTable();
-            tabla = OBannetysCD.FiltroSencillo(Aux1, Aux2);
+            tabla = OBtcg_CD.FiltroSencillo(Aux1, Aux2);
             return tabla;
         }
 
         public DataTable FiltroAvanzado(string Aux1, string Aux2, string Aux3, string Aux4)
         {
             DataTable tabla = new DataTable();
-            tabla = OBannetysCD.FiltroAvanzado(Aux1, Aux2, Aux3, Aux4);
+            tabla = OBtcg_CD.FiltroAvanzado(Aux1, Aux2, Aux3, Aux4);
             return tabla;
         }
         #endregion
@@ -32,25 +32,25 @@ namespace LibreriasNegocio
         public DataTable MostrarAnnetys()
         {
             DataTable tabla = new DataTable();
-            tabla = OBannetysCD.Mostrar();
+            tabla = OBtcg_CD.Mostrar();
             return tabla;
         }
 
-        public void Insertar(string categoriaGeneral, string categoriaEspecifica, string nombre, string descripcion, string precio, string cantidad, string puntaje)
+        public void Insertar(string nombre, string producto, string descripcion, string precio, string cantidad, string puntaje)
         {
-            OBannetysCD.Insertar(categoriaGeneral, categoriaEspecifica, nombre, descripcion, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje));
+            OBtcg_CD.Insertar(nombre, producto, descripcion, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje));
         }
 
-        public void Editar(string categoriaGeneral, string categoriaEspecifica, string nombre, string descripcion, string precio, string cantidad, string puntaje, 
+        public void Editar(string nombre, string producto, string descripcion, string precio, string cantidad, string puntaje,
             string id)
         {
-            OBannetysCD.Editar(categoriaGeneral, categoriaEspecifica, nombre, descripcion, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje), 
+            OBtcg_CD.Editar(nombre, producto, descripcion, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje),
                 int.Parse(id));
         }
 
         public void Eliminar(string id)
         {
-            OBannetysCD.Eliminar(int.Parse(id));
+            OBtcg_CD.Eliminar(int.Parse(id));
         }
         #endregion
     }

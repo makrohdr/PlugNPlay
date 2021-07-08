@@ -30,7 +30,7 @@ namespace Ventas_Inventario.Forms
 
         private void Limpiar()
         {
-            cbCategoria.Items.Clear();
+            cbCategoriaGen.Items.Clear();
             txtNombre.Clear();
             txtDescripcion.Clear();
             txtPrecio.Clear();
@@ -39,12 +39,13 @@ namespace Ventas_Inventario.Forms
         }
 
         #region area de busqueda
+        
         #region filtros
         private void FiltroSencillo()
         {
             try
             {
-                CN_Inventario filtro = new CN_Inventario();
+                CN_Annetys filtro = new CN_Annetys();
                 dataGridView1.DataSource = filtro.FiltroSencillo(txtFiltro1.Text, txtFiltro2.Text);
             }
             catch (Exception)
@@ -57,7 +58,7 @@ namespace Ventas_Inventario.Forms
         {
             try
             {
-                CN_Inventario filtro = new CN_Inventario();
+                CN_Annetys filtro = new CN_Annetys();
                 dataGridView1.DataSource = filtro.FiltroAvanzado(txtFiltro1.Text, txtFiltro2.Text, txtFiltro3.Text, txtFiltro4.Text);
             }
             catch (Exception)
@@ -123,7 +124,7 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    obAnnetysCN.Insertar(cbCategoria.Text, txtNombre.Text, txtDescripcion.Text,  txtPrecio.Text, 
+                    obAnnetysCN.Insertar(cbCategoriaGen.Text, cbCategoriaEsp.Text, txtNombre.Text, txtDescripcion.Text,  txtPrecio.Text, 
                         txtCantidad.Text, txtPuntaje.Text);
                     MessageBox.Show("Tus datos se insertaron");
                     MostrarAnnetys();
@@ -138,7 +139,7 @@ namespace Ventas_Inventario.Forms
             {
                 try
                 {
-                    obAnnetysCN.Editar(cbCategoria.Text, txtNombre.Text, txtDescripcion.Text, txtPrecio.Text,
+                    obAnnetysCN.Editar(cbCategoriaGen.Text, cbCategoriaEsp.Text, txtNombre.Text, txtDescripcion.Text, txtPrecio.Text,
                         txtCantidad.Text, txtPuntaje.Text, IDannetys);
                     MessageBox.Show("Tus datos se editaron");
                     MostrarAnnetys();
@@ -157,7 +158,8 @@ namespace Ventas_Inventario.Forms
             {
                 Editar = true;
 
-                cbCategoria.Text = dataGridView1.CurrentRow.Cells["Categoria"].Value.ToString();
+                cbCategoriaGen.Text = dataGridView1.CurrentRow.Cells["CategoriaGeneral"].Value.ToString();
+                cbCategoriaEsp.Text = dataGridView1.CurrentRow.Cells["CategoriaEspecifica"].Value.ToString();
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
                 txtDescripcion.Text = dataGridView1.CurrentRow.Cells["Descripcion"].Value.ToString();
                 txtPrecio.Text = dataGridView1.CurrentRow.Cells["Precio"].Value.ToString();

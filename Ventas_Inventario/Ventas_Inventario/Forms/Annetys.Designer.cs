@@ -41,7 +41,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.lblCantidad = new System.Windows.Forms.Label();
-            this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.cbCategoriaGen = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtPuntaje = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCategoriaEsp = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -219,17 +219,17 @@
             this.lblCantidad.TabIndex = 119;
             this.lblCantidad.Text = "Cantidad:";
             // 
-            // cbCategoria
+            // cbCategoriaGen
             // 
-            this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Items.AddRange(new object[] {
+            this.cbCategoriaGen.FormattingEnabled = true;
+            this.cbCategoriaGen.Items.AddRange(new object[] {
             "Peluche",
             "Miselanio",
             "Figuras"});
-            this.cbCategoria.Location = new System.Drawing.Point(16, 68);
-            this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(88, 21);
-            this.cbCategoria.TabIndex = 1;
+            this.cbCategoriaGen.Location = new System.Drawing.Point(16, 68);
+            this.cbCategoriaGen.Name = "cbCategoriaGen";
+            this.cbCategoriaGen.Size = new System.Drawing.Size(88, 21);
+            this.cbCategoriaGen.TabIndex = 1;
             // 
             // btnGuardar
             // 
@@ -378,17 +378,17 @@
             this.txtDescripcion.Size = new System.Drawing.Size(88, 64);
             this.txtDescripcion.TabIndex = 4;
             // 
-            // comboBox1
+            // cbCategoriaEsp
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbCategoriaEsp.FormattingEnabled = true;
+            this.cbCategoriaEsp.Items.AddRange(new object[] {
             "Peluche",
             "Miselanio",
             "Figuras"});
-            this.comboBox1.Location = new System.Drawing.Point(16, 135);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(88, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cbCategoriaEsp.Location = new System.Drawing.Point(16, 135);
+            this.cbCategoriaEsp.Name = "cbCategoriaEsp";
+            this.cbCategoriaEsp.Size = new System.Drawing.Size(88, 21);
+            this.cbCategoriaEsp.TabIndex = 2;
             // 
             // label1
             // 
@@ -410,7 +410,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(760, 465);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbCategoriaEsp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.txtDescripcion);
@@ -425,7 +425,7 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.cbCategoria);
+            this.Controls.Add(this.cbCategoriaGen);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtPuntaje);
             this.Controls.Add(this.txtCantidad);
@@ -458,7 +458,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.ComboBox cbCategoriaGen;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtPuntaje;
         private System.Windows.Forms.TextBox txtCantidad;
@@ -471,7 +471,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbCategoriaEsp;
         private System.Windows.Forms.Label label1;
     }
 }

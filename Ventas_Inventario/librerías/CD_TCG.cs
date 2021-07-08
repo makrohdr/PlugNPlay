@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace librerías
 {
-    public class CD_Annetys
+    public class CD_TCG
     {
         private Conexion conexion = new Conexion();
 
@@ -48,16 +48,15 @@ namespace librerías
             return tabla;
         }
 
-        public void Insertar(string CategoriaGeneral, string CategoriaEspecifica, string Nombre, string Descripcion, double Precio,
+        public void Insertar(string Nombre, string Producto, string Descripcion, double Precio,
             int Cantidad, int Puntaje)
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "AgregarAnnetys";
+            comando.CommandText = "AgregarTCG";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@CategoriaGeneral", CategoriaGeneral);
-            comando.Parameters.AddWithValue("@CategoriaEspecifica", CategoriaEspecifica);
             comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Producto", Producto);
             comando.Parameters.AddWithValue("@Descripcion", Descripcion);
             comando.Parameters.AddWithValue("@Precio", Precio);
             comando.Parameters.AddWithValue("@Cantidad", Cantidad);
@@ -68,21 +67,20 @@ namespace librerías
 
         }
 
-        public void Editar(string CategoriaGeneral, string CategoriaEspecifica, string Nombre, string Descripcion, double Precio, 
-            int Cantidad, int Puntaje, int IDannetys)
+        public void Editar(string Nombre, string Producto, string Descripcion, double Precio,
+            int Cantidad, int Puntaje, int IDTCG)
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "EditarAnnetys";
+            comando.CommandText = "EditarTCG";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@CategoriaGeneral", CategoriaGeneral);
-            comando.Parameters.AddWithValue("@CategoriaEspecifica", CategoriaEspecifica);
             comando.Parameters.AddWithValue("@Nombre", Nombre);
+            comando.Parameters.AddWithValue("@Producto", Producto);
             comando.Parameters.AddWithValue("@Descripcion", Descripcion);
             comando.Parameters.AddWithValue("@Precio", Precio);
             comando.Parameters.AddWithValue("@Cantidad", Cantidad);
             comando.Parameters.AddWithValue("@Puntaje", Puntaje);
-            comando.Parameters.AddWithValue("@IDannetys", IDannetys);
+            comando.Parameters.AddWithValue("@IDTCG", IDTCG);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
@@ -92,9 +90,9 @@ namespace librerías
         {
             //procedimiento almacenado
             comando.Connection = conexion.abriConexion();
-            comando.CommandText = "EliminarAnnetys";
+            comando.CommandText = "EliminarTCG";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@IDannetys", id);
+            comando.Parameters.AddWithValue("@IDTCG", id);
             comando.ExecuteNonQuery();
             comando.Connection = conexion.cerrarConexion();
             comando.Parameters.Clear();
