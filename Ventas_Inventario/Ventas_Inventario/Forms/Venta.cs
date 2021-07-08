@@ -69,7 +69,7 @@ namespace Ventas_Inventario.Forms
             lblPuntajeT.Text = (0).ToString("");
             lblPuntajeJ.Text = (0).ToString("");
         }
-
+        #region Area Ventas seleccion
         private void CbAreaVenta_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (CbAreaVenta.SelectedIndex == 0)
@@ -80,6 +80,7 @@ namespace Ventas_Inventario.Forms
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
                 ComboboxCategoriaL();
+
                 
 
             }
@@ -90,25 +91,28 @@ namespace Ventas_Inventario.Forms
                 GroupJuegosMesa.Hide();
                 GroupLibros.Hide();
                 GroupTCG.Hide();
-
+                CbCategoriaL.Items.Clear();
             }
             if (CbAreaVenta.SelectedIndex == 2)
             {
                 GroupTCG.Show();
                 GroupTCG.Location = new Point(12, 72);
                 GroupLibros.Hide();
-                GroupTCG.Hide();
+                GroupJuegosMesa.Hide();
                 GroupAnnetys.Hide();
+                CbCategoriaL.Items.Clear();
             }
             if (CbAreaVenta.SelectedIndex == 3)
             {
                 GroupJuegosMesa.Show();
                 GroupJuegosMesa.Location = new Point(12, 72);
-                GroupJuegosMesa.Hide();
+                GroupTCG.Hide();
                 GroupLibros.Hide();
                 GroupAnnetys.Hide();
+                CbCategoriaL.Items.Clear();
             }
         }
+        #endregion
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
