@@ -72,7 +72,7 @@ namespace Ventas_Inventario
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = SystemColors.Desktop;
+                currentBtn.BackColor = Color.Transparent;
                 currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.White;

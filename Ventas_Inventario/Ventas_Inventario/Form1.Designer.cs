@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnReportes = new FontAwesome.Sharp.IconButton();
             this.btnDollar = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
@@ -73,7 +72,6 @@
             // 
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Controls.Add(this.btnReportes);
             this.panelMenu.Controls.Add(this.btnDollar);
             this.panelMenu.Controls.Add(this.btnClientes);
@@ -86,15 +84,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(179, 549);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 567);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(162, 100);
-            this.panel1.TabIndex = 9;
             // 
             // btnReportes
             // 
@@ -554,7 +543,6 @@
         private FontAwesome.Sharp.IconButton btnAnnetys;
         private FontAwesome.Sharp.IconButton btnTCG;
         private FontAwesome.Sharp.IconButton btnReportes;
-        private System.Windows.Forms.Panel panel1;
     }
 }
 
