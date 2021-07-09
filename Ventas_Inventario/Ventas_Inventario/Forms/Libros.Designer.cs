@@ -75,7 +75,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(16, 387);
+            this.btnGuardar.Location = new System.Drawing.Point(16, 402);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(88, 23);
             this.btnGuardar.TabIndex = 9;
@@ -85,21 +85,21 @@
             // 
             // txtPuntaje
             // 
-            this.txtPuntaje.Location = new System.Drawing.Point(16, 352);
+            this.txtPuntaje.Location = new System.Drawing.Point(16, 367);
             this.txtPuntaje.Name = "txtPuntaje";
             this.txtPuntaje.Size = new System.Drawing.Size(88, 20);
             this.txtPuntaje.TabIndex = 8;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(16, 306);
+            this.txtCantidad.Location = new System.Drawing.Point(16, 321);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(88, 20);
             this.txtCantidad.TabIndex = 7;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(16, 260);
+            this.txtPrecio.Location = new System.Drawing.Point(16, 275);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(88, 20);
             this.txtPrecio.TabIndex = 6;
@@ -112,7 +112,7 @@
             this.lblPuntaje.AutoSize = true;
             this.lblPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntaje.ForeColor = System.Drawing.Color.White;
-            this.lblPuntaje.Location = new System.Drawing.Point(12, 329);
+            this.lblPuntaje.Location = new System.Drawing.Point(12, 344);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(75, 20);
             this.lblPuntaje.TabIndex = 15;
@@ -126,7 +126,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.White;
-            this.lblPrecio.Location = new System.Drawing.Point(12, 237);
+            this.lblPrecio.Location = new System.Drawing.Point(12, 252);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(64, 20);
             this.lblPrecio.TabIndex = 14;
@@ -140,7 +140,7 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(12, 143);
+            this.lblCategoria.Location = new System.Drawing.Point(12, 158);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(92, 20);
             this.lblCategoria.TabIndex = 12;
@@ -154,7 +154,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(12, 9);
+            this.lblNombre.Location = new System.Drawing.Point(12, 24);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(76, 20);
             this.lblNombre.TabIndex = 10;
@@ -162,7 +162,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(16, 32);
+            this.txtNombre.Location = new System.Drawing.Point(16, 47);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(88, 20);
             this.txtNombre.TabIndex = 1;
@@ -174,7 +174,7 @@
             "Comic",
             "Manga",
             "Libro"});
-            this.cbCategoria.Location = new System.Drawing.Point(16, 166);
+            this.cbCategoria.Location = new System.Drawing.Point(16, 181);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(88, 21);
             this.cbCategoria.TabIndex = 4;
@@ -188,7 +188,7 @@
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.Color.White;
-            this.lblCantidad.Location = new System.Drawing.Point(12, 283);
+            this.lblCantidad.Location = new System.Drawing.Point(12, 298);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(86, 20);
             this.lblCantidad.TabIndex = 18;
@@ -202,7 +202,7 @@
             this.lblAuxiliar.AutoSize = true;
             this.lblAuxiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAuxiliar.ForeColor = System.Drawing.Color.White;
-            this.lblAuxiliar.Location = new System.Drawing.Point(12, 190);
+            this.lblAuxiliar.Location = new System.Drawing.Point(12, 205);
             this.lblAuxiliar.Name = "lblAuxiliar";
             this.lblAuxiliar.Size = new System.Drawing.Size(80, 20);
             this.lblAuxiliar.TabIndex = 22;
@@ -211,7 +211,7 @@
             // cbAuxiliar
             // 
             this.cbAuxiliar.FormattingEnabled = true;
-            this.cbAuxiliar.Location = new System.Drawing.Point(16, 213);
+            this.cbAuxiliar.Location = new System.Drawing.Point(16, 228);
             this.cbAuxiliar.Name = "cbAuxiliar";
             this.cbAuxiliar.Size = new System.Drawing.Size(88, 21);
             this.cbAuxiliar.TabIndex = 5;
@@ -224,7 +224,7 @@
             this.lblPortada.AutoSize = true;
             this.lblPortada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPortada.ForeColor = System.Drawing.Color.White;
-            this.lblPortada.Location = new System.Drawing.Point(12, 98);
+            this.lblPortada.Location = new System.Drawing.Point(12, 113);
             this.lblPortada.Name = "lblPortada";
             this.lblPortada.Size = new System.Drawing.Size(77, 20);
             this.lblPortada.TabIndex = 25;
@@ -232,7 +232,7 @@
             // 
             // txtPortada
             // 
-            this.txtPortada.Location = new System.Drawing.Point(16, 121);
+            this.txtPortada.Location = new System.Drawing.Point(16, 136);
             this.txtPortada.Name = "txtPortada";
             this.txtPortada.Size = new System.Drawing.Size(88, 20);
             this.txtPortada.TabIndex = 3;
@@ -245,7 +245,7 @@
             this.lblVolumen.AutoSize = true;
             this.lblVolumen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVolumen.ForeColor = System.Drawing.Color.White;
-            this.lblVolumen.Location = new System.Drawing.Point(12, 55);
+            this.lblVolumen.Location = new System.Drawing.Point(12, 70);
             this.lblVolumen.Name = "lblVolumen";
             this.lblVolumen.Size = new System.Drawing.Size(84, 20);
             this.lblVolumen.TabIndex = 28;
@@ -253,7 +253,7 @@
             // 
             // txtVolumen
             // 
-            this.txtVolumen.Location = new System.Drawing.Point(16, 78);
+            this.txtVolumen.Location = new System.Drawing.Point(16, 93);
             this.txtVolumen.Name = "txtVolumen";
             this.txtVolumen.Size = new System.Drawing.Size(88, 20);
             this.txtVolumen.TabIndex = 2;

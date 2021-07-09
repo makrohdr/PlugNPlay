@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CD_Annetys.cs" />
     <Compile Include="CD_Inventario.cs" />
+    <Compile Include="CD_JuegoDeMesa.cs" />
     <Compile Include="CD_TCG.cs" />
     <Compile Include="CD_Ventas.cs" />
     <Compile Include="Conexion.cs" />

@@ -3,27 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
+
 using librerías;
+using System.Data;
 
 namespace LibreriasNegocio
 {
-    public class CN_TCG
+    public class CN_JuegosDeMesa
     {
-        CD_TCG OBtcg_CD = new CD_TCG();
+        CD_JuegoDeMesa OBJuegosDeMesa_CD = new CD_JuegoDeMesa();
 
         #region filtro
         public DataTable FiltroSencillo(string Aux1, string Aux2)
         {
             DataTable tabla = new DataTable();
-            tabla = OBtcg_CD.FiltroSencillo(Aux1, Aux2);
+            tabla = OBJuegosDeMesa_CD.FiltroSencillo(Aux1, Aux2);
             return tabla;
         }
 
         public DataTable FiltroAvanzado(string Aux1, string Aux2, string Aux3, string Aux4)
         {
             DataTable tabla = new DataTable();
-            tabla = OBtcg_CD.FiltroAvanzado(Aux1, Aux2, Aux3, Aux4);
+            tabla = OBJuegosDeMesa_CD.FiltroAvanzado(Aux1, Aux2, Aux3, Aux4);
             return tabla;
         }
         #endregion
@@ -32,25 +33,25 @@ namespace LibreriasNegocio
         public DataTable MostrarTCG()
         {
             DataTable tabla = new DataTable();
-            tabla = OBtcg_CD.Mostrar();
+            tabla = OBJuegosDeMesa_CD.Mostrar();
             return tabla;
         }
 
-        public void Insertar(string nombre, string producto, string descripcion, string precio, string cantidad, string puntaje)
+        public void Insertar(string nombre, string precio, string cantidad, string puntaje)
         {
-            OBtcg_CD.Insertar(nombre, producto, descripcion, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje));
+            OBJuegosDeMesa_CD.Insertar(nombre, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje));
         }
 
-        public void Editar(string nombre, string producto, string descripcion, string precio, string cantidad, string puntaje,
+        public void Editar(string nombre, string precio, string cantidad, string puntaje,
             string id)
         {
-            OBtcg_CD.Editar(nombre, producto, descripcion, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje),
+            OBJuegosDeMesa_CD.Editar(nombre, int.Parse(precio), int.Parse(cantidad), int.Parse(puntaje),
                 int.Parse(id));
         }
 
         public void Eliminar(string id)
         {
-            OBtcg_CD.Eliminar(int.Parse(id));
+            OBJuegosDeMesa_CD.Eliminar(int.Parse(id));
         }
         #endregion
     }

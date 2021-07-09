@@ -93,17 +93,17 @@ namespace Ventas_Inventario.Forms
             txtFiltro2.Clear();
             txtFiltro3.Items.Clear();
             txtFiltro4.Clear();
-            MostrarAnnetys();
+            MostrarTCG();
         }
         #endregion
 
         #region area de tabla
-        private void MostrarAnnetys()
+        private void MostrarTCG()
         {
             try
             {
                 CN_TCG MostrarDatos = new CN_TCG();
-                dataGridView1.DataSource = MostrarDatos();
+                dataGridView1.DataSource = MostrarDatos.MostrarTCG();
             }
             catch (Exception)
             {
@@ -122,7 +122,7 @@ namespace Ventas_Inventario.Forms
                     obTCG_CN.Insertar(txtNombre.Text, txtProducto.Text, txtDescripcion.Text, txtPrecio.Text,
                         txtCantidad.Text, txtPuntaje.Text);
                     MessageBox.Show("Tus datos se insertaron");
-                    MostrarAnnetys();
+                    MostrarTCG();
                     Limpiar();
                 }
                 catch (Exception ex)
@@ -137,7 +137,7 @@ namespace Ventas_Inventario.Forms
                     obTCG_CN.Editar(txtNombre.Text, txtProducto.Text, txtDescripcion.Text, txtPrecio.Text,
                         txtCantidad.Text, txtPuntaje.Text, IDTCG);
                     MessageBox.Show("Tus datos se editaron");
-                    MostrarAnnetys();
+                    MostrarTCG();
                     Limpiar();
                 }
                 catch (Exception ex)
@@ -184,9 +184,9 @@ namespace Ventas_Inventario.Forms
                 }
                 else
                 {
-                    MostrarAnnetys();
+                    MostrarTCG();
                 }
-                MostrarAnnetys();
+                MostrarTCG();
             }
             else
             {

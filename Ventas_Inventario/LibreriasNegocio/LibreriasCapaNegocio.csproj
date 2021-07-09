@@ -44,6 +44,7 @@
     <Compile Include="CN_Annetys.cs" />
     <Compile Include="CN_Cliente.cs" />
     <Compile Include="CN_Inventario.cs" />
+    <Compile Include="CN_JuegosDeMesa.cs" />
     <Compile Include="CN_TCG.cs" />
     <Compile Include="CN_Ventas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
