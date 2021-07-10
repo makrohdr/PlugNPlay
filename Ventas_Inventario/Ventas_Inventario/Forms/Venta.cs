@@ -14,9 +14,11 @@ namespace Ventas_Inventario.Forms
 {
     public partial class Venta : Form
     {
+
         public Venta()
         {
             InitializeComponent();
+           
         }
 
         private void ComboboxCategoriaL()
@@ -38,6 +40,39 @@ namespace Ventas_Inventario.Forms
 
                 MessageBox.Show("No se ha podido cargar la base de datos");
             }
+
+        }
+
+        private void ComboboxNombreL()
+        {
+            try
+            {
+             
+                
+
+                    CN_Ventas inventario = new CN_Ventas();
+                    DataTable dt;
+                    if (CbCategoriaL.Text != "")
+                    {
+                        dt = inventario.OBNombreL(CbCategoriaL.Text);
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            CbNombreL.Items.Add(dr["Nombre"].ToString());
+                        }
+                    }
+                    
+                
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No se ha podido cargar la base de datos");
+            }
+
+
+
+
+
 
         }
 
@@ -79,11 +114,24 @@ namespace Ventas_Inventario.Forms
                 GroupJuegosMesa.Hide();
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
+                ComboboxNombreL();
                 ComboboxCategoriaL();
+                
+               
 
                 
 
-            }
+
+
+
+
+
+
+
+
+
+
+                }
             if (CbAreaVenta.SelectedIndex == 1)
             {
                 GroupAnnetys.Show();
@@ -92,6 +140,7 @@ namespace Ventas_Inventario.Forms
                 GroupLibros.Hide();
                 GroupTCG.Hide();
                 CbCategoriaL.Items.Clear();
+                CbNombreL.Items.Clear();
             }
             if (CbAreaVenta.SelectedIndex == 2)
             {
@@ -101,6 +150,7 @@ namespace Ventas_Inventario.Forms
                 GroupJuegosMesa.Hide();
                 GroupAnnetys.Hide();
                 CbCategoriaL.Items.Clear();
+                CbNombreL.Items.Clear();
             }
             if (CbAreaVenta.SelectedIndex == 3)
             {
@@ -110,7 +160,10 @@ namespace Ventas_Inventario.Forms
                 GroupLibros.Hide();
                 GroupAnnetys.Hide();
                 CbCategoriaL.Items.Clear();
+                CbNombreL.Items.Clear();
             }
+            
+
         }
         #endregion
 
