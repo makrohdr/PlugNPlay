@@ -14,9 +14,13 @@ namespace Ventas_Inventario.Forms
 {
     public partial class Venta : Form
     {
+        public string CategoriaL;
+
+        
 
         public Venta()
         {
+            
             InitializeComponent();
            
         }
@@ -34,6 +38,12 @@ namespace Ventas_Inventario.Forms
                     CbCategoriaL.Items.Add(dr["Categoria"].ToString());
                 }
 
+                
+                
+              
+
+                
+
             }
             catch (Exception)
             {
@@ -45,30 +55,18 @@ namespace Ventas_Inventario.Forms
 
         private void ComboboxNombreL()
         {
-            try
-            {
-             
-                
+            
+                CN_Ventas inventario = new CN_Ventas();
+                DataTable dt;
 
-                    CN_Ventas inventario = new CN_Ventas();
-                    DataTable dt;
-                    if (CbCategoriaL.Text != "")
+                CategoriaL = CbCategoriaL.Text;
+                dt = inventario.OBNombreL(CategoriaL);
+                    foreach (DataRow dr in dt.Rows)
                     {
-                        dt = inventario.OBNombreL(CbCategoriaL.Text);
-                        foreach (DataRow dr in dt.Rows)
-                        {
-                            CbNombreL.Items.Add(dr["Nombre"].ToString());
-                        }
+                        CbNombreL.Items.Add(dr["Nombre"].ToString());
                     }
-                    
                 
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("No se ha podido cargar la base de datos");
-            }
-
+            
 
 
 
@@ -79,21 +77,17 @@ namespace Ventas_Inventario.Forms
 
         private void Venta_Load(object sender, EventArgs e)
         {
+            
+
             // TODO: This line of code loads data into the 'dBplugYplayDataSet.Inventario' table. You can move, or remove it, as needed.
             this.inventarioTableAdapter.Fill(this.dBplugYplayDataSet.Inventario);
 
+            
             GroupJuegosMesa.Hide();
             GroupLibros.Hide();
             GroupTCG.Hide();
             GroupAnnetys.Hide();
-            lblTextoClienteA.Hide();
-            lblTextoClienteL.Hide();
-            lblTextoClienteJ.Hide();
-            lblTextoClienteT.Hide();
-            txtClienteA.Hide();
-            txtClienteL.Hide();
-            txtClienteJ.Hide();
-            txtClienteT.Hide();
+         
             lblFecha.Text = DateTime.Today.Date.ToString("d");
             lblPrecioL.Text = (0).ToString("C");
             lblPrecioA.Text = (0).ToString("C");
@@ -103,6 +97,8 @@ namespace Ventas_Inventario.Forms
             lblPuntajeA.Text = (0).ToString("");
             lblPuntajeT.Text = (0).ToString("");
             lblPuntajeJ.Text = (0).ToString("");
+
+
         }
         #region Area Ventas seleccion
         private void CbAreaVenta_SelectedIndexChanged(object sender, EventArgs e)
@@ -111,27 +107,17 @@ namespace Ventas_Inventario.Forms
             {
                 GroupLibros.Show();
                 GroupLibros.Location = new Point(12, 72);
+
                 GroupJuegosMesa.Hide();
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
-                ComboboxNombreL();
-                ComboboxCategoriaL();
-                
+
                
+                ComboboxCategoriaL();
 
                 
+            }
 
-
-
-
-
-
-
-
-
-
-
-                }
             if (CbAreaVenta.SelectedIndex == 1)
             {
                 GroupAnnetys.Show();
@@ -162,7 +148,6 @@ namespace Ventas_Inventario.Forms
                 CbCategoriaL.Items.Clear();
                 CbNombreL.Items.Clear();
             }
-            
 
         }
         #endregion
@@ -185,7 +170,19 @@ namespace Ventas_Inventario.Forms
                 MessageBox.Show("Favor de ingresar el numero de telefono del cliente...!!!");
             }
         }
+
+        #region Combobox L
+        private void CbCategoriaL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbNombreL.Items.Clear();
+            if (CbCategoriaL.Text != "")
+            {
+                ComboboxNombreL();
+            }
+            
             
         }
     }
+    }
 
+#endregion
