@@ -33,6 +33,8 @@
             this.lblFechatxt = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.GroupLibros = new System.Windows.Forms.GroupBox();
+            this.txtPina = new System.Windows.Forms.TextBox();
+            this.lblPina = new System.Windows.Forms.Label();
             this.CbNombreL = new System.Windows.Forms.ComboBox();
             this.CbEditorialL = new System.Windows.Forms.ComboBox();
             this.lblTextoEditorialL = new System.Windows.Forms.Label();
@@ -107,8 +109,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventarioTableAdapter = new Ventas_Inventario.DBplugYplayDataSetTableAdapters.InventarioTableAdapter();
-            this.txtPina = new System.Windows.Forms.TextBox();
-            this.lblPina = new System.Windows.Forms.Label();
+            this.CheckPinaL = new System.Windows.Forms.CheckBox();
             this.GroupLibros.SuspendLayout();
             this.GroupAnnetys.SuspendLayout();
             this.GroupTCG.SuspendLayout();
@@ -161,6 +162,7 @@
             this.GroupLibros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupLibros.AutoSize = true;
+            this.GroupLibros.Controls.Add(this.CheckPinaL);
             this.GroupLibros.Controls.Add(this.txtPina);
             this.GroupLibros.Controls.Add(this.lblPina);
             this.GroupLibros.Controls.Add(this.CbNombreL);
@@ -191,6 +193,23 @@
             this.GroupLibros.TabStop = false;
             this.GroupLibros.Text = "Area de venta Libros";
             // 
+            // txtPina
+            // 
+            this.txtPina.Location = new System.Drawing.Point(350, 80);
+            this.txtPina.Name = "txtPina";
+            this.txtPina.Size = new System.Drawing.Size(157, 22);
+            this.txtPina.TabIndex = 27;
+            // 
+            // lblPina
+            // 
+            this.lblPina.AutoSize = true;
+            this.lblPina.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPina.Location = new System.Drawing.Point(347, 61);
+            this.lblPina.Name = "lblPina";
+            this.lblPina.Size = new System.Drawing.Size(76, 16);
+            this.lblPina.TabIndex = 26;
+            this.lblPina.Text = "Descuento:";
+            // 
             // CbNombreL
             // 
             this.CbNombreL.FormattingEnabled = true;
@@ -198,6 +217,7 @@
             this.CbNombreL.Name = "CbNombreL";
             this.CbNombreL.Size = new System.Drawing.Size(157, 24);
             this.CbNombreL.TabIndex = 25;
+            this.CbNombreL.SelectedIndexChanged += new System.EventHandler(this.CbNombreL_SelectedIndexChanged);
             // 
             // CbEditorialL
             // 
@@ -206,6 +226,7 @@
             this.CbEditorialL.Name = "CbEditorialL";
             this.CbEditorialL.Size = new System.Drawing.Size(157, 24);
             this.CbEditorialL.TabIndex = 24;
+            this.CbEditorialL.SelectedIndexChanged += new System.EventHandler(this.CbEditorialL_SelectedIndexChanged);
             // 
             // lblTextoEditorialL
             // 
@@ -251,6 +272,7 @@
             this.CbVolumenL.Name = "CbVolumenL";
             this.CbVolumenL.Size = new System.Drawing.Size(157, 24);
             this.CbVolumenL.TabIndex = 19;
+            this.CbVolumenL.SelectedIndexChanged += new System.EventHandler(this.CbVolumenL_SelectedIndexChanged);
             // 
             // lblVolumenL
             // 
@@ -269,6 +291,7 @@
             this.CbPortadaL.Name = "CbPortadaL";
             this.CbPortadaL.Size = new System.Drawing.Size(157, 24);
             this.CbPortadaL.TabIndex = 17;
+            this.CbPortadaL.SelectedIndexChanged += new System.EventHandler(this.CbPortadaL_SelectedIndexChanged);
             // 
             // lblPortadaL
             // 
@@ -988,22 +1011,15 @@
             // 
             this.inventarioTableAdapter.ClearBeforeFill = true;
             // 
-            // txtPina
+            // CheckPinaL
             // 
-            this.txtPina.Location = new System.Drawing.Point(350, 80);
-            this.txtPina.Name = "txtPina";
-            this.txtPina.Size = new System.Drawing.Size(157, 22);
-            this.txtPina.TabIndex = 27;
-            // 
-            // lblPina
-            // 
-            this.lblPina.AutoSize = true;
-            this.lblPina.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPina.Location = new System.Drawing.Point(347, 61);
-            this.lblPina.Name = "lblPina";
-            this.lblPina.Size = new System.Drawing.Size(76, 16);
-            this.lblPina.TabIndex = 26;
-            this.lblPina.Text = "Descuento:";
+            this.CheckPinaL.AutoSize = true;
+            this.CheckPinaL.Location = new System.Drawing.Point(144, 149);
+            this.CheckPinaL.Name = "CheckPinaL";
+            this.CheckPinaL.Size = new System.Drawing.Size(94, 20);
+            this.CheckPinaL.TabIndex = 28;
+            this.CheckPinaL.Text = "Grupo Piña";
+            this.CheckPinaL.UseVisualStyleBackColor = true;
             // 
             // Venta
             // 
@@ -1125,5 +1141,6 @@
         private System.Windows.Forms.BindingSource inventarioBindingSource1;
         private System.Windows.Forms.TextBox txtPina;
         private System.Windows.Forms.Label lblPina;
+        private System.Windows.Forms.CheckBox CheckPinaL;
     }
 }

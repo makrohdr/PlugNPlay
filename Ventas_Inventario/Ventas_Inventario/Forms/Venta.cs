@@ -15,8 +15,14 @@ namespace Ventas_Inventario.Forms
     public partial class Venta : Form
     {
         public string CategoriaL;
+        public string NombreL;
+        public string EditorialL;
+        public string PortadaL;
+        public string VolumenL;
+        public string PrecioL;
 
-        
+
+
 
         public Venta()
         {
@@ -38,11 +44,6 @@ namespace Ventas_Inventario.Forms
                     CbCategoriaL.Items.Add(dr["Categoria"].ToString());
                 }
 
-                
-                
-              
-
-                
 
             }
             catch (Exception)
@@ -65,14 +66,66 @@ namespace Ventas_Inventario.Forms
                     {
                         CbNombreL.Items.Add(dr["Nombre"].ToString());
                     }
+        }
+
+        private void ComboboxEditorialL()
+        {
+
+                CN_Ventas inventario = new CN_Ventas();
+                DataTable dt;
+
+                NombreL = CbNombreL.Text;
+                dt = inventario.OBEditorialL(NombreL);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    CbEditorialL.Items.Add(dr["Editorial"].ToString());
+                }
+        }
+
+        private void ComboboxPortadaL()
+        {
+
+            CN_Ventas inventario = new CN_Ventas();
+            DataTable dt;
+
+            NombreL = CbNombreL.Text;
+            dt = inventario.OBPortadaL(NombreL);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CbPortadaL.Items.Add(dr["Portada"].ToString());
+            }
+        }
+
+        private void ComboboxVolumenL()
+        {
+
+            CN_Ventas inventario = new CN_Ventas();
+            DataTable dt;
+
+            NombreL = CbNombreL.Text;
+            dt = inventario.OBVolumenL(NombreL);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CbVolumenL.Items.Add(dr["Volumen"].ToString());
+            }
+        }
+
+        private void LabelPrecioL()
+        {
+            NombreL = CbNombreL.Text;
+            PortadaL = CbPortadaL.Text;
+            VolumenL = CbVolumenL.Text;
+
+            CN_Ventas inventario = new CN_Ventas();
+            DataTable dt; 
+
+            dt = inventario.OBPrecioL(NombreL, VolumenL, PortadaL);
+
+            lblPrecioL.Text = dt.ToString();
                 
             
 
-
-
-
-
-        }
+            }
 
 
         private void Venta_Load(object sender, EventArgs e)
@@ -97,7 +150,7 @@ namespace Ventas_Inventario.Forms
             lblPuntajeA.Text = (0).ToString("");
             lblPuntajeT.Text = (0).ToString("");
             lblPuntajeJ.Text = (0).ToString("");
-
+            
 
         }
         #region Area Ventas seleccion
@@ -111,11 +164,13 @@ namespace Ventas_Inventario.Forms
                 GroupJuegosMesa.Hide();
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
-
-               
                 ComboboxCategoriaL();
-
                 
+
+
+
+
+
             }
 
             if (CbAreaVenta.SelectedIndex == 1)
@@ -127,6 +182,7 @@ namespace Ventas_Inventario.Forms
                 GroupTCG.Hide();
                 CbCategoriaL.Items.Clear();
                 CbNombreL.Items.Clear();
+                CbEditorialL.Items.Clear();
             }
             if (CbAreaVenta.SelectedIndex == 2)
             {
@@ -137,6 +193,7 @@ namespace Ventas_Inventario.Forms
                 GroupAnnetys.Hide();
                 CbCategoriaL.Items.Clear();
                 CbNombreL.Items.Clear();
+                CbEditorialL.Items.Clear();
             }
             if (CbAreaVenta.SelectedIndex == 3)
             {
@@ -147,11 +204,13 @@ namespace Ventas_Inventario.Forms
                 GroupAnnetys.Hide();
                 CbCategoriaL.Items.Clear();
                 CbNombreL.Items.Clear();
+                CbEditorialL.Items.Clear();
             }
 
         }
         #endregion
 
+        #region BtnGuardar
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             if (CbAreaVenta.SelectedIndex > 0 && CbAreaVenta.SelectedIndex < 3)
@@ -170,19 +229,54 @@ namespace Ventas_Inventario.Forms
                 MessageBox.Show("Favor de ingresar el numero de telefono del cliente...!!!");
             }
         }
-
+        #endregion
         #region Combobox L
         private void CbCategoriaL_SelectedIndexChanged(object sender, EventArgs e)
         {
             CbNombreL.Items.Clear();
-            if (CbCategoriaL.Text != "")
+            if (CategoriaL != "")
             {
                 ComboboxNombreL();
             }
-            
-            
+                
+                
+        }
+        #endregion
+
+        private void CbEditorialL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            CbPortadaL.Items.Clear();
+            if (NombreL != "")
+            {
+                ComboboxPortadaL();
+            }
+        }
+
+        private void CbNombreL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbEditorialL.Items.Clear();
+            if (NombreL != "")
+            {
+                ComboboxEditorialL();
+            }
+                
+
+        }
+
+        private void CbPortadaL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbVolumenL.Items.Clear();
+            if (NombreL != "")
+            {
+                ComboboxVolumenL();
+            }
+        }
+
+        private void CbVolumenL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LabelPrecioL();
         }
     }
-    }
+}
 
-#endregion

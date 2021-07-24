@@ -24,5 +24,36 @@ namespace LibreriasNegocio
             tabla = OBinventario.NombreL(Categoria);
             return tabla;
         }
-    } 
-}
+        public DataTable OBEditorialL(string Nombre)
+        {
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.EditorialL(Nombre);
+            return tabla;
+        }
+        public DataTable OBPortadaL(string Nombre)
+        {
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.PortadaL(Nombre);
+            return tabla;
+        }
+        public DataTable OBVolumenL(string Nombre)
+        {
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.VolumenL(Nombre);
+            return tabla;
+        }
+        public DataTable OBPrecioL(string Nombre , string Volumen, string Portada)
+        {
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.PrecioL(Nombre , Volumen, Portada);
+            return tabla;
+        }
+        public DataTable OBPuntajeL(string Nombre, string Volumen, string Portada)
+        {
+            DataTable tabla = new DataTable();
+            tabla = OBinventario.PrecioL(Nombre, Volumen, Portada);
+            return tabla;
+        }
+    }
+} 
+
