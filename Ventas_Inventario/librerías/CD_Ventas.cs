@@ -13,6 +13,8 @@ namespace librerías
     {
         private Conexion conexion = new Conexion();
 
+        public string PasarInfoPrecioL, PasarInfoPuntajeL;
+
         SqlDataReader leer;
         DataTable tabla = new DataTable();
         SqlCommand comando = new SqlCommand();
@@ -49,7 +51,7 @@ namespace librerías
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
-          //comando.Parameters.Clear();
+          comando.Parameters.Clear();
             return tabla;
 
         }
@@ -64,7 +66,7 @@ namespace librerías
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
-            //comando.Parameters.Clear();
+            comando.Parameters.Clear();
             return tabla;
 
         }
@@ -79,10 +81,11 @@ namespace librerías
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
-            //comando.Parameters.Clear();
+            comando.Parameters.Clear();
             return tabla;
 
         }
+
         public DataTable VolumenL(string Nombre)
         {
             //Llenado de datos con filtro NombreL (Proceso almacenado)
@@ -93,28 +96,33 @@ namespace librerías
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.cerrarConexion();
-            //comando.Parameters.Clear();
+            comando.Parameters.Clear();
             return tabla;
 
         }
+        
 
-        public DataTable PrecioL(string Nombre ,string Volumen, string Portada)
+        public string PrecioL(string Nombre, string Volumen, string Portada, string Cantidad)
         {
-            //Llenado de datos con filtro NombreL VolumenL PortadaL (Proceso almacenado)
             comando.Connection = conexion.abriConexion();
             comando.CommandText = "VentaslblPrecioL";
             comando.Parameters.AddWithValue("@Nombre", Nombre);
             comando.Parameters.AddWithValue("@Volumen", Volumen);
             comando.Parameters.AddWithValue("@Portada", Portada);
+            comando.Parameters.AddWithValue("@Cantidad", Cantidad);
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
-            tabla.Load(leer);
+            if (leer.Read())
+            {
+                PasarInfoPrecioL = leer["Precio"].ToString();
+            }
             conexion.cerrarConexion();
-            //comando.Parameters.Clear();
-            return tabla;
+            comando.Parameters.Clear();
 
+            return PasarInfoPrecioL;
         }
-        public DataTable PuntajeL(string Nombre, string Volumen, string Portada)
+
+        public string PuntajeL(string Nombre, string Volumen, string Portada, string Cantidad)
         {
             //Llenado de datos con filtro NombreL VolumenL PortadaL (Proceso almacenado)
             comando.Connection = conexion.abriConexion();
@@ -122,17 +130,21 @@ namespace librerías
             comando.Parameters.AddWithValue("@Nombre", Nombre);
             comando.Parameters.AddWithValue("@Volumen", Volumen);
             comando.Parameters.AddWithValue("@Portada", Portada);
+            comando.Parameters.AddWithValue("@Cantidad", Cantidad);
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
-            tabla.Load(leer);
+            if (leer.Read())
+            {
+                PasarInfoPuntajeL = leer["Puntaje"].ToString();
+            }
             conexion.cerrarConexion();
-            //comando.Parameters.Clear();
-            return tabla;
-
+            comando.Parameters.Clear();
+            return PasarInfoPuntajeL;
         }
+        
 
-
-        /*public DataTable Mostrar()
+        /*
+        public DataTable Mostrar()
         {
             //Procedimiento almacenado (primero se ocupa crear uno)
             comando.Connection = conexion.abriConexion();

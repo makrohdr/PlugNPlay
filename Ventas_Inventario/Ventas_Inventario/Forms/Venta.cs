@@ -14,37 +14,33 @@ namespace Ventas_Inventario.Forms
 {
     public partial class Venta : Form
     {
-        public string CategoriaL;
-        public string NombreL;
-        public string EditorialL;
-        public string PortadaL;
-        public string VolumenL;
-        public string PrecioL;
-
-
-
+        //Variables para Libro
+        string CategoriaL;
+        string NombreL;
 
         public Venta()
         {
             
             InitializeComponent();
-           
+            
         }
 
+        #region Libro
+
+        #region metodos
         private void ComboboxCategoriaL()
         {
             try
             {
-
                 CN_Ventas inventario = new CN_Ventas();
                 DataTable dt;
+
                 dt = inventario.ObCategoriaL();
+
                 foreach (DataRow dr in dt.Rows)
                 {
                     CbCategoriaL.Items.Add(dr["Categoria"].ToString());
                 }
-
-
             }
             catch (Exception)
             {
@@ -56,40 +52,43 @@ namespace Ventas_Inventario.Forms
 
         private void ComboboxNombreL()
         {
-            
-                CN_Ventas inventario = new CN_Ventas();
-                DataTable dt;
+            CN_Ventas inventario = new CN_Ventas();
+            DataTable dt;
 
-                CategoriaL = CbCategoriaL.Text;
-                dt = inventario.OBNombreL(CategoriaL);
-                    foreach (DataRow dr in dt.Rows)
-                    {
-                        CbNombreL.Items.Add(dr["Nombre"].ToString());
-                    }
+            CategoriaL = CbCategoriaL.Text;
+
+            dt = inventario.OBNombreL(CategoriaL);
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                CbNombreL.Items.Add(dr["Nombre"].ToString());
+            }
         }
 
         private void ComboboxEditorialL()
         {
-
-                CN_Ventas inventario = new CN_Ventas();
-                DataTable dt;
-
-                NombreL = CbNombreL.Text;
-                dt = inventario.OBEditorialL(NombreL);
-                foreach (DataRow dr in dt.Rows)
-                {
-                    CbEditorialL.Items.Add(dr["Editorial"].ToString());
-                }
-        }
-
-        private void ComboboxPortadaL()
-        {
-
             CN_Ventas inventario = new CN_Ventas();
             DataTable dt;
 
             NombreL = CbNombreL.Text;
+
+            dt = inventario.OBEditorialL(NombreL);
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                CbEditorialL.Items.Add(dr["Editorial"].ToString());
+            }
+        }
+
+        private void ComboboxPortadaL()
+        {
+            CN_Ventas inventario = new CN_Ventas();
+            DataTable dt;
+
+            NombreL = CbNombreL.Text;
+
             dt = inventario.OBPortadaL(NombreL);
+
             foreach (DataRow dr in dt.Rows)
             {
                 CbPortadaL.Items.Add(dr["Portada"].ToString());
@@ -98,12 +97,13 @@ namespace Ventas_Inventario.Forms
 
         private void ComboboxVolumenL()
         {
-
             CN_Ventas inventario = new CN_Ventas();
             DataTable dt;
 
             NombreL = CbNombreL.Text;
+
             dt = inventario.OBVolumenL(NombreL);
+        
             foreach (DataRow dr in dt.Rows)
             {
                 CbVolumenL.Items.Add(dr["Volumen"].ToString());
@@ -112,21 +112,114 @@ namespace Ventas_Inventario.Forms
 
         private void LabelPrecioL()
         {
-            NombreL = CbNombreL.Text;
-            PortadaL = CbPortadaL.Text;
-            VolumenL = CbVolumenL.Text;
-
             CN_Ventas inventario = new CN_Ventas();
-            DataTable dt; 
-
-            dt = inventario.OBPrecioL(NombreL, VolumenL, PortadaL);
-
-            lblPrecioL.Text = dt.ToString();
-                
             
+            lblPrecioL.Text = 
+                "$" + inventario.precioL(CbNombreL.Text, CbVolumenL.Text, CbPortadaL.Text, nuCantidadL.Text);
+        }
 
+        private void LabelPuntaje()
+        {
+            CN_Ventas inventario = new CN_Ventas();
+
+            lblPuntajeL.Text =
+                inventario.Puntaje(CbNombreL.Text, CbVolumenL.Text, CbPortadaL.Text, nuCantidadL.Text);
+        }
+        #endregion
+
+        #region comboBox, TextBox, Label, etc...
+        private void CbCategoriaL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbNombreL.Items.Clear();
+            if (CategoriaL != "")
+            {
+                ComboboxNombreL();
+            }
+        }
+
+        private void CbEditorialL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbPortadaL.Items.Clear();
+            if (NombreL != "")
+            {
+                ComboboxPortadaL();
+            }
+        }
+
+        private void CbNombreL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbEditorialL.Items.Clear();
+            if (NombreL != "")
+            {
+                ComboboxEditorialL();
             }
 
+
+        }
+
+        private void CbPortadaL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CbVolumenL.Items.Clear();
+            if (NombreL != "")
+            {
+                ComboboxVolumenL();
+            }
+        }
+        //Hace funcionar a los label de precio y puntaje
+        private void nuCantidadL_Click(object sender, EventArgs e)
+        {
+            LabelPrecioL();
+            LabelPuntaje();
+        }
+
+        private void CheckClienteL_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CheckClienteL.Checked)
+            {
+                lblTextoClienteL.Show();
+                txtClienteL.Show();
+
+            }
+            else
+            {
+                lblTextoClienteL.Hide();
+                txtClienteL.Hide();
+            }
+        }
+
+        private void CheckPinaL_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CheckPinaL.Checked)
+            {
+                lblPina.Show();
+                txtPina.Show();
+
+            }
+            else
+            {
+                lblPina.Hide();
+                txtPina.Hide();
+            }
+        }
+        //No se usa, borrar
+        private void CbVolumenL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+        //No se usa, borrar
+        private void txtCantidadL_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+        //No se usa, borrar
+        private void nuCantidadL_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        #endregion
 
         private void Venta_Load(object sender, EventArgs e)
         {
@@ -153,9 +246,11 @@ namespace Ventas_Inventario.Forms
             
 
         }
+
         #region Area Ventas seleccion
         private void CbAreaVenta_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Seccion de Libros
             if (CbAreaVenta.SelectedIndex == 0)
             {
                 GroupLibros.Show();
@@ -165,12 +260,14 @@ namespace Ventas_Inventario.Forms
                 GroupTCG.Hide();
                 GroupAnnetys.Hide();
                 ComboboxCategoriaL();
+
+                CheckClienteL.Checked = false;
+                lblTextoClienteL.Hide();
+                txtClienteL.Hide();
                 
-
-
-
-
-
+                CheckPinaL.Checked = false;
+                lblPina.Hide();
+                txtPina.Hide();
             }
 
             if (CbAreaVenta.SelectedIndex == 1)
@@ -230,53 +327,8 @@ namespace Ventas_Inventario.Forms
             }
         }
         #endregion
-        #region Combobox L
-        private void CbCategoriaL_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CbNombreL.Items.Clear();
-            if (CategoriaL != "")
-            {
-                ComboboxNombreL();
-            }
-                
-                
-        }
-        #endregion
 
-        private void CbEditorialL_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            CbPortadaL.Items.Clear();
-            if (NombreL != "")
-            {
-                ComboboxPortadaL();
-            }
-        }
-
-        private void CbNombreL_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CbEditorialL.Items.Clear();
-            if (NombreL != "")
-            {
-                ComboboxEditorialL();
-            }
-                
-
-        }
-
-        private void CbPortadaL_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CbVolumenL.Items.Clear();
-            if (NombreL != "")
-            {
-                ComboboxVolumenL();
-            }
-        }
-
-        private void CbVolumenL_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            LabelPrecioL();
-        }
+        
     }
 }
 

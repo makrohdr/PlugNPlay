@@ -234,6 +234,7 @@ namespace Ventas_Inventario.Forms
             }
         }
 
+
         //exportar a excel
         private void btnExportar_Click(object sender, EventArgs e)
         {
