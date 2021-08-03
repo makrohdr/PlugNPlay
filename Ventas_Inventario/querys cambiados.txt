@@ -1,0 +1,26 @@
+ALTER proc [dbo].[VentaslblPrecioL]
+@Nombre VARCHAR (100),
+@Volumen VARCHAR (100),
+@Portada Varchar (100),
+@Cantidad varchar(100)
+as
+Begin
+select (
+select distinct Precio from Inventario where Inventario.Nombre = @Nombre and
+Inventario.Volumen = @Volumen and Inventario.Portada = @Portada ) * @Cantidad as 'Precio'
+Return
+END
+
+ALTER proc [dbo].[VentaslblPuntajeL]
+@Nombre VARCHAR (100),
+@Volumen VARCHAR (100),
+@Portada Varchar (100),
+@Cantidad varchar(100)
+as
+Begin
+select (
+select distinct Puntaje from Inventario where Inventario.Nombre = @Nombre and
+Inventario.Volumen = @Volumen and Inventario.Portada = @Portada ) * @Cantidad as 'Puntaje'
+Return
+END
+
