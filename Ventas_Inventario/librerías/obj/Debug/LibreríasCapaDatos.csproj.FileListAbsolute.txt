@@ -9,3 +9,9 @@ C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventar
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\librerías\obj\Debug\LibreríasCapaDatos.csprojAssemblyReference.cache
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\librerías\obj\Debug\librerías.dll
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\librerías\obj\Debug\librerías.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\librerías\bin\Debug\librerías.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\librerías\bin\Debug\librerías.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\librerías\obj\Debug\LibreríasCapaDatos.csproj.AssemblyReference.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\librerías\obj\Debug\LibreríasCapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\librerías\obj\Debug\librerías.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\librerías\obj\Debug\librerías.pdb

@@ -59,3 +59,34 @@ D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inve
 D:\Escritorio\Proyectos\repositorio git\appdiegoou\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.ReportesDeVentas.resources
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Libros.resources
 C:\Users\diego\Desktop\Inventario Plug&Play\Inventario Plug&Play\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.ReportesDeVentas.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.exe.config
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.exe
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\Ventas_Inventario.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\LibreriasNegocio.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\SpreadsheetLight.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.Packaging.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\librerías.dll
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\LibreriasNegocio.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\SpreadsheetLight.xml
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\System.IO.Packaging.xml
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\bin\Debug\librerías.pdb
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.ResolveComReference.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Form1.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Annetys.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Cliente.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Dollar.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.JuegosDeMesa.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Libros.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.ReportesDeVentas.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.TCG.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Forms.Venta.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.Properties.Resources.resources
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.GenerateResource.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\LibreríasCapaPresentacion.csproj.CopyComplete
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.exe
+C:\Users\diego\Desktop\Inventario Plug&Play\PlugNPlay\Ventas_Inventario\Ventas_Inventario\obj\Debug\Ventas_Inventario.pdb

@@ -125,6 +125,35 @@ namespace Ventas_Inventario.Forms
             lblPuntajeL.Text =
                 inventario.Puntaje(CbNombreL.Text, CbVolumenL.Text, CbPortadaL.Text, nuCantidadL.Text);
         }
+
+        private void LlenarListaL()
+        {
+            string NombreL = CbNombreL.Text, CantidadL = nuCantidadL.Text,VolumenL = "Volumen: " + CbVolumenL.Text, PrecioL = lblPrecioL.Text, PuntajeL = lblPuntajeL.Text;
+            //string PrecioOperacionL = lblPrecioL.Text.Substring(1);
+            double SumaPrecio = 0, SumaPuntaje = 0; 
+            if (CbAreaVenta.SelectedIndex == 0)
+            {
+                
+                
+                ListViewItem ListaL = new ListViewItem(NombreL);
+                ListaL.SubItems.Add(VolumenL);
+                ListaL.SubItems.Add(CantidadL);
+                ListaL.SubItems.Add(PrecioL);
+                ListaL.SubItems.Add(PuntajeL);
+                ListVentas.Items.Add(ListaL);
+            }
+
+            foreach (ListViewItem ListaL in ListVentas.Items) 
+            {
+                SumaPrecio += double.Parse(ListaL.SubItems[3].Text.Substring(1));
+                SumaPuntaje += double.Parse(ListaL.SubItems[4].Text);
+            }
+
+            
+            lblTotalPrecio.Text = "$" + SumaPrecio.ToString();
+            lblTotalPuntaje.Text = SumaPuntaje.ToString();
+
+        }
         #endregion
 
         #region comboBox, TextBox, Label, etc...
@@ -310,6 +339,9 @@ namespace Ventas_Inventario.Forms
         #region BtnGuardar
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+            
+           
+           /* 
             if (CbAreaVenta.SelectedIndex > 0 && CbAreaVenta.SelectedIndex < 3)
             {
                 MessageBox.Show("Debe de seleccionar un Area de ventas...!!!");
@@ -325,6 +357,9 @@ namespace Ventas_Inventario.Forms
                 if (txtClienteL.Text == "" && txtClienteA.Text == "" && txtClienteT.Text == "" && txtClienteJ.Text == "")
                 MessageBox.Show("Favor de ingresar el numero de telefono del cliente...!!!");
             }
+           */
+
+            LlenarListaL();
         }
         #endregion
 

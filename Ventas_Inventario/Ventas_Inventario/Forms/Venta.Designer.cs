@@ -107,9 +107,16 @@
             this.BtnGuardar = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.ListVentas = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventarioTableAdapter = new Ventas_Inventario.DBplugYplayDataSetTableAdapters.InventarioTableAdapter();
+            this.lblTotalPrecio = new System.Windows.Forms.Label();
+            this.lblTotalPuntaje = new System.Windows.Forms.Label();
             this.GroupLibros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nuCantidadL)).BeginInit();
             this.GroupAnnetys.SuspendLayout();
@@ -355,11 +362,11 @@
             this.lblPuntajeL.AutoSize = true;
             this.lblPuntajeL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntajeL.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPuntajeL.Location = new System.Drawing.Point(636, 113);
+            this.lblPuntajeL.Location = new System.Drawing.Point(636, 114);
             this.lblPuntajeL.Name = "lblPuntajeL";
-            this.lblPuntajeL.Size = new System.Drawing.Size(93, 20);
+            this.lblPuntajeL.Size = new System.Drawing.Size(88, 20);
             this.lblPuntajeL.TabIndex = 11;
-            this.lblPuntajeL.Text = " lblPuntaje";
+            this.lblPuntajeL.Text = "lblPuntaje";
             // 
             // lblTextoPuntajeL
             // 
@@ -995,28 +1002,58 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconSize = 16;
-            this.iconButton3.Location = new System.Drawing.Point(654, 504);
+            this.iconButton3.Location = new System.Drawing.Point(288, 504);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(140, 38);
+            this.iconButton3.Size = new System.Drawing.Size(239, 38);
             this.iconButton3.TabIndex = 43;
             this.iconButton3.Text = "Guardar Registro";
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
-            // listView1
+            // ListVentas
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ListVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.BackColor = System.Drawing.SystemColors.Window;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 321);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(776, 177);
-            this.listView1.TabIndex = 44;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.ListVentas.BackColor = System.Drawing.SystemColors.Window;
+            this.ListVentas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.ListVentas.GridLines = true;
+            this.ListVentas.HideSelection = false;
+            this.ListVentas.Location = new System.Drawing.Point(12, 321);
+            this.ListVentas.Name = "ListVentas";
+            this.ListVentas.Size = new System.Drawing.Size(776, 177);
+            this.ListVentas.TabIndex = 44;
+            this.ListVentas.UseCompatibleStateImageBehavior = false;
+            this.ListVentas.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nombre de Producto";
+            this.columnHeader1.Width = 251;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Descripcion";
+            this.columnHeader2.Width = 342;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Cantidad";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Precio";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Puntaje";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // inventarioBindingSource
             // 
@@ -1027,12 +1064,38 @@
             // 
             this.inventarioTableAdapter.ClearBeforeFill = true;
             // 
+            // lblTotalPrecio
+            // 
+            this.lblTotalPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotalPrecio.AutoSize = true;
+            this.lblTotalPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPrecio.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblTotalPrecio.Location = new System.Drawing.Point(96, 511);
+            this.lblTotalPrecio.Name = "lblTotalPrecio";
+            this.lblTotalPrecio.Size = new System.Drawing.Size(104, 20);
+            this.lblTotalPrecio.TabIndex = 45;
+            this.lblTotalPrecio.Text = "Precio Total";
+            // 
+            // lblTotalPuntaje
+            // 
+            this.lblTotalPuntaje.AutoSize = true;
+            this.lblTotalPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPuntaje.ForeColor = System.Drawing.Color.Yellow;
+            this.lblTotalPuntaje.Location = new System.Drawing.Point(610, 511);
+            this.lblTotalPuntaje.Name = "lblTotalPuntaje";
+            this.lblTotalPuntaje.Size = new System.Drawing.Size(115, 20);
+            this.lblTotalPuntaje.TabIndex = 27;
+            this.lblTotalPuntaje.Text = "Puntaje Total";
+            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(800, 553);
+            this.Controls.Add(this.lblTotalPuntaje);
+            this.Controls.Add(this.lblTotalPrecio);
             this.Controls.Add(this.GroupJuegosMesa);
             this.Controls.Add(this.GroupTCG);
             this.Controls.Add(this.GroupAnnetys);
@@ -1045,7 +1108,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.CbAreaVenta);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.ListVentas);
             this.Name = "Venta";
             this.Text = "Venta";
             this.Load += new System.EventHandler(this.Venta_Load);
@@ -1125,7 +1188,7 @@
         private FontAwesome.Sharp.IconButton BtnGuardar;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView ListVentas;
         private System.Windows.Forms.TextBox txtClienteL;
         private System.Windows.Forms.Label lblTextoClienteL;
         private System.Windows.Forms.CheckBox CheckClienteL;
@@ -1149,5 +1212,12 @@
         private System.Windows.Forms.Label lblPina;
         private System.Windows.Forms.CheckBox CheckPinaL;
         private System.Windows.Forms.NumericUpDown nuCantidadL;
+        public System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Label lblTotalPrecio;
+        private System.Windows.Forms.Label lblTotalPuntaje;
     }
 }
