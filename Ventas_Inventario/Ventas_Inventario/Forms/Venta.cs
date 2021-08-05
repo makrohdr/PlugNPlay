@@ -273,7 +273,7 @@ namespace Ventas_Inventario.Forms
             lblPuntajeT.Text = (0).ToString("");
             lblPuntajeJ.Text = (0).ToString("");
             
-
+            
         }
 
         #region Area Ventas seleccion

@@ -956,6 +956,9 @@
             // 
             // BtnGuardar
             // 
+            this.BtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnGuardar.AutoSize = true;
             this.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -965,6 +968,8 @@
             this.BtnGuardar.IconColor = System.Drawing.Color.Black;
             this.BtnGuardar.IconSize = 16;
             this.BtnGuardar.Location = new System.Drawing.Point(288, 276);
+            this.BtnGuardar.MaximumSize = new System.Drawing.Size(102, 38);
+            this.BtnGuardar.MinimumSize = new System.Drawing.Size(102, 38);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Rotation = 0D;
             this.BtnGuardar.Size = new System.Drawing.Size(102, 38);
@@ -975,7 +980,9 @@
             // 
             // iconButton2
             // 
-            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.iconButton2.AutoSize = true;
             this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -985,6 +992,8 @@
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconSize = 16;
             this.iconButton2.Location = new System.Drawing.Point(425, 276);
+            this.iconButton2.MaximumSize = new System.Drawing.Size(102, 38);
+            this.iconButton2.MinimumSize = new System.Drawing.Size(102, 38);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Rotation = 0D;
             this.iconButton2.Size = new System.Drawing.Size(102, 38);
@@ -994,7 +1003,8 @@
             // 
             // iconButton3
             // 
-            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -1003,6 +1013,8 @@
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconSize = 16;
             this.iconButton3.Location = new System.Drawing.Point(288, 504);
+            this.iconButton3.MaximumSize = new System.Drawing.Size(239, 38);
+            this.iconButton3.MinimumSize = new System.Drawing.Size(239, 38);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Rotation = 0D;
             this.iconButton3.Size = new System.Drawing.Size(239, 38);
@@ -1066,12 +1078,14 @@
             // 
             // lblTotalPrecio
             // 
-            this.lblTotalPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotalPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotalPrecio.AutoSize = true;
             this.lblTotalPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPrecio.ForeColor = System.Drawing.Color.LawnGreen;
             this.lblTotalPrecio.Location = new System.Drawing.Point(96, 511);
+            this.lblTotalPrecio.MaximumSize = new System.Drawing.Size(104, 20);
+            this.lblTotalPrecio.MinimumSize = new System.Drawing.Size(104, 20);
             this.lblTotalPrecio.Name = "lblTotalPrecio";
             this.lblTotalPrecio.Size = new System.Drawing.Size(104, 20);
             this.lblTotalPrecio.TabIndex = 45;
@@ -1079,10 +1093,14 @@
             // 
             // lblTotalPuntaje
             // 
+            this.lblTotalPuntaje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotalPuntaje.AutoSize = true;
             this.lblTotalPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPuntaje.ForeColor = System.Drawing.Color.Yellow;
             this.lblTotalPuntaje.Location = new System.Drawing.Point(610, 511);
+            this.lblTotalPuntaje.MaximumSize = new System.Drawing.Size(115, 20);
+            this.lblTotalPuntaje.MinimumSize = new System.Drawing.Size(115, 20);
             this.lblTotalPuntaje.Name = "lblTotalPuntaje";
             this.lblTotalPuntaje.Size = new System.Drawing.Size(115, 20);
             this.lblTotalPuntaje.TabIndex = 27;
